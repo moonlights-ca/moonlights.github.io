@@ -16,7 +16,7 @@ export default function Lighting() {
           <div className="absolute inset-0">
             <img
               alt="Residential Architectural Lighting"
-              src="/assets/residential_hero.jpg"
+              src="/moonlights.github.io/assets/residential_hero.jpg"
               className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-700 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
             />
           </div>
@@ -35,7 +35,7 @@ export default function Lighting() {
           <div className="absolute inset-0">
             <img
               alt="Commercial Industrial Lighting"
-              src="/assets/commercial_hero.jpg"
+              src="/moonlights.github.io/assets/commercial_hero.jpg"
               className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-700 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
             />
           </div>
@@ -113,7 +113,7 @@ export default function Lighting() {
             <div className="absolute inset-0 z-0">
               <img
                 alt="Smart Controls Ecosystem"
-                src="/assets/smart_controls.jpg"
+                src="/moonlights.github.io/assets/smart_controls.jpg"
                 className="w-full h-full object-cover mix-blend-luminosity grayscale opacity-30 group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700"
               />
             </div>

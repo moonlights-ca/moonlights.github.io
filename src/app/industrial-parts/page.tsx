@@ -29,7 +29,7 @@ export default function IndustrialParts() {
           <Image
             alt="Industrial Electrical Parts"
             className="w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
-            src="/assets/industrial_hero.png"
+            src="/moonlights.github.io/assets/industrial_hero.png"
             fill
             sizes="100vw"
             priority
@@ -59,7 +59,7 @@ export default function IndustrialParts() {
             <Image
               alt="Electrical Connectors"
               className="w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)] md:[mask-image:linear-gradient(to_right,transparent,black_30%)]"
-              src="/assets/industrial_connectors.jpg"
+              src="/moonlights.github.io/assets/industrial_connectors.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               loading="lazy"

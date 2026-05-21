@@ -15,7 +15,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "dry-type-distribution-transformer",
     name: "Dry-Type Distribution Transformer",
-    img: "/assets/transformer_dry_type.png",
+    img: "/moonlights.github.io/assets/transformer_dry_type.png",
     tags: ["600V", "THREE-PHASE"],
     category: "Distribution",
     voltage: "600V",
@@ -43,7 +43,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "control-transformer",
     name: "Industrial Control Transformer",
-    img: "/assets/transformer_control.png",
+    img: "/moonlights.github.io/assets/transformer_control.png",
     tags: ["600V", "CONTROL"],
     category: "Control",
     voltage: "600V",
@@ -71,7 +71,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "isolation-transformer",
     name: "Isolation Transformer",
-    img: "/assets/transformer_isolation.png",
+    img: "/moonlights.github.io/assets/transformer_isolation.png",
     tags: ["600V", "ISOLATED"],
     category: "Isolation",
     voltage: "600V",
@@ -99,7 +99,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "buck-boost-transformer",
     name: "Buck-Boost Transformer",
-    img: "/assets/transformer_buck_boost.png",
+    img: "/moonlights.github.io/assets/transformer_buck_boost.png",
     tags: ["240V", "VOLTAGE CORRECTION"],
     category: "Buck-Boost",
     voltage: "240V",
@@ -127,7 +127,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "three-phase-autotransformer",
     name: "Three-Phase Autotransformer",
-    img: "/assets/transformer_auto_3ph.png",
+    img: "/moonlights.github.io/assets/transformer_auto_3ph.png",
     tags: ["600V", "THREE-PHASE"],
     category: "Auto",
     voltage: "600V",
@@ -155,7 +155,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "drive-isolation-transformer",
     name: "Drive Isolation Transformer",
-    img: "/assets/transformer_drive_isolation.png",
+    img: "/moonlights.github.io/assets/transformer_drive_isolation.png",
     tags: ["600V", "VFD RATED"],
     category: "Isolation",
     voltage: "600V",
@@ -183,7 +183,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "step-down-distribution-transformer",
     name: "Step-Down Distribution Transformer",
-    img: "/assets/transformer_step_down.png",
+    img: "/moonlights.github.io/assets/transformer_step_down.png",
     tags: ["600V", "STEP-DOWN"],
     category: "Distribution",
     voltage: "600V",
@@ -211,7 +211,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "encapsulated-transformer",
     name: "Encapsulated Dry-Type Transformer",
-    img: "/assets/transformer_encapsulated.png",
+    img: "/moonlights.github.io/assets/transformer_encapsulated.png",
     tags: ["600V", "SEALED"],
     category: "Distribution",
     voltage: "600V",
@@ -239,7 +239,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "medium-voltage-transformer",
     name: "Medium Voltage Transformer",
-    img: "/assets/transformer_medium_voltage.png",
+    img: "/moonlights.github.io/assets/transformer_medium_voltage.png",
     tags: ["15kV", "PADMOUNT"],
     category: "Distribution",
     voltage: "15kV",
@@ -267,7 +267,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "harmonic-mitigating-transformer",
     name: "K-Rated Harmonic Mitigating Transformer",
-    img: "/assets/transformer_harmonic.png",
+    img: "/moonlights.github.io/assets/transformer_harmonic.png",
     tags: ["480V", "K-RATED"],
     category: "Distribution",
     voltage: "480V",

@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   // Required for GitHub Pages
   output: 'export',
   
+  // Base path for GitHub Pages Project deployment
+  basePath: '/moonlights.github.io',
+  
   // Disable server-based image optimization since GitHub Pages is static
   images: {
     unoptimized: true,

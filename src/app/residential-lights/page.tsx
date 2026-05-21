@@ -10,7 +10,7 @@ const products = [
   {
     name: "Home Lighting Strips",
     desc: "Motion-activated LED strips perfect for home perimeters, driveways, and walkways.",
-    img: "/assets/residential_hero.jpg",
+    img: "/moonlights.github.io/assets/residential_hero.jpg",
     features: [
       "Motion Detection",
       "Energy Efficient",
@@ -34,7 +34,7 @@ const products = [
   {
     name: "Garden Lighting",
     desc: "Decorative LED solutions for landscaping and outdoor entertainment areas.",
-    img: "/assets/residential_hero.jpg",
+    img: "/moonlights.github.io/assets/residential_hero.jpg",
     features: [
       "Color Changing RGB",
       "Remote Controlled",
@@ -56,7 +56,7 @@ const products = [
   {
     name: "Pathway Safety Lights",
     desc: "Low-profile LED strips for safe navigation along walkways and stairs.",
-    img: "/assets/residential_hero.jpg",
+    img: "/moonlights.github.io/assets/residential_hero.jpg",
     features: [
       "Non-Slip Design",
       "Dusk-to-Dawn Sensor",
@@ -86,7 +86,7 @@ export default function ResidentialLights() {
           <img
             alt="Residential LED Lighting"
             className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
-            src="/assets/residential_hero.jpg"
+            src="/moonlights.github.io/assets/residential_hero.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
         </div>

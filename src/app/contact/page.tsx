@@ -71,7 +71,7 @@ export default function Contact() {
               <img
                 alt="Map location"
                 className="w-full h-full object-cover rounded-lg opacity-60 filter grayscale contrast-125 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
-                src="/assets/map_location.jpg"
+                src="/moonlights.github.io/assets/map_location.jpg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent pointer-events-none rounded-xl"></div>
             </div>

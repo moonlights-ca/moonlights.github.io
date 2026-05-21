@@ -10,7 +10,7 @@ const products = [
   {
     name: "Professional RGB+White Strip",
     desc: "Premium RGB+White LED strips designed for professional installations requiring both color and clean white illumination.",
-    img: "/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.jpg",
     features: [
       "RGB + White Channels",
       "High CRI (>90)",
@@ -33,7 +33,7 @@ const products = [
   {
     name: "High-Density RGB Strip",
     desc: "Commercial-grade high-density RGB LED strips with seamless color blending for continuous lighting runs.",
-    img: "/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.jpg",
     features: [
       "120 LEDs/m Density",
       "Seamless Color Blend",
@@ -56,7 +56,7 @@ const products = [
   {
     name: "Ultra-Bright RGB Strip",
     desc: "High-lumen RGB LED strip for outdoor commercial installations and large-scale architectural lighting.",
-    img: "/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.jpg",
     features: [
       "Ultra-High Output",
       "Aluminum Channel Compatible",
@@ -79,7 +79,7 @@ const products = [
   {
     name: "Commercial White Strip",
     desc: "High-efficiency commercial-grade white LED strip for professional ambient and task lighting applications.",
-    img: "/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.jpg",
     features: [
       "Tunable White",
       "High Efficiency",
@@ -116,7 +116,7 @@ export default function CommercialLights() {
           <img
             alt="Commercial LED Systems"
             className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
-            src="/assets/commercial_hero.jpg"
+            src="/moonlights.github.io/assets/commercial_hero.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
         </div>
