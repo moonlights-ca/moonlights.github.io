@@ -122,7 +122,7 @@ export default function Contact() {
 
                 <div className="mt-4 flex items-center justify-between">
                   <span className="font-label-caps text-label-caps text-outline">* Required fields</span>
-                  <button className="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 rounded-full shadow-[0_0_20px_rgba(207,188,255,0.2)] hover:shadow-[0_0_30px_rgba(207,188,255,0.4)] transition-all duration-300 flex items-center gap-2" type="button">
+                  <button className="bg-primary text-on-primary font-label-caps text-label-caps px-8 py-3 rounded-full shadow-[0_0_20px_var(--glow-color)] hover:shadow-[0_0_30px_var(--glow-color-hover)] transition-all duration-300 flex items-center gap-2" type="button">
                     Send Inquiry
                     <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
                   </button>

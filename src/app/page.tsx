@@ -12,7 +12,7 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background to-transparent z-10"></div>
           <Image
             alt="High-end smart LED lighting system"
-            className="w-full h-full object-cover object-right mix-blend-luminosity group-hover:mix-blend-normal opacity-60 group-hover:opacity-80 transition-all duration-700"
+            className="hero-img w-full h-full object-cover object-right mix-blend-luminosity group-hover:mix-blend-normal opacity-60 group-hover:opacity-80 transition-all duration-700"
             src="/moonlights.github.io/assets/hero_bg.jpg"
             fill
             sizes="100vw"
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary text-on-primary font-body-md text-body-md font-bold shadow-[0_0_20px_rgba(207,188,255,0.3)] hover:shadow-[0_0_30px_rgba(207,188,255,0.5)] transition-all duration-300"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary text-on-primary font-body-md text-body-md font-bold shadow-[0_0_20px_var(--glow-color-strong)] hover:shadow-[0_0_30px_var(--glow-color-strong-hover)] transition-all duration-300"
               href="/contact"
             >
               Request a Quote
@@ -77,7 +77,7 @@ export default function Home() {
           >
             <Image
               alt="Wires and Cables"
-              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
+              className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
               src="/moonlights.github.io/assets/cat_wires.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -108,7 +108,7 @@ export default function Home() {
           >
             <Image
               alt="Auto Transformers"
-              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
+              className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
               src="/moonlights.github.io/assets/transformers_hero.png"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -139,7 +139,7 @@ export default function Home() {
           >
             <Image
               alt="Industrial Electrical Parts"
-              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
+              className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
               src="/moonlights.github.io/assets/cat_industrial.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -170,7 +170,7 @@ export default function Home() {
           >
             <Image
               alt="Lighting Solutions"
-              className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
+              className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
               src="/moonlights.github.io/assets/cat_lighting.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -213,7 +213,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Schema Image */}
           <div className="lg:col-span-2 relative rounded-2xl overflow-hidden border border-outline-variant/30 bg-surface-container-low aspect-[16/9] lg:aspect-auto group">
-            <div className="absolute inset-0 bg-[url('/moonlights.github.io/assets/schema_bg.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0 mix-blend-luminosity group-hover:mix-blend-normal"></div>
+            <div className="hero-img absolute inset-0 bg-[url('/moonlights.github.io/assets/schema_bg.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0 mix-blend-luminosity group-hover:mix-blend-normal"></div>
             <div className="absolute inset-0 bg-gradient-to-tr from-background/80 to-transparent"></div>
             {/* Technical Overlay Over Blueprint */}
             <div className="absolute top-6 left-6 flex space-x-2">
@@ -314,7 +314,7 @@ export default function Home() {
             <div className="aspect-square md:aspect-video rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 flex items-center justify-center relative group">
               <Image
                 alt="Abstract light engineering cutaway"
-                className="w-full h-full object-cover mix-blend-luminosity group-hover:mix-blend-normal opacity-70 grayscale group-hover:grayscale-0 transition-all duration-700"
+                className="hero-img w-full h-full object-cover mix-blend-luminosity group-hover:mix-blend-normal opacity-70 grayscale group-hover:grayscale-0 transition-all duration-700"
                 src="/moonlights.github.io/assets/innovation_bg.jpg"
                 fill
                 sizes="(max-width: 768px) 100vw, 60vw"

@@ -28,7 +28,7 @@ export default function IndustrialParts() {
           <div className="w-full h-full bg-gradient-to-r from-background via-background/80 to-transparent absolute inset-0 z-10"></div>
           <Image
             alt="Industrial Electrical Parts"
-            className="w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
+            className="hero-img w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
             src="/moonlights.github.io/assets/industrial_hero.png"
             fill
             sizes="100vw"
@@ -53,19 +53,19 @@ export default function IndustrialParts() {
         {/* Electrical Connectors (Large Feature) */}
         <Link
           href="/industrial-parts/electrical-connectors"
-          className="col-span-1 md:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant/30 hover:border-primary hover:shadow-[0_0_20px_rgba(207,188,255,0.4)] transition-all duration-300 overflow-hidden flex flex-col md:flex-row group"
+          className="col-span-1 md:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant/30 hover:border-primary hover:shadow-[0_0_20px_var(--glow-color-hover)] transition-all duration-300 overflow-hidden flex flex-col md:flex-row group"
         >
           <div className="md:w-1/2 relative h-64 md:h-auto bg-surface-container-low overflow-hidden">
             <Image
               alt="Electrical Connectors"
-              className="w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)] md:[mask-image:linear-gradient(to_right,transparent,black_30%)]"
+              className="hero-img w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)] md:[mask-image:linear-gradient(to_right,transparent,black_30%)]"
               src="/moonlights.github.io/assets/industrial_connectors.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               loading="lazy"
             />
             <div className="absolute top-4 left-4">
-              <span className="bg-white/10 backdrop-blur-md px-3 py-1 rounded text-on-surface font-label-caps text-label-caps border border-white/20">High-Voltage</span>
+              <span className="chip backdrop-blur-md px-3 py-1 rounded text-on-surface font-label-caps text-label-caps">High-Voltage</span>
             </div>
           </div>
           <div className="p-8 md:w-1/2 flex flex-col justify-center gap-4">
@@ -87,12 +87,12 @@ export default function IndustrialParts() {
           <Link
             key={cat.slug}
             href={`/industrial-parts/${cat.slug}`}
-            className="col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-outline-variant/30 hover:border-primary hover:shadow-[0_0_20px_rgba(207,188,255,0.4)] transition-all duration-300 overflow-hidden flex flex-col group"
+            className="col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-outline-variant/30 hover:border-primary hover:shadow-[0_0_20px_var(--glow-color-hover)] transition-all duration-300 overflow-hidden flex flex-col group"
           >
             <div className="h-48 relative bg-surface-container-low overflow-hidden">
               <Image
                 alt={cat.name}
-                className="w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)]"
+                className="hero-img w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)]"
                 src={cat.img}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { useTheme } from "./ThemeProvider";
 
 const navLinks = [
   { href: "/wires-and-cables", label: "Wires & Cables" },
@@ -14,6 +15,7 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   // Close menu on route change
   useEffect(() => {
@@ -64,9 +66,25 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant/30 hover:border-primary/50 text-on-surface-variant hover:text-primary transition-all duration-300"
+              aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+              title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            >
+              <span
+                className="material-symbols-outlined text-xl transition-transform duration-500"
+                style={{
+                  transform: theme === "dark" ? "rotate(0deg)" : "rotate(360deg)",
+                }}
+              >
+                {theme === "dark" ? "light_mode" : "dark_mode"}
+              </span>
+            </button>
             <Link
-              className="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(207,188,255,0.2)] hover:shadow-[0_0_20px_rgba(207,188,255,0.4)]"
+              className="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps hover:bg-primary/90 transition-all shadow-[0_0_15px_var(--glow-color)] hover:shadow-[0_0_20px_var(--glow-color-hover)]"
               href="/contact"
             >
               Request a Quote
@@ -134,7 +152,7 @@ export default function Navbar() {
           <div className="mt-auto pb-8">
             <Link
               href="/contact"
-              className="flex items-center justify-center w-full py-3 rounded-full bg-primary text-on-primary font-label-caps text-label-caps shadow-[0_0_15px_rgba(207,188,255,0.2)] hover:shadow-[0_0_25px_rgba(207,188,255,0.4)] transition-all"
+              className="flex items-center justify-center w-full py-3 rounded-full bg-primary text-on-primary font-label-caps text-label-caps shadow-[0_0_15px_var(--glow-color)] hover:shadow-[0_0_25px_var(--glow-color-hover)] transition-all"
               onClick={() => setIsOpen(false)}
             >
               Request a Quote
@@ -145,3 +163,4 @@ export default function Navbar() {
     </>
   );
 }
+

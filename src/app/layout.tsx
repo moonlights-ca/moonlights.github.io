@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ThemeProvider from "@/components/ThemeProvider";
 import "./globals.css";
 
 const inter = Inter({
@@ -43,14 +44,28 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.moonlights.ca"),
 };
 
+// Inline script to prevent flash of wrong theme (runs before React hydrates)
+const themeScript = `
+(function() {
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') {
+      document.documentElement.classList.remove('dark', 'light');
+      document.documentElement.classList.add(t);
+    }
+  } catch(e) {}
+})();
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable}`}>
+    <html lang="en" className={`dark ${inter.variable}`} suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="theme-color" content="#141218" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
@@ -67,10 +82,13 @@ export default function RootLayout({
         />
       </head>
       <body className="flex flex-col min-h-screen">
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
 }
+

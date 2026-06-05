@@ -28,7 +28,7 @@ export default function WiresAndCables() {
           <div className="w-full h-full bg-gradient-to-r from-background via-background/80 to-transparent absolute inset-0 z-10"></div>
           <Image
             alt="Industrial Grade Wires & Cables"
-            className="w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
+            className="hero-img w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
             src="/moonlights.github.io/assets/wires_hero.jpg"
             fill
             sizes="100vw"

@@ -98,7 +98,7 @@ export default function Footer() {
             {/* CTA */}
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-on-primary font-label-caps text-label-caps text-sm shadow-[0_0_15px_rgba(207,188,255,0.15)] hover:shadow-[0_0_25px_rgba(207,188,255,0.3)] transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-on-primary font-label-caps text-label-caps text-sm shadow-[0_0_15px_var(--glow-color)] hover:shadow-[0_0_25px_var(--glow-color-hover)] transition-all"
             >
               Get a Quote
               <span className="material-symbols-outlined text-[16px]">arrow_forward</span>

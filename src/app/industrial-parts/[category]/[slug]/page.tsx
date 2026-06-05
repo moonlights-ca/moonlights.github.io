@@ -75,7 +75,7 @@ export default async function ProductDetailPage({
             <div className="aspect-[3/2] w-full overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/30 relative">
               <img
                 alt={product.name}
-                className="object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                className="hero-img object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                 src={product.img}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low/60 via-transparent to-transparent"></div>
@@ -118,7 +118,7 @@ export default async function ProductDetailPage({
             {/* CTA */}
             <Link
               href="/contact"
-              className="rounded-xl bg-primary text-on-primary font-label-caps text-label-caps px-6 py-4 transition-all flex justify-center items-center gap-2 shadow-[0_0_15px_rgba(207,188,255,0.2)] hover:shadow-[0_0_25px_rgba(207,188,255,0.4)]"
+              className="rounded-xl bg-primary text-on-primary font-label-caps text-label-caps px-6 py-4 transition-all flex justify-center items-center gap-2 shadow-[0_0_15px_var(--glow-color)] hover:shadow-[0_0_25px_var(--glow-color-hover)]"
             >
               Request a Quote
               <span className="material-symbols-outlined text-[16px]">arrow_forward</span>

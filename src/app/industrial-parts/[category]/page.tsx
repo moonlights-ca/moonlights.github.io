@@ -84,7 +84,7 @@ export default async function CategoryPage({
               <div className="aspect-[4/3] w-full overflow-hidden bg-surface-container-low relative">
                 <img
                   alt={product.name}
-                  className="object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="hero-img object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   src={product.img}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>

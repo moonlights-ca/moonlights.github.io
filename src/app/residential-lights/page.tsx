@@ -85,7 +85,7 @@ export default function ResidentialLights() {
         <div className="absolute inset-0 z-0">
           <img
             alt="Residential LED Lighting"
-            className="w-full h-full object-cover opacity-40 mix-blend-luminosity"
+            className="hero-img w-full h-full object-cover opacity-40 mix-blend-luminosity"
             src="/moonlights.github.io/assets/residential_hero.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
@@ -140,7 +140,7 @@ export default function ResidentialLights() {
                 <div className="aspect-[4/3] bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden">
                   <img
                     alt={product.name}
-                    className="w-full h-full object-cover mix-blend-luminosity group-hover:mix-blend-normal opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                    className="hero-img w-full h-full object-cover mix-blend-luminosity group-hover:mix-blend-normal opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                     src={product.img}
                   />
                 </div>
@@ -213,7 +213,7 @@ export default function ResidentialLights() {
           <div className="flex justify-center gap-4 flex-wrap relative z-10">
             <Link
               href="/contact"
-              className="px-8 py-3 rounded-full bg-primary text-on-primary font-label-caps text-label-caps shadow-[0_0_15px_rgba(207,188,255,0.2)] hover:shadow-[0_0_25px_rgba(207,188,255,0.4)] transition-all"
+              className="px-8 py-3 rounded-full bg-primary text-on-primary font-label-caps text-label-caps shadow-[0_0_15px_var(--glow-color)] hover:shadow-[0_0_25px_var(--glow-color-hover)] transition-all"
             >
               Get Quote
             </Link>

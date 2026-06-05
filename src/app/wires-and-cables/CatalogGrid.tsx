@@ -136,14 +136,14 @@ export default function CatalogGrid() {
                 <div className="aspect-video w-full mb-5 overflow-hidden rounded-lg bg-surface-container-low relative flex items-center justify-center">
                   <img
                     alt={product.name}
-                    className="object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    className="hero-img object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     src={product.img}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
                 </div>
                 <div className="flex flex-wrap gap-2 mb-3">
                   {product.tags.map((tag) => (
-                    <span key={tag} className="bg-white/10 rounded px-2 py-1 font-label-caps text-label-caps text-on-surface">{tag}</span>
+                    <span key={tag} className="chip rounded px-2 py-1 font-label-caps text-label-caps text-on-surface">{tag}</span>
                   ))}
                 </div>
                 <h2 className="font-headline-md text-headline-md text-on-surface mb-2">{product.name}</h2>
