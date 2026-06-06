@@ -245,6 +245,10 @@ html.light .hero-img {
   grayscale: 0 !important;
 }
 
+html.light .about-hero-gradient {
+  display: none !important;
+}
+
 html.light .hero-img:hover,
 html.light .group:hover .hero-img {
   mix-blend-mode: normal !important;
@@ -311,7 +315,7 @@ html.light .text-transparent.bg-clip-text[class*="bg-gradient-to-r"][class*="fro
 }
 
 /* EXCEPT for h1 hero text which needs to be grayish white over the dark hero image */
-html.light h1 .text-transparent.bg-clip-text[class*="bg-gradient-to-r"][class*="from-primary"] {
+html.light h1.text-white .text-transparent.bg-clip-text[class*="bg-gradient-to-r"][class*="from-primary"] {
   -webkit-text-fill-color: var(--color-background) !important;
   color: var(--color-background) !important;
 }

@@ -240,10 +240,6 @@ export default function Home() {
               <p className="font-body-md text-body-md text-on-surface-variant relative z-10 lm-text-black">
                 Industrial-grade transmission lines designed for extreme environments and maximum durability.
               </p>
-              <div className="mt-4 pt-4 border-t border-outline-variant/30 flex justify-between text-sm font-mono text-on-surface-variant relative z-10">
-                <span>Stock Level</span>
-                <span className="text-primary">High</span>
-              </div>
             </div>
             <div className="glass-card rounded-2xl p-6 relative overflow-hidden group hover:border-primary/50 transition-colors lm-text-black">
               <div className="flex items-start justify-between mb-4 relative z-10">
@@ -260,10 +256,6 @@ export default function Home() {
               <p className="font-body-md text-body-md text-on-surface-variant relative z-10 lm-text-black">
                 Heavy-duty power management systems ensuring absolute stability under peak electrical loads.
               </p>
-              <div className="mt-4 pt-4 border-t border-outline-variant/30 flex justify-between text-sm font-mono text-on-surface-variant relative z-10">
-                <span>Lead Time</span>
-                <span className="text-primary">3-5 Days</span>
-              </div>
             </div>
           </div>
         </div>
