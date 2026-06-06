@@ -267,20 +267,7 @@ export default function CustomConfigurator() {
                 <div className="flex flex-col gap-5">
                   <h3 className="font-headline-sm text-headline-sm text-on-surface border-b border-outline-variant/20 pb-3 mb-2">Project Details</h3>
                   
-                  <div className="flex flex-col gap-2">
-                    <label htmlFor="projectType" className="font-label-md text-label-md text-on-surface-variant lm-text-black">Project Type *</label>
-                    <select
-                      id="projectType"
-                      required
-                      className="bg-surface-container rounded-xl px-4 py-3 text-on-surface border border-outline-variant/20 focus:border-primary focus:outline-none transition-colors appearance-none lm-bg-white lm-border-black/20"
-                    >
-                      <option value="" disabled selected>Select project type</option>
-                      <option value="commercial">Commercial</option>
-                      <option value="industrial">Industrial</option>
-                      <option value="residential">Residential</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
+
 
                   <div className="flex flex-col gap-2">
                     <label htmlFor="quantity" className="font-label-md text-label-md text-on-surface-variant lm-text-black">Estimated Quantity</label>
@@ -303,7 +290,40 @@ export default function CustomConfigurator() {
                 </div>
               </div>
 
-              <div className="flex justify-center mt-6">
+              <div className="bg-surface-container/30 border border-primary/20 rounded-xl p-6 mt-2">
+                <h3 className="font-label-caps text-label-caps text-primary mb-4 uppercase tracking-widest flex items-center gap-2">
+                  <span className="material-symbols-outlined text-[18px]">list_alt</span>
+                  Selected Specifications
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-sm text-on-surface-variant lm-text-black">
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs opacity-70 uppercase tracking-wider">Chip Type</span>
+                    <strong className="text-on-surface lm-text-black font-medium">{specs.chipTypes}</strong>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs opacity-70 uppercase tracking-wider">Color Temp</span>
+                    <strong className="text-on-surface lm-text-black font-medium">{specs.cct}</strong>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs opacity-70 uppercase tracking-wider">Density</span>
+                    <strong className="text-on-surface lm-text-black font-medium">{specs.density}</strong>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs opacity-70 uppercase tracking-wider">Protection</span>
+                    <strong className="text-on-surface lm-text-black font-medium">{specs.protection}</strong>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs opacity-70 uppercase tracking-wider">PCB Width</span>
+                    <strong className="text-on-surface lm-text-black font-medium">{specs.pcb}</strong>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs opacity-70 uppercase tracking-wider">Brightness</span>
+                    <strong className="text-on-surface lm-text-black font-medium">{specs.brightness}</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-center mt-2">
                 <button
                   type="submit"
                   disabled={isSubmitting}
