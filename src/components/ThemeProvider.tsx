@@ -41,7 +41,7 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
     // Update the theme-color meta tag
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) {
-      meta.setAttribute("content", theme === "dark" ? "#141218" : "#f7faf6");
+      meta.setAttribute("content", theme === "dark" ? "#141218" : "#ededf0");
     }
   }, [theme, mounted]);
 

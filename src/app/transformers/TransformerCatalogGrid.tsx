@@ -33,7 +33,7 @@ export default function TransformerCatalogGrid() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-lg font-label-caps text-label-caps transition-all duration-200 border ${
                   activeCategory === cat
-                    ? "bg-primary/15 border-primary/50 text-primary"
+                    ? "bg-primary text-on-primary border-primary shadow-md"
                     : "bg-surface-container border-outline-variant/30 text-on-surface-variant hover:border-primary/30 hover:text-on-surface"
                 }`}
               >
@@ -48,7 +48,7 @@ export default function TransformerCatalogGrid() {
               onClick={() => setVoltageOpen(!voltageOpen)}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg font-label-caps text-label-caps transition-all duration-200 border min-w-[160px] justify-between ${
                 activeVoltage !== "All Voltages"
-                  ? "bg-primary/15 border-primary/50 text-primary"
+                  ? "bg-primary text-on-primary border-primary shadow-md"
                   : "bg-surface-container border-outline-variant/30 text-on-surface-variant hover:border-primary/30"
               }`}
             >
@@ -80,7 +80,7 @@ export default function TransformerCatalogGrid() {
                       }}
                       className={`w-full text-left px-4 py-3 font-label-caps text-label-caps transition-colors ${
                         activeVoltage === v
-                          ? "bg-primary/15 text-primary"
+                          ? "bg-primary text-on-primary"
                           : "text-on-surface-variant hover:bg-surface-variant hover:text-on-surface"
                       }`}
                     >
@@ -147,7 +147,7 @@ export default function TransformerCatalogGrid() {
                   ))}
                 </div>
                 <h2 className="font-headline-md text-headline-md text-on-surface mb-2">{product.name}</h2>
-                <p className="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                <p className="font-body-md text-body-md text-on-surface-variant flex-grow mb-6 lm-text-black">
                   {product.desc}
                 </p>
                 <div className="w-full rounded-xl bg-transparent border border-outline-variant/30 group-hover:border-primary group-hover:text-primary text-on-surface font-label-caps text-label-caps px-6 py-3 transition-colors flex justify-center items-center gap-2">

@@ -91,26 +91,26 @@ export default function ResidentialLights() {
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
         </div>
         <div className="relative z-10 text-center px-margin-mobile md:px-margin-desktop py-20">
-          <nav className="flex justify-center text-on-surface-variant font-label-caps text-label-caps gap-2 items-center mb-8">
-            <Link href="/" className="hover:text-primary transition-colors">HOME</Link>
-            <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-            <Link href="/lighting" className="hover:text-primary transition-colors">LIGHTING</Link>
-            <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-            <span className="text-primary">RESIDENTIAL</span>
+          <nav className="flex justify-center text-on-surface-variant font-label-caps text-label-caps gap-2 items-center mb-8 lm-text-white">
+            <Link href="/" className="hover:text-primary transition-colors lm-text-white">HOME</Link>
+            <span className="material-symbols-outlined text-[14px] lm-text-white">chevron_right</span>
+            <Link href="/lighting" className="hover:text-primary transition-colors lm-text-white">LIGHTING</Link>
+            <span className="material-symbols-outlined text-[14px] lm-text-white">chevron_right</span>
+            <span className="text-primary lm-text-white">RESIDENTIAL</span>
           </nav>
-          <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-on-surface mb-4">
+          <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-white mb-4">
             Residential{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               LED Solutions
             </span>
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+          <p className="font-body-lg text-body-lg text-white/90 max-w-2xl mx-auto mb-8">
             Transform your home with intelligent LED lighting systems designed for safety, security, and style.
           </p>
           <div className="flex justify-center gap-3 flex-wrap">
-            <span className="bg-primary/15 border border-primary/40 rounded-lg px-4 py-1.5 font-label-caps text-label-caps text-primary">Smart</span>
-            <span className="bg-primary/15 border border-primary/40 rounded-lg px-4 py-1.5 font-label-caps text-label-caps text-primary">IP65</span>
-            <span className="bg-primary/15 border border-primary/40 rounded-lg px-4 py-1.5 font-label-caps text-label-caps text-primary">Energy</span>
+            <span className="bg-primary/15 border border-primary/40 rounded-lg px-4 py-1.5 font-label-caps text-label-caps text-primary lm-bg-black lm-text-white lm-border-black">Smart</span>
+            <span className="bg-primary/15 border border-primary/40 rounded-lg px-4 py-1.5 font-label-caps text-label-caps text-primary lm-bg-black lm-text-white lm-border-black">IP65</span>
+            <span className="bg-primary/15 border border-primary/40 rounded-lg px-4 py-1.5 font-label-caps text-label-caps text-primary lm-bg-black lm-text-white lm-border-black">Energy</span>
           </div>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function ResidentialLights() {
               <div className={`flex flex-col gap-6 ${product.reverse ? "md:order-1" : ""}`}>
                 <div>
                   <h3 className="font-display-lg text-headline-md text-on-surface mb-2">{product.name}</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant">{product.desc}</p>
+                  <p className="font-body-md text-body-md text-on-surface-variant lm-text-black">{product.desc}</p>
                 </div>
 
                 {/* Key Features */}
@@ -161,7 +161,7 @@ export default function ResidentialLights() {
                   </h4>
                   <div className="grid grid-cols-2 gap-2">
                     {product.features.map((f, i) => (
-                      <div key={i} className="flex items-center gap-2 text-sm text-on-surface-variant">
+                      <div key={i} className="flex items-center gap-2 text-sm text-on-surface-variant lm-text-black">
                         <span className="material-symbols-outlined text-primary text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
                         {f}
                       </div>
@@ -178,8 +178,8 @@ export default function ResidentialLights() {
                   <div className="space-y-2">
                     {product.specs.map((s, i) => (
                       <div key={i} className="flex justify-between text-sm border-b border-outline-variant/10 pb-2 last:border-0 last:pb-0">
-                        <span className="text-on-surface-variant">{s.label}</span>
-                        <span className="text-on-surface font-mono font-medium">{s.value}</span>
+                        <span className="text-on-surface-variant lm-text-black">{s.label}</span>
+                        <span className="text-on-surface font-mono font-medium lm-text-black">{s.value}</span>
                       </div>
                     ))}
                   </div>
@@ -191,7 +191,7 @@ export default function ResidentialLights() {
                     <span className="material-symbols-outlined text-primary text-[16px]">location_on</span>
                     PERFECT FOR
                   </h4>
-                  <p className="font-body-md text-body-md text-on-surface-variant">{product.perfectFor}</p>
+                  <p className="font-body-md text-body-md text-on-surface-variant lm-text-black">{product.perfectFor}</p>
                 </div>
               </div>
             </article>
@@ -207,7 +207,7 @@ export default function ResidentialLights() {
           <h2 className="font-display-lg text-headline-md text-on-surface mb-4 relative z-10">
             Ready to brighten your home?
           </h2>
-          <p className="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xl mx-auto relative z-10">
+          <p className="font-body-md text-body-md text-on-surface-variant mb-8 max-w-xl mx-auto relative z-10 lm-text-black">
             Contact our team for a personalized LED consultation and transform your home with smart LED lighting.
           </p>
           <div className="flex justify-center gap-4 flex-wrap relative z-10">
@@ -219,7 +219,7 @@ export default function ResidentialLights() {
             </Link>
             <Link
               href="/lighting"
-              className="px-8 py-3 rounded-full border border-outline-variant/30 text-on-surface font-label-caps text-label-caps hover:border-primary hover:text-primary transition-all"
+              className="px-8 py-3 rounded-full border border-outline-variant/30 text-on-surface font-label-caps text-label-caps hover:border-primary hover:text-primary transition-all lm-text-black lm-border-black"
             >
               View All Products
             </Link>

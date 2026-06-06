@@ -20,11 +20,11 @@ export default function Contact() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pb-stack-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
           <section className="lg:col-span-5 flex flex-col gap-8">
-            <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 hover:border-primary/50 transition-colors duration-500 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-8 lg:p-12 hover:border-primary/50 transition-colors duration-500 relative overflow-hidden group/contact h-full flex flex-col">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover/contact:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               <h2 className="font-headline-md text-headline-md text-on-surface mb-8">Contact Information</h2>
 
-              <div className="flex flex-col gap-6 relative z-10">
+              <div className="flex flex-col justify-between gap-8 relative z-10 pb-4">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0 border border-outline-variant/20">
                     <span className="material-symbols-outlined text-primary text-[20px]">apartment</span>
@@ -67,14 +67,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-xl p-2 h-[300px] relative overflow-hidden group">
-              <img
-                alt="Map location"
-                className="w-full h-full object-cover rounded-lg opacity-60 filter grayscale contrast-125 group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
-                src="/moonlights.github.io/assets/map_location.jpg"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent pointer-events-none rounded-xl"></div>
-            </div>
+
           </section>
 
           <section className="lg:col-span-7">

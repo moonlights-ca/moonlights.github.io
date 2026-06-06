@@ -36,13 +36,13 @@ export default function IndustrialParts() {
           />
         </div>
         <div className="relative z-20 max-w-3xl pointer-events-none p-8 md:p-16">
-          <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-on-surface mb-6">
+          <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-white mb-6">
             Industrial Grade<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Electrical Parts.
             </span>
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+          <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-xl">
             Precision-engineered components for high-voltage and critical infrastructure applications. Built for uncompromising reliability in extreme environments.
           </p>
         </div>
@@ -58,23 +58,23 @@ export default function IndustrialParts() {
           <div className="md:w-1/2 relative h-64 md:h-auto bg-surface-container-low overflow-hidden">
             <Image
               alt="Electrical Connectors"
-              className="hero-img w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)] md:[mask-image:linear-gradient(to_right,transparent,black_30%)]"
+              className="hero-img w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)] md:[mask-image:linear-gradient(to_right,transparent,black_30%)] lm-no-mask"
               src="/moonlights.github.io/assets/industrial_connectors.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
               loading="lazy"
             />
             <div className="absolute top-4 left-4">
-              <span className="chip backdrop-blur-md px-3 py-1 rounded text-on-surface font-label-caps text-label-caps">High-Voltage</span>
+              <span className="chip backdrop-blur-md px-3 py-1 rounded text-on-surface font-label-caps text-label-caps lm-bg-black lm-text-white">High-Voltage</span>
             </div>
           </div>
           <div className="p-8 md:w-1/2 flex flex-col justify-center gap-4">
-            <h2 className="font-headline-md text-headline-md bg-gradient-to-r from-primary to-secondary-fixed bg-clip-text text-transparent">Electrical Connectors</h2>
-            <p className="font-body-md text-body-md text-on-surface-variant">
+            <h2 className="font-headline-md text-headline-md bg-gradient-to-r from-primary to-secondary-fixed bg-clip-text text-transparent lm-text-black">Electrical Connectors</h2>
+            <p className="font-body-md text-body-md text-on-surface-variant lm-text-black">
               Heavy-duty multipin and circular connectors designed for secure data and power transmission in harsh industrial settings. Features IP68 ratings and vibration resistance.
             </p>
             <div className="mt-4">
-              <span className="bg-transparent border border-outline-variant/30 px-6 py-2.5 rounded-xl font-label-caps text-label-caps text-on-surface group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-wider inline-flex items-center gap-2">
+              <span className="bg-transparent border border-outline-variant/30 px-6 py-2.5 rounded-xl font-label-caps text-label-caps text-on-surface group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-wider inline-flex items-center gap-2 lm-text-black lm-border-black">
                 View Products
                 <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
               </span>
@@ -92,7 +92,7 @@ export default function IndustrialParts() {
             <div className="h-48 relative bg-surface-container-low overflow-hidden">
               <Image
                 alt={cat.name}
-                className="hero-img w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)]"
+                className="hero-img w-full h-full object-cover mix-blend-luminosity opacity-80 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)] lm-no-mask"
                 src={cat.img}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -101,10 +101,10 @@ export default function IndustrialParts() {
             </div>
             <div className="p-8 flex flex-col flex-grow gap-4">
               <h2 className="font-headline-md text-headline-md text-on-surface">{cat.name}</h2>
-              <p className="font-body-md text-body-md text-on-surface-variant flex-grow">
+              <p className="font-body-md text-body-md text-on-surface-variant flex-grow lm-text-black">
                 {cat.desc}
               </p>
-              <span className="bg-transparent border border-outline-variant/30 px-6 py-2.5 rounded-xl font-label-caps text-label-caps text-on-surface group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-wider w-full mt-auto flex justify-center items-center gap-2">
+              <span className="bg-transparent border border-outline-variant/30 px-6 py-2.5 rounded-xl font-label-caps text-label-caps text-on-surface group-hover:border-primary group-hover:text-primary transition-colors uppercase tracking-wider w-full mt-auto flex justify-center items-center gap-2 lm-text-black lm-border-black">
                 View Products
                 <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
               </span>

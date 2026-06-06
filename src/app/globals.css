@@ -107,55 +107,73 @@
   --text-body-md--font-weight: 400;
 }
 
-/* ─── Light Theme Overrides (Industrial Expressive) ─── */
+/* ─── Light Theme Overrides ─── */
 html.light {
-  --color-background: #f7faf6;
-  --color-surface: #f7faf6;
-  --color-surface-dim: #d8dbd7;
-  --color-surface-bright: #f7faf6;
+  /* Cooler, more decisive gray palette */
+  --color-background: #ededf0;
+  --color-surface: #ededf0;
+  --color-surface-dim: #e0e0e4;
+  --color-surface-bright: #fafafa;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f1f4f0;
-  --color-surface-container: #ecefeb;
-  --color-surface-container-high: #e6e9e5;
-  --color-surface-container-highest: #e0e3df;
-  --color-surface-variant: #e0e3df;
-  --color-surface-tint: #585e6c;
-  --color-on-surface: #181c1a;
-  --color-on-surface-variant: #45474c;
-  --color-on-background: #181c1a;
-  --color-inverse-surface: #2d312f;
-  --color-inverse-on-surface: #eef2ee;
-  --color-inverse-primary: #c1c6d7;
-  --color-outline: #76777c;
-  --color-outline-variant: #c6c6cc;
-  --color-primary: #030813;
+  --color-surface-container-low: #f4f4f6;
+  --color-surface-container: #e8e8ec;
+  --color-surface-container-high: #dfdfe3;
+  --color-surface-container-highest: #d6d6da;
+
+  /* Surface variant — borders & subtle fills */
+  --color-surface-variant: #d6d6da;
+  --color-surface-tint: #111111;
+
+  /* Text colors */
+  --color-on-surface: #111111;
+  --color-on-surface-variant: #555555;
+  --color-on-background: #111111;
+
+  /* Inverse tones */
+  --color-inverse-surface: #222222;
+  --color-inverse-on-surface: #f0f0f2;
+  --color-inverse-primary: #999999;
+
+  /* Outlines */
+  --color-outline: #888888;
+  --color-outline-variant: #c4c4ca;
+
+  /* Primary — pure black for a clean, modern look */
+  --color-primary: #111111;
   --color-on-primary: #ffffff;
-  --color-primary-container: #1a202c;
-  --color-on-primary-container: #828796;
-  --color-primary-fixed: #dde2f3;
-  --color-primary-fixed-dim: #c1c6d7;
-  --color-on-primary-fixed: #161c27;
-  --color-on-primary-fixed-variant: #414754;
-  --color-secondary: #0051d5;
-  --color-secondary-container: #316bf3;
-  --color-secondary-fixed: #dbe1ff;
-  --color-secondary-fixed-dim: #b4c5ff;
+  --color-primary-container: #e0e0e4;
+  --color-on-primary-container: #111111;
+  --color-primary-fixed: #e0e0e4;
+  --color-primary-fixed-dim: #bbbbbb;
+  --color-on-primary-fixed: #111111;
+  --color-on-primary-fixed-variant: #333333;
+
+  /* Secondary — neutral charcoal */
+  --color-secondary: #333333;
+  --color-secondary-container: #e8e8ec;
+  --color-secondary-fixed: #e8e8ec;
+  --color-secondary-fixed-dim: #999999;
   --color-on-secondary: #ffffff;
-  --color-on-secondary-container: #fefcff;
-  --color-on-secondary-fixed: #00174b;
-  --color-on-secondary-fixed-variant: #003ea8;
-  --color-tertiary: #130600;
-  --color-tertiary-container: #351900;
-  --color-tertiary-fixed: #ffdcc3;
-  --color-tertiary-fixed-dim: #ffb77d;
+  --color-on-secondary-container: #222222;
+  --color-on-secondary-fixed: #111111;
+  --color-on-secondary-fixed-variant: #444444;
+
+  /* Tertiary — warm amber accent */
+  --color-tertiary: #92400e;
+  --color-tertiary-container: #fef3c7;
+  --color-tertiary-fixed: #fef3c7;
+  --color-tertiary-fixed-dim: #fbbf24;
   --color-on-tertiary: #ffffff;
-  --color-on-tertiary-container: #cd6f00;
-  --color-on-tertiary-fixed: #2f1500;
-  --color-on-tertiary-fixed-variant: #6e3900;
-  --color-error: #ba1a1a;
+  --color-on-tertiary-container: #78350f;
+  --color-on-tertiary-fixed: #451a03;
+  --color-on-tertiary-fixed-variant: #92400e;
+
+  /* Error */
+  --color-error: #dc2626;
   --color-on-error: #ffffff;
-  --color-error-container: #ffdad6;
-  --color-on-error-container: #93000a;
+  --color-error-container: #fee2e2;
+  --color-on-error-container: #991b1b;
+
   color-scheme: light;
 }
 
@@ -168,11 +186,12 @@ html.dark {
   color-scheme: dark;
 }
 
+/* Light mode: no glows — clean elevation shadows only */
 html.light {
-  --glow-color: rgba(3, 8, 19, 0.08);
-  --glow-color-hover: rgba(3, 8, 19, 0.15);
-  --glow-color-strong: rgba(3, 8, 19, 0.1);
-  --glow-color-strong-hover: rgba(3, 8, 19, 0.2);
+  --glow-color: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --glow-color-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --glow-color-strong: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --glow-color-strong-hover: 0 8px 24px rgba(0, 0, 0, 0.14);
 }
 
 @layer utilities {
@@ -188,9 +207,17 @@ html.light {
   }
 }
 
+/* Light mode glass-card */
+html.light .glass-card {
+  background: var(--color-surface-container-lowest);
+  border: 1px solid var(--color-outline-variant);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
 html.light .chip {
-  background: rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(17, 17, 17, 0.03);
+  border: 1px solid var(--color-outline-variant);
+  color: var(--color-on-surface);
 }
 
 html {
@@ -209,17 +236,300 @@ img {
   content-visibility: auto;
 }
 
-/* Light mode image adjustments */
+/* ─── Light Mode Image Treatment ─── */
+/* Show images naturally — no blend modes, no filters */
 html.light .hero-img {
-  mix-blend-mode: multiply !important;
+  mix-blend-mode: normal !important;
   filter: none !important;
-  opacity: 0.5;
+  opacity: 1 !important;
+  grayscale: 0 !important;
 }
 
 html.light .hero-img:hover,
 html.light .group:hover .hero-img {
   mix-blend-mode: normal !important;
-  opacity: 0.85;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* ─── KILL ALL GRADIENT OVERLAYS ON IMAGES IN LIGHT MODE ─── */
+/* These from-background gradients create ugly white washes over photos in light mode.
+   In dark mode they look great — providing readable text contrast.
+   In light mode, images look better without them; we use a subtle dark
+   scrim at the bottom only for text readability on category cards. */
+html.light [class*="bg-gradient-to-t"][class*="from-background"],
+html.light [class*="bg-gradient-to-r"][class*="from-background"],
+html.light [class*="bg-gradient-to-b"][class*="from-background"],
+html.light [class*="bg-gradient-to-tr"][class*="from-background"],
+html.light [class*="bg-gradient-to-br"][class*="from-background"],
+html.light [class*="bg-gradient-to-t"][class*="from-surface-container"],
+html.light [class*="bg-gradient-to-b"][class*="from-surface-container"] {
+  background: transparent !important;
+}
+
+/* For hero sections: replace the white gradient with a subtle dark scrim
+   so the text stays readable without washing out the image */
+html.light section[class*="relative"] > div[class*="bg-gradient-to-r"][class*="from-background"] {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.3), transparent) !important;
+}
+
+/* Hero bottom gradient — eliminate completely (text isn't placed over it) */
+html.light section[class*="relative"] > div[class*="bg-gradient-to-t"][class*="from-background"] {
+  background: transparent !important;
+}
+
+/* Category cards on homepage — use a dark bottom scrim for text readability */
+html.light a[class*="group"] > div[class*="bg-gradient-to-t"][class*="from-background"] {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35) 50%, transparent) !important;
+}
+
+/* "Engineered for Reliability" inventory image — use a very subtle scrim */
+html.light div[class*="relative"] > div[class*="bg-gradient-to-tr"][class*="from-background"] {
+  background: linear-gradient(to top right, rgba(0, 0, 0, 0.3), transparent) !important;
+}
+
+/* Catalog grid image overlays — eliminate */
+html.light div[class*="bg-gradient-to-t"][class*="from-surface-container-low"] {
+  background: transparent !important;
+}
+
+/* Product detail page image overlays — eliminate */
+html.light div[class*="bg-gradient-to-t"][class*="from-surface-container-lowest"] {
+  background: transparent !important;
+}
+
+/* Contact page map overlay — eliminate */
+html.light div[class*="bg-gradient-to-t"][class*="from-surface-container-lowest"] {
+  background: transparent !important;
+}
+
+/* Text gradient (from-primary to-secondary) — make it solid black in light mode */
+html.light .text-transparent.bg-clip-text[class*="bg-gradient-to-r"][class*="from-primary"] {
+  background: none !important;
+  -webkit-text-fill-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+}
+
+/* EXCEPT for h1 hero text which needs to be grayish white over the dark hero image */
+html.light h1 .text-transparent.bg-clip-text[class*="bg-gradient-to-r"][class*="from-primary"] {
+  -webkit-text-fill-color: var(--color-background) !important;
+  color: var(--color-background) !important;
+}
+
+/* ─── Light Mode Hero Text Readability ─── */
+/* When hero text overlays a dark scrim, it needs to be white */
+html.light section[class*="relative"] h1[class*="text-on-surface"],
+html.light section[class*="relative"] p[class*="text-on-surface-variant"],
+html.light a[class*="group"] h3[class*="text-on-surface"],
+html.light a[class*="group"] p[class*="text-on-surface-variant"],
+html.light a[class*="group"] span[class*="text-primary"],
+html.light section[class*="relative"] span[class*="text-primary"] {
+  color: #ffffff !important;
+}
+
+html.light section[class*="relative"] p[class*="text-on-surface-variant"] {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Fix category card text numbers */
+html.light a[class*="group"] span[class*="text-primary"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+html.light a[class*="group"] h3[class*="text-on-surface"] {
+  color: #ffffff !important;
+}
+
+html.light a[class*="group"] p[class*="text-on-surface-variant"] {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+/* ─── Light Mode Utility Overrides ─── */
+html.light .lm-bg-black {
+  background-color: #111111 !important;
+  border-color: #111111 !important;
+}
+html.light .lm-bg-white {
+  background-color: #ffffff !important;
+}
+html.light .lm-border-black {
+  border-color: #111111 !important;
+}
+html.light .lm-text-white,
+html.light section[class*="relative"] .lm-text-white,
+html.light section[class*="relative"] p.lm-text-white,
+html.light section[class*="relative"] span.lm-text-white,
+html.light a[class*="group"] h3.lm-text-white,
+html.light a[class*="group"] p.lm-text-white {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+html.light .lm-text-black,
+html.light .lm-text-black *,
+html.light section[class*="relative"] .lm-text-black,
+html.light section[class*="relative"] p.lm-text-black,
+html.light section[class*="relative"] span.lm-text-black,
+html.light a[class*="group"] h2.lm-text-black,
+html.light a[class*="group"] h3.lm-text-black,
+html.light a[class*="group"] p.lm-text-black,
+html.light .text-transparent.bg-clip-text[class*="bg-gradient-to-r"][class*="from-primary"].lm-text-black {
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+html.light .lm-no-mask {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+html.light .lm-no-hover-bg:hover {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+html.light .lm-hover-text-black:hover,
+html.light section[class*="relative"] .lm-hover-text-black:hover,
+html.light a[class*="group"] .lm-hover-text-black:hover {
+  color: #111111 !important;
+  -webkit-text-fill-color: #111111 !important;
+}
+
+/* ─── Light Mode Button Shadows ─── */
+html.light [class*="shadow-[0_0_"] {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+html.light [class*="shadow-[0_0_"]:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06) !important;
+  transform: translateY(-1px);
+}
+
+/* ─── Light Mode Border Refinements ─── */
+html.light .border-outline-variant\/30 {
+  border-color: rgba(196, 196, 202, 0.6);
+}
+
+html.light .border-outline-variant\/20 {
+  border-color: rgba(196, 196, 202, 0.4);
+}
+
+/* ─── Smooth Animations ─── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Section entrance animations */
+html.light section {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+html.light section:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+html.light section:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+html.light section:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Smooth hover transitions for interactive cards */
+html.light .group {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.light .group:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Product card hover lift */
+html.light a.group[class*="rounded-xl"] {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s ease;
+}
+
+html.light a.group[class*="rounded-xl"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Arrow icon micro-animation on hover */
+html.light .group:hover .material-symbols-outlined {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.light .group:hover [class*="rounded-full"] .material-symbols-outlined {
+  transform: translate(2px, -2px);
+}
+
+/* ─── Light Mode Navbar ─── */
+html.light nav.sticky {
+  background: rgba(237, 237, 240, 0.88) !important;
+  backdrop-filter: blur(24px) saturate(1.8);
+  -webkit-backdrop-filter: blur(24px) saturate(1.8);
+  border-bottom-color: rgba(196, 196, 202, 0.5) !important;
+}
+
+/* ─── Light Mode Footer ─── */
+html.light footer {
+  background: var(--color-surface-container-lowest) !important;
+  border-top-color: rgba(196, 196, 202, 0.4) !important;
+}
+
+/* ─── Light Mode Spec Card Hover ─── */
+html.light .glass-card:hover {
+  border-color: rgba(17, 17, 17, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Light Mode Primary Button ─── */
+html.light .bg-primary {
+  transition: background-color 0.3s ease,
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.light .bg-primary:hover {
+  background-color: #333333 !important;
+}
+
+/* ─── Light Mode Pulse Dot ─── */
+html.light .animate-pulse {
+  background-color: var(--color-primary) !important;
 }
 
 /* Theme transition */
@@ -227,7 +537,7 @@ html {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Respect reduced motion preferences */
+/* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

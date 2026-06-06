@@ -22,10 +22,10 @@ export default function Lighting() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:via-background/50 md:to-transparent"></div>
           <div className="relative h-full flex flex-col justify-end p-margin-mobile md:p-margin-desktop z-10">
-            <span className="inline-block chip backdrop-blur-md rounded px-3 py-1 font-label-caps text-label-caps text-on-surface w-max mb-6">Residential</span>
-            <h1 className="font-display-xl text-display-xl text-on-surface mb-6">Architectural<br />Brilliance</h1>
-            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-8">Elevate luxury homes with precision-engineered lighting systems designed for sophisticated atmospheres.</p>
-            <Link href="/residential-lights" className="w-max px-8 py-4 border border-outline-variant/30 rounded-xl text-on-surface font-label-caps text-label-caps hover:bg-surface-container hover:border-primary hover:text-primary transition-all">
+            <span className="inline-block chip backdrop-blur-md rounded px-3 py-1 font-label-caps text-label-caps text-on-surface w-max mb-6 lm-bg-black lm-text-white">Residential</span>
+            <h1 className="font-display-xl text-display-xl text-white mb-6">Architectural<br />Brilliance</h1>
+            <p className="font-body-lg text-body-lg text-white/90 max-w-md mb-8">Elevate luxury homes with precision-engineered lighting systems designed for sophisticated atmospheres.</p>
+            <Link href="/residential-lights" className="w-max px-8 py-4 border border-outline-variant/30 rounded-xl text-on-surface font-label-caps text-label-caps hover:bg-surface-container hover:border-primary hover:text-primary transition-all lm-text-white lm-hover-text-black">
               Explore Residential
             </Link>
           </div>
@@ -41,10 +41,10 @@ export default function Lighting() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-l md:from-background md:via-background/50 md:to-transparent"></div>
           <div className="relative h-full flex flex-col justify-end p-margin-mobile md:p-margin-desktop z-10">
-            <span className="inline-block chip backdrop-blur-md rounded px-3 py-1 font-label-caps text-label-caps text-on-surface w-max mb-6">Commercial</span>
-            <h2 className="font-display-xl text-display-xl text-on-surface mb-6">Industrial<br />Precision</h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-8">Robust, scalable lighting infrastructure built for demanding commercial and industrial environments.</p>
-            <Link href="/commercial-lights" className="w-max px-8 py-4 border border-outline-variant/30 rounded-xl text-on-surface font-label-caps text-label-caps hover:bg-surface-container hover:border-primary hover:text-primary transition-all">
+            <span className="inline-block chip backdrop-blur-md rounded px-3 py-1 font-label-caps text-label-caps text-on-surface w-max mb-6 lm-bg-black lm-text-white">Commercial</span>
+            <h2 className="font-display-xl text-display-xl text-white mb-6">Industrial<br />Precision</h2>
+            <p className="font-body-lg text-body-lg text-white/90 max-w-md mb-8">Robust, scalable lighting infrastructure built for demanding commercial and industrial environments.</p>
+            <Link href="/commercial-lights" className="w-max px-8 py-4 border border-outline-variant/30 rounded-xl text-on-surface font-label-caps text-label-caps hover:bg-surface-container hover:border-primary hover:text-primary transition-all lm-text-white lm-hover-text-black">
               Explore Commercial
             </Link>
           </div>
@@ -110,14 +110,7 @@ export default function Lighting() {
 
           {/* Glassmorphic Card 4 */}
           <div className="bg-surface-container-lowest/60 backdrop-blur-[20px] border border-outline-variant/30 hover:border-primary/50 hover:shadow-[0_0_20px_0_var(--glow-color)] p-8 rounded-xl transition-all duration-300 col-span-1 md:col-span-2 relative overflow-hidden group">
-            <div className="absolute inset-0 z-0">
-              <img
-                alt="Smart Controls Ecosystem"
-                src="/moonlights.github.io/assets/smart_controls.jpg"
-                className="hero-img w-full h-full object-cover mix-blend-luminosity grayscale opacity-30 group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700"
-              />
-            </div>
-            <div className="absolute inset-0 bg-background/80 backdrop-blur-sm z-10 transition-all duration-700 group-hover:bg-background/60"></div>
+            <div className="absolute bottom-0 right-0 w-56 h-56 bg-tertiary/10 blur-[70px] rounded-full pointer-events-none transition-all duration-500 group-hover:bg-tertiary/20"></div>
             <div className="relative z-20 flex flex-col justify-center h-full">
               <div className="flex items-center space-x-4 mb-6">
                 <span className="material-symbols-outlined text-tertiary" style={{ fontVariationSettings: "'FILL' 1" }}>hub</span>

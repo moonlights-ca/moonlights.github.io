@@ -21,16 +21,16 @@ export default function Home() {
         </div>
         {/* Hero Content */}
         <div className="relative z-20 w-full max-w-2xl pl-8 md:pl-12">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-surface-container border border-outline-variant/50 mb-6">
-            <span className="font-label-caps text-label-caps text-primary uppercase tracking-wider">
+          <div className="inline-flex items-center px-3 py-1 rounded-full bg-surface-container border border-outline-variant/50 mb-6 lm-bg-black">
+            <span className="font-label-caps text-label-caps text-primary uppercase tracking-wider lm-text-white">
               Full-Scale North American Electrical Supplier
             </span>
           </div>
-          <h1 className="font-display-lg text-display-xl md:text-display-2xl text-on-surface mb-6 font-bold">
+          <h1 className="font-display-lg text-display-xl md:text-display-2xl text-white mb-6 font-bold">
             Powering <br />
-            <span className="text-primary">Industry.</span>
+            <span className="text-white">Industry.</span>
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl">
+          <p className="font-body-lg text-body-lg text-white/90 mb-10 max-w-xl">
             The premier distributor for wires, cables, and industrial electrical components across North America. Engineered for reliability and scale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -41,7 +41,7 @@ export default function Home() {
               Request a Quote
             </Link>
             <Link
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-transparent border border-outline-variant text-on-surface font-body-md text-body-md font-bold hover:border-primary hover:text-primary transition-colors duration-300"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-transparent border border-outline-variant text-white font-body-md text-body-md font-bold hover:border-primary hover:text-primary transition-colors duration-300 lm-no-hover-bg"
               href="/wires-and-cables"
             >
               View Catalog
@@ -57,7 +57,7 @@ export default function Home() {
             <h2 className="font-display-lg text-display-lg text-on-surface mb-4">
               Product Categories
             </h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg lm-text-black">
               Comprehensive electrical components engineered for industrial scale, reliability, and precision.
             </p>
           </div>
@@ -89,10 +89,10 @@ export default function Home() {
                 <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
                   01
                 </span>
-                <h3 className="font-headline-md text-headline-md text-on-surface">
+                <h3 className="font-headline-md text-headline-md text-white">
                   Wires &amp; Cables
                 </h3>
-                <p className="font-body-md text-on-surface-variant mt-2 max-w-sm hidden sm:block">
+                <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
                   High-grade transmission lines and motor cables for extreme industrial environments.
                 </p>
               </div>
@@ -120,10 +120,10 @@ export default function Home() {
                 <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
                   02
                 </span>
-                <h3 className="font-headline-md text-headline-md text-on-surface">
+                <h3 className="font-headline-md text-headline-md text-white">
                   Auto Transformers
                 </h3>
-                <p className="font-body-md text-on-surface-variant mt-2 max-w-sm hidden sm:block">
+                <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
                   Heavy-duty voltage regulation systems ensuring absolute stability under peak loads.
                 </p>
               </div>
@@ -151,10 +151,10 @@ export default function Home() {
                 <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
                   03
                 </span>
-                <h3 className="font-headline-md text-headline-md text-on-surface">
+                <h3 className="font-headline-md text-headline-md text-white">
                   Industrial Electrical Parts
                 </h3>
-                <p className="font-body-md text-on-surface-variant mt-2 max-w-sm hidden sm:block">
+                <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
                   Connectors, accessories, lugs, and switches engineered for unyielding reliability.
                 </p>
               </div>
@@ -182,10 +182,10 @@ export default function Home() {
                 <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
                   04
                 </span>
-                <h3 className="font-headline-md text-headline-md text-on-surface">
+                <h3 className="font-headline-md text-headline-md text-white">
                   Lighting Solutions
                 </h3>
-                <p className="font-body-md text-on-surface-variant mt-2 max-w-sm hidden sm:block">
+                <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
                   Advanced commercial and residential lighting systems designed for precision and scale.
                 </p>
               </div>
@@ -200,13 +200,13 @@ export default function Home() {
       {/* Engineering the Light Section */}
       <section className="py-stack-xl border-t border-outline-variant/20 relative z-10">
         <div className="text-center mb-16 relative">
-          <span className="inline-block px-2 py-1 rounded bg-surface-container border border-outline-variant/50 font-label-caps text-label-caps text-primary mb-4 tracking-widest uppercase">
+          <span className="inline-block px-2 py-1 rounded bg-surface-container border border-outline-variant/50 font-label-caps text-label-caps text-primary mb-4 tracking-widest uppercase lm-bg-black lm-text-white">
             Core Inventory
           </span>
           <h2 className="font-display-lg text-display-lg text-on-surface mb-6">
             Engineered for Reliability
           </h2>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto lm-text-black">
             Beneath the surface lies military-grade infrastructure. Explore the core components that power our supply chains.
           </p>
         </div>
@@ -216,16 +216,16 @@ export default function Home() {
             <div className="hero-img absolute inset-0 bg-[url('/moonlights.github.io/assets/schema_bg.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0 mix-blend-luminosity group-hover:mix-blend-normal"></div>
             <div className="absolute inset-0 bg-gradient-to-tr from-background/80 to-transparent"></div>
             {/* Technical Overlay Over Blueprint */}
-            <div className="absolute top-6 left-6 flex space-x-2">
-              <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
-              <span className="font-mono text-[10px] text-primary uppercase tracking-widest">
+            <div className="absolute top-6 left-6 flex space-x-2 lm-bg-black px-3 py-1 rounded-full items-center">
+              <div className="w-2 h-2 rounded-full bg-primary animate-pulse lm-bg-white"></div>
+              <span className="font-mono text-[10px] text-primary uppercase tracking-widest lm-text-white">
                 Inventory Index v4.2
               </span>
             </div>
           </div>
           {/* Glassmorphism Spec Cards */}
           <div className="flex flex-col gap-6">
-            <div className="glass-card rounded-2xl p-6 relative overflow-hidden group hover:border-primary/50 transition-colors">
+            <div className="glass-card rounded-2xl p-6 relative overflow-hidden group hover:border-primary/50 transition-colors lm-text-black">
               <div className="flex items-start justify-between mb-4 relative z-10">
                 <span className="material-symbols-outlined text-primary text-3xl">
                   cable
@@ -237,7 +237,7 @@ export default function Home() {
               <h4 className="font-headline-md text-headline-md text-on-surface mb-2 relative z-10">
                 High-Voltage Cables
               </h4>
-              <p className="font-body-md text-body-md text-on-surface-variant relative z-10">
+              <p className="font-body-md text-body-md text-on-surface-variant relative z-10 lm-text-black">
                 Industrial-grade transmission lines designed for extreme environments and maximum durability.
               </p>
               <div className="mt-4 pt-4 border-t border-outline-variant/30 flex justify-between text-sm font-mono text-on-surface-variant relative z-10">
@@ -245,7 +245,7 @@ export default function Home() {
                 <span className="text-primary">High</span>
               </div>
             </div>
-            <div className="glass-card rounded-2xl p-6 relative overflow-hidden group hover:border-primary/50 transition-colors">
+            <div className="glass-card rounded-2xl p-6 relative overflow-hidden group hover:border-primary/50 transition-colors lm-text-black">
               <div className="flex items-start justify-between mb-4 relative z-10">
                 <span className="material-symbols-outlined text-primary text-3xl">
                   electric_bolt
@@ -257,7 +257,7 @@ export default function Home() {
               <h4 className="font-headline-md text-headline-md text-on-surface mb-2 relative z-10">
                 Industrial Transformers
               </h4>
-              <p className="font-body-md text-body-md text-on-surface-variant relative z-10">
+              <p className="font-body-md text-body-md text-on-surface-variant relative z-10 lm-text-black">
                 Heavy-duty power management systems ensuring absolute stability under peak electrical loads.
               </p>
               <div className="mt-4 pt-4 border-t border-outline-variant/30 flex justify-between text-sm font-mono text-on-surface-variant relative z-10">
@@ -273,20 +273,20 @@ export default function Home() {
       <section className="py-stack-xl border-t border-outline-variant/20 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-5 mb-10 md:mb-0">
-            <span className="inline-block px-2 py-1 rounded bg-surface-container border border-outline-variant/50 font-label-caps text-label-caps text-primary mb-6 tracking-widest uppercase">
+            <span className="inline-block px-2 py-1 rounded bg-surface-container border border-outline-variant/50 font-label-caps text-label-caps text-primary mb-6 tracking-widest uppercase lm-bg-black lm-text-white">
               Distribution Network
             </span>
             <h2 className="font-display-xl text-display-lg md:text-display-xl text-on-surface mb-6">
               The Supply <br />
               Engine.
             </h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
+            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 lm-text-black">
               Our proprietary logistics network ensures next-day delivery across North America, keeping your operations running without interruption.
             </p>
             <ul className="space-y-4 mb-10">
               <li className="flex items-center text-on-surface-variant font-body-md text-body-md glass-card px-4 py-3 rounded-lg border-l-2 border-l-primary border-y-0 border-r-0 rounded-l-none">
                 <span
-                  className="material-symbols-outlined text-primary mr-3"
+                  className="material-symbols-outlined text-primary mr-3 lm-text-black"
                   style={{ fontVariationSettings: "'FILL' 1" }}
                 >
                   check_circle
@@ -295,7 +295,7 @@ export default function Home() {
               </li>
               <li className="flex items-center text-on-surface-variant font-body-md text-body-md glass-card px-4 py-3 rounded-lg border-l-2 border-l-primary border-y-0 border-r-0 rounded-l-none">
                 <span
-                  className="material-symbols-outlined text-primary mr-3"
+                  className="material-symbols-outlined text-primary mr-3 lm-text-black"
                   style={{ fontVariationSettings: "'FILL' 1" }}
                 >
                   check_circle
@@ -304,7 +304,7 @@ export default function Home() {
               </li>
             </ul>
             <Link
-              className="inline-flex items-center justify-center px-6 py-3 rounded-xl border border-outline-variant text-on-surface font-label-caps text-label-caps uppercase hover:border-primary hover:text-primary transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-outline-variant text-on-surface font-label-caps text-label-caps uppercase transition-colors lm-bg-black lm-text-white lm-border-black hover:opacity-80"
               href="/contact"
             >
               Contact Our Team
@@ -322,9 +322,9 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-transparent z-10"></div>
               {/* Technical Overlays */}
-              <div className="absolute top-1/4 left-1/4 w-32 h-px bg-primary/50 z-20"></div>
-              <div className="absolute top-1/4 left-1/4 w-px h-16 bg-primary/50 z-20"></div>
-              <div className="absolute top-[22%] left-[23%] text-[10px] font-mono text-primary z-20">
+              <div className="absolute top-1/4 left-1/4 w-32 h-px bg-primary/50 z-20 lm-bg-white opacity-50"></div>
+              <div className="absolute top-1/4 left-1/4 w-px h-16 bg-primary/50 z-20 lm-bg-white opacity-50"></div>
+              <div className="absolute top-[22%] left-[23%] text-[10px] font-mono text-primary z-20 lm-text-white">
                 LOGISTICS_NODE_ALPHA
               </div>
               {/* Floating Glassmorphism Tag */}

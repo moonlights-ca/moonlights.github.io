@@ -36,13 +36,13 @@ export default function Transformers() {
           />
         </div>
         <div className="relative z-20 max-w-3xl pointer-events-none p-8 md:p-16">
-          <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-on-surface mb-6">
+          <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-white mb-6">
             Industrial Grade<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               Transformers.
             </span>
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+          <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-xl">
             Precision-engineered voltage regulation for high-demand industrial ecosystems. Distribution, control, isolation, and specialty transformers built for uncompromising reliability.
           </p>
         </div>
