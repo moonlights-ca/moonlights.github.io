@@ -4,8 +4,8 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { wireProducts } from "./wireProducts";
 
-const CATEGORIES = ["All", "Building Wire", "Portable Cord", "Tray Cable", "Armored", "Service", "Shielded"] as const;
-const VOLTAGES = ["All Voltages", "300V", "600V", "15kV"] as const;
+const CATEGORIES = ["All", "Building Wire", "Portable Cord", "Tray Cable", "Armored", "Service", "Shielded", "Coaxial & Data", "Fire Alarm", "Instrumentation", "Solar PV", "Grounding"] as const;
+const VOLTAGES = ["All Voltages", "300V", "600V", "2kV", "15kV"] as const;
 
 export default function CatalogGrid() {
   const [activeCategory, setActiveCategory] = useState<string>("All");

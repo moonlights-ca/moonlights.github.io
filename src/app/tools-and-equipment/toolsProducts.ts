@@ -87,6 +87,62 @@ export const toolsCategories: ToolsCategory[] = [
       { slug: "caddy-erico-cat-hp-j-hook", name: "Caddy Erico CAT HP J-Hook 2\"", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Supports Cat5e/Cat6, 2\" bundle capacity, press-on flange mount, UL Listed", category: "Fasteners & Hardware" },
     ],
   },
+  {
+    slug: "safety-ppe",
+    name: "Safety & PPE",
+    img: "/moonlights.github.io/assets/industrial_terminals.jpg",
+    desc: "Arc-flash protection, insulating gloves, lockout/tagout kits, hard hats, and high-visibility gear for electrical worker safety. From Salisbury, Honeywell, Brady, and Klein.",
+    products: [
+      { slug: "salisbury-pro-wear-arc-flash-kit-40cal", name: "Salisbury Pro-Wear Arc Flash Kit 40 cal/cm²", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "40 cal/cm², coat/bib/hood, ASTM F1959, includes faceshield and bag", category: "Safety & PPE" },
+      { slug: "salisbury-e0011-class-0-rubber-gloves", name: "Salisbury E0011B Class 0 Insulating Gloves", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "1000V AC rated, Class 0, 11\" length, ASTM D120, type I natural rubber", category: "Safety & PPE" },
+      { slug: "brady-lockout-tagout-kit", name: "Brady 99683 Lockout/Tagout Starter Kit", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "Includes padlocks, hasps, breaker lockouts, tags, in carrying pouch", category: "Safety & PPE" },
+      { slug: "klein-60407-hard-hat", name: "Klein 60407 Class E Safety Helmet w/ Headlamp", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "ANSI Type 1 Class E (20kV), vented, chin strap, rechargeable headlamp", category: "Safety & PPE" },
+      { slug: "honeywell-uvex-stealth-safety-glasses", name: "Honeywell Uvex Stealth Safety Glasses", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "ANSI Z87.1, anti-fog Uvextreme coating, clear lens, adjustable", category: "Safety & PPE" },
+      { slug: "klein-60249-hi-vis-safety-vest", name: "Klein 60249 Hi-Visibility Safety Vest Class 2", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "ANSI Class 2, breathable mesh, 9 pockets, reflective tape, yellow", category: "Safety & PPE" },
+    ],
+  },
+  {
+    slug: "conduit-bending-pulling",
+    name: "Conduit Bending & Wire Pulling",
+    img: "/moonlights.github.io/assets/industrial_switches.jpg",
+    desc: "Conduit benders, cable pullers, fish tapes, pulling lubricant, and rod systems for routing conduit and pulling conductors. From Greenlee, Klein, Gardner Bender, and Ideal.",
+    products: [
+      { slug: "greenlee-555cx-bender", name: "Greenlee 555CX Classic Electric Conduit Bender", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "Bends 1/2\"–2\" EMT/IMC/rigid, microprocessor angle control, 120V", category: "Conduit Bending & Wire Pulling" },
+      { slug: "klein-51215-aluminum-bender", name: "Klein 51215 Aluminum Conduit Bender 1/2\" EMT", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "1/2\" EMT / 1/2\" rigid, cast aluminum head, angle markings, with handle", category: "Conduit Bending & Wire Pulling" },
+      { slug: "greenlee-6810-ultra-tugger-cable-puller", name: "Greenlee 6810 Ultra Tugger 8000 lb Cable Puller", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "8000 lb pulling force, 120V, force gauge, includes mounting hardware", category: "Conduit Bending & Wire Pulling" },
+      { slug: "klein-50063-fiberglass-fish-rod-kit", name: "Klein 50063 Lo-Flex Fiberglass Fish Rod Set 24ft", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "24ft total, 6 × 4ft rods, threaded connectors, hook and bullnose ends", category: "Conduit Bending & Wire Pulling" },
+      { slug: "ideal-31-358-yellow-77-wire-lube", name: "Ideal 31-358 Yellow 77 Wire Pulling Lubricant 1 Gal", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "1 gallon, wax-based, non-toxic, won't harden, -15°F to 145°F", category: "Conduit Bending & Wire Pulling" },
+      { slug: "gardner-bender-emt-hickey-bender", name: "Gardner Bender EMT Mechanical Hickey Bender", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "For 1/2\"–1\" rigid/IMC, offset and saddle bends, hardened steel", category: "Conduit Bending & Wire Pulling" },
+    ],
+  },
+  {
+    slug: "drill-bits-cutting",
+    name: "Drill Bits & Cutting Accessories",
+    img: "/moonlights.github.io/assets/industrial_accessories.jpg",
+    desc: "Hole saws, step bits, masonry bits, knockout punches, and reciprocating blades for drilling and cutting in electrical work. From Milwaukee, Greenlee, DeWalt, and Lenox.",
+    products: [
+      { slug: "milwaukee-49-22-4185-hole-dozer-kit", name: "Milwaukee 49-22-4185 Hole Dozer Hole Saw Kit", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "19-piece, bi-metal, 3/4\"–2-1/2\", quick-release arbor, carrying case", category: "Drill Bits & Cutting Accessories" },
+      { slug: "dewalt-dw1587-step-bit", name: "DeWalt DW1587 Impact Ready Step Drill Bit", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "1/4\"–3/4\", 12 steps, 1/4\" hex shank, pilot point, cobalt finish", category: "Drill Bits & Cutting Accessories" },
+      { slug: "greenlee-7238sb-knockout-set", name: "Greenlee 7238SB Slug-Buster Knockout Punch Set", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "1/2\"–2\" conduit sizes, ratchet wrench, draw studs, in molded case", category: "Drill Bits & Cutting Accessories" },
+      { slug: "milwaukee-48-00-5026-sawzall-blades", name: "Milwaukee 48-00-5026 Sawzall Blade Set", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "12-pack, bi-metal, wood/metal/demo, 6\"–9\", universal shank", category: "Drill Bits & Cutting Accessories" },
+      { slug: "dewalt-dw5207-sds-masonry-bit-set", name: "DeWalt DW5207 SDS-Plus Masonry Bit Set", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "5-piece, carbide tip, 3/16\"–1/2\", for concrete anchors, SDS-Plus", category: "Drill Bits & Cutting Accessories" },
+      { slug: "lenox-1779793-hole-saw-arbor", name: "Lenox 1779793 Snap-Back Hole Saw Arbor", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "For 1-1/4\"–6\" hole saws, 1/2\" quick-change shank, spring eject", category: "Drill Bits & Cutting Accessories" },
+    ],
+  },
+  {
+    slug: "tool-storage",
+    name: "Tool Storage & Bags",
+    img: "/moonlights.github.io/assets/industrial_connectors.jpg",
+    desc: "Tool bags, pouches, backpacks, rolling cases, and modular storage systems for organizing and transporting electrical tools. From Klein, Veto Pro Pac, Milwaukee, and DeWalt.",
+    products: [
+      { slug: "veto-pro-pac-tech-pac-backpack", name: "Veto Pro Pac TECH PAC Tool Backpack", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "56 pockets, weatherproof base, padded straps, center panel, 4 trays", category: "Tool Storage & Bags" },
+      { slug: "klein-55421bp14-backpack", name: "Klein 55421BP-14 Tradesman Pro Tool Backpack", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "39 pockets, molded bottom, hi-vis orange interior, laptop sleeve", category: "Tool Storage & Bags" },
+      { slug: "milwaukee-packout-rolling-toolbox", name: "Milwaukee 48-22-8426 PACKOUT Rolling Tool Box", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "250 lb capacity, IP65 weather seal, 9\" wheels, stackable, metal latches", category: "Tool Storage & Bags" },
+      { slug: "klein-5139b-canvas-tool-bag", name: "Klein 5139B Canvas Tool Bag 10\"", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "10\" × 5\" × 9\", No. 6 natural canvas, leather handles, steel frame", category: "Tool Storage & Bags" },
+      { slug: "dewalt-dwst08203-tstak-organizer", name: "DeWalt DWST08203 TSTAK Deep Box Organizer", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Stackable, removable bins, clear lid, 44 lb capacity, metal latches", category: "Tool Storage & Bags" },
+      { slug: "klein-55915-zipper-bags", name: "Klein 55915 Zipper Tool Bags 4-Pack", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "4 sizes, 1680d ballistic nylon, color-coded, reinforced bottom", category: "Tool Storage & Bags" },
+    ],
+  },
 ];
 
 // Flat list of all products for dynamic routing

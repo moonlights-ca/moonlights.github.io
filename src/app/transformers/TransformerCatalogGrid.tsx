@@ -4,8 +4,8 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { transformerProducts } from "./transformerProducts";
 
-const CATEGORIES = ["All", "Distribution", "Control", "Isolation", "Auto", "Buck-Boost"] as const;
-const VOLTAGES = ["All Voltages", "240V", "480V", "600V", "15kV"] as const;
+const CATEGORIES = ["All", "Distribution", "Single-Phase", "Control", "Isolation", "Auto", "Buck-Boost", "Specialty"] as const;
+const VOLTAGES = ["All Voltages", "240V", "480V", "600V", "15kV", "34.5kV"] as const;
 
 export default function TransformerCatalogGrid() {
   const [activeCategory, setActiveCategory] = useState<string>("All");

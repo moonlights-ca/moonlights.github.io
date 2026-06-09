@@ -69,16 +69,16 @@ export default function Home() {
             <span className="material-symbols-outlined ml-2">arrow_forward</span>
           </Link>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-          {/* Wires & Cables Card */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 md:auto-rows-[220px] gap-gutter">
+          {/* Lighting Solutions Card */}
           <Link
-            className="group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300"
-            href="/wires-and-cables"
+            className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 sm:col-span-2 md:col-span-4 md:row-span-2"
+            href="/lighting"
           >
             <Image
-              alt="Wires and Cables"
+              alt="Lighting Solutions"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/cat_wires.jpg"
+              src="/moonlights.github.io/assets/cat_lighting.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -89,11 +89,11 @@ export default function Home() {
                 <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
                   01
                 </span>
-                <h3 className="font-headline-md text-headline-md text-white">
-                  Wires &amp; Cables
+                <h3 className="font-display-lg text-display-lg-mobile md:text-display-lg text-white">
+                  Lighting Solutions
                 </h3>
                 <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
-                  High-grade transmission lines and motor cables for extreme industrial environments.
+                  Advanced commercial and residential lighting systems designed for precision and scale.
                 </p>
               </div>
               <div className="w-10 h-10 shrink-0 rounded-full bg-surface border border-outline-variant flex items-center justify-center group-hover:border-primary text-on-surface group-hover:text-primary transition-colors">
@@ -103,7 +103,7 @@ export default function Home() {
           </Link>
           {/* Auto Transformers Card */}
           <Link
-            className="group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300"
+            className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-2 md:row-span-2"
             href="/transformers"
           >
             <Image
@@ -134,7 +134,7 @@ export default function Home() {
           </Link>
           {/* Industrial Electrical Parts Card */}
           <Link
-            className="group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300"
+            className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-2"
             href="/industrial-parts"
           >
             <Image
@@ -163,15 +163,15 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          {/* Lighting Solutions Card */}
+          {/* Wires & Cables Card */}
           <Link
-            className="group relative block aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300"
-            href="/lighting"
+            className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-2"
+            href="/wires-and-cables"
           >
             <Image
-              alt="Lighting Solutions"
+              alt="Wires and Cables"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/cat_lighting.jpg"
+              src="/moonlights.github.io/assets/cat_wires.jpg"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -183,10 +183,103 @@ export default function Home() {
                   04
                 </span>
                 <h3 className="font-headline-md text-headline-md text-white">
-                  Lighting Solutions
+                  Wires &amp; Cables
                 </h3>
                 <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
-                  Advanced commercial and residential lighting systems designed for precision and scale.
+                  High-grade transmission lines and motor cables for extreme industrial environments.
+                </p>
+              </div>
+              <div className="w-10 h-10 shrink-0 rounded-full bg-surface border border-outline-variant flex items-center justify-center group-hover:border-primary text-on-surface group-hover:text-primary transition-colors">
+                <span className="material-symbols-outlined">north_east</span>
+              </div>
+            </div>
+          </Link>
+          {/* Tools & Equipment Card */}
+          <Link
+            className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-2"
+            href="/tools-and-equipment"
+          >
+            <Image
+              alt="Tools and Equipment"
+              className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
+              src="/moonlights.github.io/assets/industrial_hero.png"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
+              <div>
+                <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
+                  05
+                </span>
+                <h3 className="font-headline-md text-headline-md text-white">
+                  Tools &amp; Equipment
+                </h3>
+                <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
+                  Professional-grade hand tools, power tools, test instruments, and safety gear for every job site.
+                </p>
+              </div>
+              <div className="w-10 h-10 shrink-0 rounded-full bg-surface border border-outline-variant flex items-center justify-center group-hover:border-primary text-on-surface group-hover:text-primary transition-colors">
+                <span className="material-symbols-outlined">north_east</span>
+              </div>
+            </div>
+          </Link>
+          {/* Distribution & Protection Card */}
+          <Link
+            className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 sm:col-span-2 md:col-span-3"
+            href="/enclosures-and-power"
+          >
+            <Image
+              alt="Distribution and Protection"
+              className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
+              src="/moonlights.github.io/assets/industrial_controls.jpg"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
+              <div>
+                <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
+                  06
+                </span>
+                <h3 className="font-headline-md text-headline-md text-white">
+                  Distribution &amp; Protection
+                </h3>
+                <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
+                  Circuit breakers, panelboards, disconnects, surge protection, and transfer switches for safe power control.
+                </p>
+              </div>
+              <div className="w-10 h-10 shrink-0 rounded-full bg-surface border border-outline-variant flex items-center justify-center group-hover:border-primary text-on-surface group-hover:text-primary transition-colors">
+                <span className="material-symbols-outlined">north_east</span>
+              </div>
+            </div>
+          </Link>
+          {/* Conduit & Fittings Card */}
+          <Link
+            className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 sm:col-span-2 md:col-span-3"
+            href="/datacom-and-security"
+          >
+            <Image
+              alt="Conduit and Fittings"
+              className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
+              src="/moonlights.github.io/assets/industrial_connectors.jpg"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
+              <div>
+                <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
+                  07
+                </span>
+                <h3 className="font-headline-md text-headline-md text-white">
+                  Conduit &amp; Fittings
+                </h3>
+                <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
+                  EMT, rigid, and flexible conduit, boxes, wireway, grounding, and wiring devices for complete raceway systems.
                 </p>
               </div>
               <div className="w-10 h-10 shrink-0 rounded-full bg-surface border border-outline-variant flex items-center justify-center group-hover:border-primary text-on-surface group-hover:text-primary transition-colors">

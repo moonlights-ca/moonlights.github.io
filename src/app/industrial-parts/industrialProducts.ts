@@ -158,6 +158,63 @@ export const industrialCategories: IndustrialCategory[] = [
       { slug: "heat-shrink-for-electric-vehicles", name: "Heat Shrink For Electric Vehicles", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "Industrial grade, RoHS compliant, UL Listed.", category: "Heat Shrink Tubing" },
     ],
   },
+  {
+    slug: "wire-markers-labels",
+    name: "Wire Markers & Labels",
+    img: "/moonlights.github.io/assets/industrial_accessories.jpg",
+    desc: "Wire marker books, heat-shrink labels, wrap-around labels, and printable identification systems for circuit identification and code-compliant labeling.",
+    products: [
+      { slug: "wire-marker-books", name: "Wire Marker Books", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Pre-printed 0–9 and A–Z, vinyl cloth, self-laminating, UL Listed.", category: "Wire Markers & Labels" },
+      { slug: "heat-shrink-wire-labels", name: "Heat Shrink Wire Labels", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Thermal-transfer printable, 3:1 shrink, oil/solvent resistant.", category: "Wire Markers & Labels" },
+      { slug: "self-laminating-wrap-labels", name: "Self-Laminating Wrap Labels", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Clear protective tail, smudge-proof, for wire and cable.", category: "Wire Markers & Labels" },
+      { slug: "wraparound-cable-markers", name: "Wraparound Cable Markers", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Write-on PVC, self-adhesive, weatherproof, color-coded.", category: "Wire Markers & Labels" },
+      { slug: "clip-on-wire-markers", name: "Clip-On Wire Markers", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "PVC, snap-on, reusable, 18–10 AWG, numbered and lettered.", category: "Wire Markers & Labels" },
+      { slug: "arc-flash-warning-labels", name: "Arc Flash Warning Labels", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "NEC 110.16 compliant, UV-resistant, polyester, self-adhesive.", category: "Wire Markers & Labels" },
+      { slug: "voltage-marker-labels", name: "Voltage Marker Labels", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Pressure-sensitive vinyl, 480V/277V/240V/120V, high-visibility.", category: "Wire Markers & Labels" },
+    ],
+  },
+  {
+    slug: "solder-splice-connectors",
+    name: "Solder Seal & Splice Connectors",
+    img: "/moonlights.github.io/assets/industrial_connectors.jpg",
+    desc: "Heat-activated solder seal connectors, waterproof splices, push-in connectors, and twist-on wire nuts for fast, reliable conductor joining.",
+    products: [
+      { slug: "solder-seal-heat-shrink-connectors", name: "Solder Seal Heat Shrink Connectors", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Low-temp solder ring, dual adhesive seal, 26–10 AWG, waterproof.", category: "Solder Seal & Splice Connectors" },
+      { slug: "waterproof-butt-splice-connectors", name: "Waterproof Butt Splice Connectors", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Adhesive-lined heat shrink barrel, tinned copper, IP67, 22–10 AWG.", category: "Solder Seal & Splice Connectors" },
+      { slug: "push-in-wire-connectors", name: "Push-In Wire Connectors", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Lever or push-in, 2–8 port, 24–10 AWG, 600V, transparent housing.", category: "Solder Seal & Splice Connectors" },
+      { slug: "twist-on-wire-nuts", name: "Twist-On Wire Nuts", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Color-coded, 22–6 AWG range, live-action spring, UL 486C.", category: "Solder Seal & Splice Connectors" },
+      { slug: "waterproof-wire-nuts", name: "Waterproof Wire Nuts", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Pre-filled silicone sealant, direct burial rated, 22–8 AWG.", category: "Solder Seal & Splice Connectors" },
+      { slug: "in-line-splice-connectors", name: "In-Line Splice Connectors", img: "/moonlights.github.io/assets/industrial_connectors.jpg", spec: "Heat shrink, single-wire pass-through, tinned barrel, IP68.", category: "Solder Seal & Splice Connectors" },
+    ],
+  },
+  {
+    slug: "panel-enclosure-accessories",
+    name: "Panel & Enclosure Accessories",
+    img: "/moonlights.github.io/assets/industrial_switches.jpg",
+    desc: "DIN rail, slotted wire duct, panel cooling fans, filter fans, and mounting accessories for organizing and protecting control panel interiors.",
+    products: [
+      { slug: "din-rail-35mm-slotted", name: "DIN Rail 35mm Slotted", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "35mm × 7.5mm, slotted steel, zinc plated, 1m and 2m lengths.", category: "Panel & Enclosure Accessories" },
+      { slug: "slotted-wire-duct-with-cover", name: "Slotted Wire Duct with Cover", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "PVC, 1\"–4\" widths, UL94 V-0, narrow/wide finger, gray.", category: "Panel & Enclosure Accessories" },
+      { slug: "panel-cooling-filter-fan", name: "Panel Cooling Filter Fan", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "115/230V, 50–200 CFM, IP54, snap-in, replaceable filter mat.", category: "Panel & Enclosure Accessories" },
+      { slug: "enclosure-thermostat", name: "Enclosure Thermostat", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "NC/NO, 32–140°F adjustable, DIN-rail clip, 250V/10A contact.", category: "Panel & Enclosure Accessories" },
+      { slug: "end-brackets-din-rail", name: "DIN Rail End Brackets", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "Screw-clamp, for terminal blocks, polyamide, gray, 6–10mm.", category: "Panel & Enclosure Accessories" },
+      { slug: "panel-mount-led-indicators", name: "Panel-Mount LED Indicators", img: "/moonlights.github.io/assets/industrial_switches.jpg", spec: "22mm, 24V/120V/240V, red/green/amber, IP65, chrome bezel.", category: "Panel & Enclosure Accessories" },
+    ],
+  },
+  {
+    slug: "grommets-bushings",
+    name: "Grommets, Bushings & Plugs",
+    img: "/moonlights.github.io/assets/industrial_accessories.jpg",
+    desc: "Rubber grommets, snap bushings, plastic hole plugs, and edge protection for safely passing conductors through panel and enclosure openings.",
+    products: [
+      { slug: "rubber-grommets-assortment", name: "Rubber Grommets Assortment", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "EPDM rubber, 1/8\"–2\" hole sizes, oil resistant, assorted kit.", category: "Grommets, Bushings & Plugs" },
+      { slug: "snap-in-nylon-bushings", name: "Snap-In Nylon Bushings", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Nylon 6/6, push-in, smooth bore, 3/8\"–2\", flame retardant.", category: "Grommets, Bushings & Plugs" },
+      { slug: "plastic-hole-plugs", name: "Plastic Hole Plugs", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "LDPE, snap-in, 1/4\"–2-1/2\", black, seals unused knockouts.", category: "Grommets, Bushings & Plugs" },
+      { slug: "liquid-tight-cord-grips", name: "Liquid-Tight Cord Grips", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Nylon, 1/2\"–2\" NPT, IP68, with sealing ring and locknut.", category: "Grommets, Bushings & Plugs" },
+      { slug: "edge-trim-grommet-strip", name: "Edge Trim Grommet Strip", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "PVC with steel clip core, 1/16\"–1/4\" edge, by-the-foot.", category: "Grommets, Bushings & Plugs" },
+      { slug: "snap-bushing-oval", name: "Oval Snap Bushings", img: "/moonlights.github.io/assets/industrial_accessories.jpg", spec: "Nylon, oval profile, for multi-conductor pass-through, black.", category: "Grommets, Bushings & Plugs" },
+    ],
+  },
 ];
 
 // Flat list of all products for dynamic routing
