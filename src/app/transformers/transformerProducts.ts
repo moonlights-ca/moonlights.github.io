@@ -292,4 +292,56 @@ export const transformerProducts: TransformerProduct[] = [
       "DOE 2016 efficiency compliant",
     ],
   },
+  {
+    slug: "oil-filled-power-transformer",
+    name: "Oil-Filled Power Transformer",
+    img: "/moonlights.github.io/assets/transformer_medium_voltage.png",
+    tags: ["34.5kV", "OIL-FILLED"],
+    category: "Distribution",
+    voltage: "34.5kV",
+    desc: "High-capacity liquid-filled transformer designed for primary substations and heavy industrial applications.",
+    description: [
+      "Oil-filled power transformers are designed for high voltage and high power ratings where air cooling is insufficient. The mineral oil or natural ester fluid acts as both an electrical insulator and a highly effective cooling medium, allowing for compact designs at very high power levels.",
+      "Available from 5 MVA up to 100 MVA, these substation-class transformers feature customizable impedance, load tap changers (LTC) for active voltage regulation, and comprehensive monitoring packages for dissolved gas analysis (DGA) and winding temperature."
+    ],
+    usage: [
+      "Utility substations",
+      "Heavy industrial plants (steel, mining, chemical)",
+      "Renewable energy grid interconnections",
+      "Data center primary power"
+    ],
+    features: [
+      "High power density with liquid cooling",
+      "Customizable impedance for short-circuit control",
+      "Optional Load Tap Changers (LTC)",
+      "Advanced SCADA monitoring packages",
+      "Natural ester (FR3) fluid options"
+    ],
+  },
+  {
+    slug: "cast-resin-transformer",
+    name: "Cast Resin Dry-Type Transformer",
+    img: "/moonlights.github.io/assets/transformer_dry_type.png",
+    tags: ["15kV", "CAST-RESIN"],
+    category: "Distribution",
+    voltage: "15kV",
+    desc: "Medium voltage dry-type transformer with epoxy cast coils for maximum environmental and mechanical protection.",
+    description: [
+      "Cast resin transformers encase the high-voltage windings in a solid epoxy resin block under vacuum, providing exceptional mechanical strength and rendering the windings completely impervious to moisture, dust, and corrosive environments.",
+      "These transformers offer the environmental robustness of liquid-filled units without the fire risk or maintenance requirements of oil. They are ideal for high-rise buildings, underground transit systems, and environmentally sensitive areas where oil spills cannot be tolerated."
+    ],
+    usage: [
+      "High-rise commercial buildings",
+      "Underground mining and transit systems",
+      "Offshore oil and gas platforms",
+      "Hospitals and critical care facilities"
+    ],
+    features: [
+      "Zero fire risk and self-extinguishing",
+      "Impervious to moisture and extreme pollution",
+      "High short-circuit mechanical strength",
+      "Minimal maintenance required",
+      "Environmentally safe with no fluid leaks"
+    ],
+  },
 ];

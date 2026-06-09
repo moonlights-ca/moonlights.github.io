@@ -10,6 +10,9 @@ const navLinks = [
   { href: "/transformers", label: "Transformers" },
   { href: "/industrial-parts", label: "Industrial Parts" },
   { href: "/lighting", label: "Lighting" },
+  { href: "/tools-and-equipment", label: "Tools & Equipment" },
+  { href: "/enclosures-and-power", label: "Distribution & Protection" },
+  { href: "/datacom-and-security", label: "Conduit & Fittings" },
 ];
 
 export default function Navbar() {
