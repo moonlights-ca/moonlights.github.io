@@ -4,52 +4,52 @@ import type { Metadata } from "next";
 import CatalogGrid from "./CatalogGrid";
 
 export const metadata: Metadata = {
-  title: "Wires & Cables | Moonlights Electrical",
-  description: "Browse our comprehensive catalog of commercial and residential wires and cables. Built for safety, durability, and high performance.",
+ title: "Wires & Cables | Moonlights Electrical",
+ description: "Browse our comprehensive catalog of commercial and residential wires and cables. Built for safety, durability, and high performance.",
 };
 
 export default function WiresAndCables() {
-  return (
-    <main className="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-      {/* Breadcrumb */}
-      <div className="pt-8 pb-4">
-        <nav className="flex text-on-surface-variant font-label-caps text-label-caps gap-2 items-center">
-          <Link href="/" className="hover:text-primary transition-colors">
-            HOME
-          </Link>
-          <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-          <span className="text-primary">WIRES &amp; CABLES</span>
-        </nav>
-      </div>
+ return (
+ <main className="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+ {/* Breadcrumb */}
+ <div className="pt-8 pb-4">
+ <nav className="flex text-on-surface-variant font-label-caps text-label-caps gap-2 items-center">
+ <Link href="/" className="hover:text-primary transition-colors">
+ HOME
+ </Link>
+ <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+ <span className="text-primary">WIRES &amp; CABLES</span>
+ </nav>
+ </div>
 
-      {/* Hero Section */}
-      <section className="py-stack-md relative overflow-hidden rounded-xl group mb-8">
-        <div className="absolute inset-0 z-0">
-          <div className="w-full h-full bg-gradient-to-r from-background via-background/80 to-transparent absolute inset-0 z-10"></div>
-          <Image
-            alt="Industrial Grade Wires & Cables"
-            className="hero-img w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
-            src="/moonlights.github.io/assets/wires_hero.webp"
-            fill
-            sizes="100vw"
-            priority
-          />
-        </div>
-        <div className="relative z-20 max-w-3xl pointer-events-none p-8 md:p-16">
-          <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-white mb-6">
-            Industrial Grade<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              Wires &amp; Cables.
-            </span>
-          </h1>
-          <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-xl">
-            Precision-engineered electrical transmission systems for commercial, industrial, and specialized applications. Uncompromising reliability engineered for demanding environments.
-          </p>
-        </div>
-      </section>
+ {/* Hero Section */}
+ <section className="py-stack-md relative overflow-hidden rounded-xl group mb-8">
+ <div className="absolute inset-0 z-0">
+ <div className="w-full h-full bg-gradient-to-r from-background via-background/80 to-transparent absolute inset-0 z-10"></div>
+ <Image
+ alt="Industrial Grade Wires & Cables"
+ className="hero-img w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
+ src="/moonlights.github.io/assets/wires_hero.webp"
+ fill
+ sizes="100vw"
+ priority
+ />
+ </div>
+ <div className="relative z-20 max-w-3xl pointer-events-none p-8 md:p-16">
+ <h1 className="font-display-xl text-display-lg-mobile md:text-display-xl text-white mb-6">
+ Industrial Grade<br />
+ <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+ Wires &amp; Cables.
+ </span>
+ </h1>
+ <p className="font-body-lg text-body-lg text-white/90 mb-8 max-w-xl">
+ Precision-engineered electrical transmission systems for commercial, industrial, and specialized applications. Uncompromising reliability engineered for demanding environments.
+ </p>
+ </div>
+ </section>
 
-      {/* Interactive Catalog Grid */}
-      <CatalogGrid />
-    </main>
-  );
+ {/* Interactive Catalog Grid */}
+ <CatalogGrid />
+ </main>
+ );
 }
