@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { enclosuresCategories } from "../enclosuresProducts";
@@ -82,7 +83,7 @@ export default async function CategoryPage({
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               {/* Product Image */}
               <div className="aspect-[4/3] w-full overflow-hidden bg-surface-container-low relative">
-                <img
+                <Image width={800} height={800}
                   alt={product.name}
                   className="hero-img object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                   src={product.img}

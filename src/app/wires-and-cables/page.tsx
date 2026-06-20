@@ -29,7 +29,7 @@ export default function WiresAndCables() {
           <Image
             alt="Industrial Grade Wires & Cables"
             className="hero-img w-full h-full object-cover opacity-40 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
-            src="/moonlights.github.io/assets/wires_hero.jpg"
+            src="/moonlights.github.io/assets/wires_hero.webp"
             fill
             sizes="100vw"
             priority

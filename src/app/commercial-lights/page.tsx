@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -10,7 +11,7 @@ const products = [
   {
     name: "Professional RGB+White Strip",
     desc: "Premium RGB+White LED strips designed for professional installations requiring both color and clean white illumination.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "RGB + White Channels",
       "High CRI (>90)",
@@ -33,7 +34,7 @@ const products = [
   {
     name: "High-Density RGB Strip",
     desc: "Commercial-grade high-density RGB LED strips with seamless color blending for continuous lighting runs.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "120 LEDs/m Density",
       "Seamless Color Blend",
@@ -56,7 +57,7 @@ const products = [
   {
     name: "Ultra-Bright RGB Strip",
     desc: "High-lumen RGB LED strip for outdoor commercial installations and large-scale architectural lighting.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "Ultra-High Output",
       "Aluminum Channel Compatible",
@@ -79,7 +80,7 @@ const products = [
   {
     name: "Commercial White Strip",
     desc: "High-efficiency commercial-grade white LED strip for professional ambient and task lighting applications.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "Tunable White",
       "High Efficiency",
@@ -103,7 +104,7 @@ const products = [
   {
     name: "High-Bay LED Warehouse Light",
     desc: "Powerful and efficient high-bay lighting designed for warehouses and large commercial facilities.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "UFO Style Design",
       "150W-240W Options",
@@ -126,7 +127,7 @@ const products = [
   {
     name: "Commercial Troffer Panel",
     desc: "Ultra-slim LED panel lights offering glare-free and uniform illumination for office ceilings.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "Edge-Lit Technology",
       "Flicker-Free",
@@ -149,7 +150,7 @@ const products = [
   {
     name: "Architectural Wall Pack",
     desc: "Heavy-duty LED wall packs for exterior building security and perimeter lighting.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "Die-Cast Aluminum Housing",
       "Shatter-Resistant Glass",
@@ -172,7 +173,7 @@ const products = [
   {
     name: "LED Parking Lot Shoebox",
     desc: "High-performance area lights for massive outdoor spaces requiring immense illumination.",
-    img: "/moonlights.github.io/assets/commercial_hero.jpg",
+    img: "/moonlights.github.io/assets/commercial_hero.webp",
     features: [
       "Slipfitter Mount",
       "High Efficacy (140 lm/w)",
@@ -206,10 +207,10 @@ export default function CommercialLights() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image width={800} height={800}
             alt="Commercial LED Systems"
             className="hero-img w-full h-full object-cover opacity-40 mix-blend-luminosity"
-            src="/moonlights.github.io/assets/commercial_hero.jpg"
+            src="/moonlights.github.io/assets/commercial_hero.webp"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
         </div>
@@ -261,7 +262,7 @@ export default function CommercialLights() {
               {/* Image */}
               <div className={`relative group overflow-hidden rounded-xl ${product.reverse ? "md:order-2" : ""}`}>
                 <div className="aspect-[4/3] bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden">
-                  <img
+                  <Image width={800} height={800}
                     alt={product.name}
                     className="hero-img w-full h-full object-cover mix-blend-luminosity group-hover:mix-blend-normal opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                     src={product.img}

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { wireProducts } from "./wireProducts";
@@ -134,7 +135,7 @@ export default function CatalogGrid() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                 <div className="aspect-video w-full mb-5 overflow-hidden rounded-lg bg-surface-container-low relative flex items-center justify-center">
-                  <img
+                  <Image width={800} height={800}
                     alt={product.name}
                     className="hero-img object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     src={product.img}

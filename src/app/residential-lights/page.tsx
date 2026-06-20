@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -10,7 +11,7 @@ const products = [
   {
     name: "Home Lighting Strips",
     desc: "Motion-activated LED strips perfect for home perimeters, driveways, and walkways.",
-    img: "/moonlights.github.io/assets/residential_hero.jpg",
+    img: "/moonlights.github.io/assets/residential_hero.webp",
     features: [
       "Motion Detection",
       "Energy Efficient",
@@ -34,7 +35,7 @@ const products = [
   {
     name: "Garden Lighting",
     desc: "Decorative LED solutions for landscaping and outdoor entertainment areas.",
-    img: "/moonlights.github.io/assets/residential_hero.jpg",
+    img: "/moonlights.github.io/assets/residential_hero.webp",
     features: [
       "Color Changing RGB",
       "Remote Controlled",
@@ -56,7 +57,7 @@ const products = [
   {
     name: "Pathway Safety Lights",
     desc: "Low-profile LED strips for safe navigation along walkways and stairs.",
-    img: "/moonlights.github.io/assets/residential_hero.jpg",
+    img: "/moonlights.github.io/assets/residential_hero.webp",
     features: [
       "Non-Slip Design",
       "Dusk-to-Dawn Sensor",
@@ -83,10 +84,10 @@ export default function ResidentialLights() {
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image width={800} height={800}
             alt="Residential LED Lighting"
             className="hero-img w-full h-full object-cover opacity-40 mix-blend-luminosity"
-            src="/moonlights.github.io/assets/residential_hero.jpg"
+            src="/moonlights.github.io/assets/residential_hero.webp"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
         </div>
@@ -138,7 +139,7 @@ export default function ResidentialLights() {
               {/* Image */}
               <div className={`relative group overflow-hidden rounded-xl ${product.reverse ? "md:order-2" : ""}`}>
                 <div className="aspect-[4/3] bg-surface-container-low border border-outline-variant/30 rounded-xl overflow-hidden">
-                  <img
+                  <Image width={800} height={800}
                     alt={product.name}
                     className="hero-img w-full h-full object-cover mix-blend-luminosity group-hover:mix-blend-normal opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                     src={product.img}

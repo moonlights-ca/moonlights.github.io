@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -14,9 +15,9 @@ export default function Lighting() {
         {/* Residential Half */}
         <div className="relative flex-1 group overflow-hidden bg-surface-container-lowest min-h-[400px]">
           <div className="absolute inset-0">
-            <img
+            <Image width={800} height={800}
               alt="Residential Architectural Lighting"
-              src="/moonlights.github.io/assets/residential_hero.jpg"
+              src="/moonlights.github.io/assets/residential_hero.webp"
               className="hero-img w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-700 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
             />
           </div>
@@ -33,9 +34,9 @@ export default function Lighting() {
         {/* Commercial Half */}
         <div className="relative flex-1 group overflow-hidden bg-surface-container-lowest min-h-[400px]">
           <div className="absolute inset-0">
-            <img
+            <Image width={800} height={800}
               alt="Commercial Industrial Lighting"
-              src="/moonlights.github.io/assets/commercial_hero.jpg"
+              src="/moonlights.github.io/assets/commercial_hero.webp"
               className="hero-img w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-700 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
             />
           </div>

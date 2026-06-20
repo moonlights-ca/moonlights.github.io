@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { toolsCategories } from "../../toolsProducts";
@@ -73,7 +74,7 @@ export default async function ProductDetailPage({
           {/* Product Image */}
           <div className="col-span-1 md:col-span-7 relative group">
             <div className="aspect-[3/2] w-full overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/30 relative">
-              <img
+              <Image width={800} height={800}
                 alt={product.name}
                 className="hero-img object-cover w-full h-full mix-blend-luminosity group-hover:mix-blend-normal opacity-80 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                 src={product.img}

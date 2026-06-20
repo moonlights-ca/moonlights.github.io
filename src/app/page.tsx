@@ -13,7 +13,7 @@ export default function Home() {
           <Image
             alt="High-end smart LED lighting system"
             className="hero-img w-full h-full object-cover object-right mix-blend-luminosity group-hover:mix-blend-normal opacity-60 group-hover:opacity-80 transition-all duration-700"
-            src="/moonlights.github.io/assets/hero_bg.jpg"
+            src="/moonlights.github.io/assets/hero_bg.webp"
             fill
             sizes="100vw"
             priority
@@ -78,7 +78,7 @@ export default function Home() {
             <Image
               alt="Lighting Solutions"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/cat_lighting.jpg"
+              src="/moonlights.github.io/assets/cat_lighting.webp"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -109,7 +109,7 @@ export default function Home() {
             <Image
               alt="Auto Transformers"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/transformers_hero.png"
+              src="/moonlights.github.io/assets/transformers_hero.webp"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -140,7 +140,7 @@ export default function Home() {
             <Image
               alt="Industrial Electrical Parts"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/cat_industrial.jpg"
+              src="/moonlights.github.io/assets/cat_industrial.webp"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -171,7 +171,7 @@ export default function Home() {
             <Image
               alt="Wires and Cables"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/cat_wires.jpg"
+              src="/moonlights.github.io/assets/cat_wires.webp"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -202,7 +202,7 @@ export default function Home() {
             <Image
               alt="Tools and Equipment"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/industrial_hero.png"
+              src="/moonlights.github.io/assets/industrial_hero.webp"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -233,7 +233,7 @@ export default function Home() {
             <Image
               alt="Distribution and Protection"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/industrial_controls.jpg"
+              src="/moonlights.github.io/assets/industrial_controls.webp"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -264,7 +264,7 @@ export default function Home() {
             <Image
               alt="Conduit and Fittings"
               className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 mix-blend-luminosity group-hover:mix-blend-normal grayscale group-hover:grayscale-0"
-              src="/moonlights.github.io/assets/industrial_connectors.jpg"
+              src="/moonlights.github.io/assets/industrial_connectors.webp"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               loading="lazy"
@@ -306,7 +306,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Schema Image */}
           <div className="lg:col-span-2 relative rounded-2xl overflow-hidden border border-outline-variant/30 bg-surface-container-low aspect-[16/9] lg:aspect-auto group">
-            <div className="hero-img absolute inset-0 bg-[url('/moonlights.github.io/assets/schema_bg.jpg')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0 mix-blend-luminosity group-hover:mix-blend-normal"></div>
+            <div className="hero-img absolute inset-0 bg-[url('/moonlights.github.io/assets/schema_bg.webp')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0 mix-blend-luminosity group-hover:mix-blend-normal"></div>
             <div className="absolute inset-0 bg-gradient-to-tr from-background/80 to-transparent"></div>
             {/* Technical Overlay Over Blueprint */}
             <div className="absolute top-6 left-6 flex space-x-2 lm-bg-black px-3 py-1 rounded-full items-center">
@@ -400,7 +400,7 @@ export default function Home() {
               <Image
                 alt="Abstract light engineering cutaway"
                 className="hero-img w-full h-full object-cover mix-blend-luminosity group-hover:mix-blend-normal opacity-70 grayscale group-hover:grayscale-0 transition-all duration-700"
-                src="/moonlights.github.io/assets/innovation_bg.jpg"
+                src="/moonlights.github.io/assets/innovation_bg.webp"
                 fill
                 sizes="(max-width: 768px) 100vw, 60vw"
                 loading="lazy"
