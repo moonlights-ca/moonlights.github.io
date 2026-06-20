@@ -51,7 +51,7 @@ export const datacomCategories: DatacomCategory[] = [
     img: "/moonlights.github.io/assets/industrial_terminals.jpg",
     desc: "Junction boxes, device boxes, pull boxes, NEMA-rated enclosures, and cabinets for housing electrical connections and equipment. From Hoffman, Hubbell, Wiegmann, and Red Dot.",
     products: [
-      { slug: "red-dot-s310e-r-wp-box-cover", name: "Red Dot S310E-R Weatherproof Duplex Box Cover", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "Die-cast aluminum, duplex receptacle, NEMA 3R, in-use, paintable", category: "Boxes & Enclosures" },
+      { slug: "red-dot-s310e-r-wp-box-cover", name: "Red Dot S310E-R Weatherproof Duplex Box Cover", img: "/moonlights.github.io/assets/red_dot_s310e_r_wp_box_cover.png", spec: "Die-cast aluminum, duplex receptacle, NEMA 3R, in-use, paintable", category: "Boxes & Enclosures" },
       { slug: "hoffman-a8064ch-jic-box", name: "Hoffman A8064CH JIC Continuous Hinge Box", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "8\" × 6\" × 4\", carbon steel, NEMA 12/4, continuous hinge, clamps", category: "Boxes & Enclosures" },
       { slug: "hubbell-ba100-weatherproof-box", name: "Hubbell BA100 Bell Box 1-Gang", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "Die-cast aluminum, 1-gang, 3 × 1/2\" hubs, NEMA 3R, gray", category: "Boxes & Enclosures" },
       { slug: "wiegmann-b060403ch-enclosure", name: "Wiegmann B060403CH NEMA 4 Enclosure", img: "/moonlights.github.io/assets/industrial_terminals.jpg", spec: "6\" × 4\" × 3\", carbon steel, NEMA 4/12, continuous hinge, clamps", category: "Boxes & Enclosures" },

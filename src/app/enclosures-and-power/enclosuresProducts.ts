@@ -21,7 +21,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
     img: "/moonlights.github.io/assets/industrial_controls.jpg",
     desc: "Molded case, miniature, and motor protection circuit breakers from Siemens, Eaton, Square D, and ABB. Rated for residential, commercial, and industrial power distribution.",
     products: [
-      { slug: "siemens-neg3b050l-mccb", name: "Siemens NEG3B050L Molded Case Circuit Breaker", img: "/moonlights.github.io/assets/industrial_controls.jpg", spec: "240 VAC, 50A, 85 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
+      { slug: "siemens-neg3b050l-mccb", name: "Siemens NEG3B050L Molded Case Circuit Breaker", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.png", spec: "240 VAC, 50A, 85 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
       { slug: "siemens-qn2150r-miniature-breaker", name: "Siemens QN2150R Miniature Molded Case Breaker", img: "/moonlights.github.io/assets/industrial_controls.jpg", spec: "120/240 VAC, 150A, 10 kA interrupt, 2-pole, thermal-magnetic trip", category: "Circuit Breakers" },
       { slug: "siemens-3rv20111fa15-motor-protection", name: "Siemens 3RV2011 Motor Protection Circuit Breaker", img: "/moonlights.github.io/assets/industrial_controls.jpg", spec: "690 VAC, 3.5–5A adjustable, 4 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
       { slug: "siemens-3rv20324ea15-motor-breaker", name: "Siemens 3RV2032 Motor Protection Breaker w/ Aux", img: "/moonlights.github.io/assets/industrial_controls.jpg", spec: "690 VAC, 22–32A, 6 kA interrupt, 3-pole, 1NO+1NC auxiliary switch", category: "Circuit Breakers" },
