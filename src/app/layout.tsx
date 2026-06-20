@@ -67,7 +67,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="theme-color" content="#141218" />
-        <link rel="preload" href="/moonlights.github.io/assets/hero_bg.webp" as="image" />
+        <link rel="preload" href="/moonlights.github.io/assets/hero_bg.webp" as="image" type="image/webp" fetchPriority="high" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
@@ -78,9 +78,22 @@ export default function RootLayout({
           as="style"
         />
         <link
+          id="material-symbols-css"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
+          media="print"
         />
+        <script dangerouslySetInnerHTML={{ __html: `
+          var msLink = document.getElementById('material-symbols-css');
+          msLink.onload = function() { this.media='all' };
+          setTimeout(function() { msLink.media='all' }, 100);
+        ` }} />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+            rel="stylesheet"
+          />
+        </noscript>
       </head>
       <body className="flex flex-col min-h-screen">
         <ThemeProvider>

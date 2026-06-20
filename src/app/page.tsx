@@ -10,15 +10,13 @@ export default function Home() {
  <div className="absolute inset-0 z-0 overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-low">
  <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40 z-10"></div>
  <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background to-transparent z-10"></div>
- <Image
- alt="High-end smart LED lighting system"
- className="hero-img w-full h-full object-cover object-right opacity-60 group-hover:opacity-80 transition-all duration-700"
- src="/moonlights.github.io/assets/hero_bg.webp"
- fill
- sizes="100vw"
- priority
- fetchPriority="high"
- />
+          <img
+            alt="High-end smart LED lighting system"
+            className="hero-img absolute inset-0 w-full h-full object-cover object-right opacity-60 transition-all duration-700"
+            src="/moonlights.github.io/assets/hero_bg.webp"
+            fetchPriority="high"
+            decoding="sync"
+          />
  </div>
  {/* Hero Content */}
  <div className="relative z-20 w-full max-w-2xl pl-8 md:pl-12">
