@@ -320,33 +320,7 @@ html.light h1.text-white .text-transparent.bg-clip-text[class*="bg-gradient-to-r
   color: var(--color-background) !important;
 }
 
-/* ─── Light Mode Hero Text Readability ─── */
-/* When hero text overlays a dark scrim, it needs to be white */
-html.light section[class*="relative"] h1[class*="text-on-surface"],
-html.light section[class*="relative"] p[class*="text-on-surface-variant"],
-html.light a[class*="group"] h3[class*="text-on-surface"],
-html.light a[class*="group"] p[class*="text-on-surface-variant"],
-html.light a[class*="group"] span[class*="text-primary"],
-html.light section[class*="relative"] span[class*="text-primary"] {
-  color: #ffffff !important;
-}
 
-html.light section[class*="relative"] p[class*="text-on-surface-variant"] {
-  color: rgba(255, 255, 255, 0.9) !important;
-}
-
-/* Fix category card text numbers */
-html.light a[class*="group"] span[class*="text-primary"] {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-html.light a[class*="group"] h3[class*="text-on-surface"] {
-  color: #ffffff !important;
-}
-
-html.light a[class*="group"] p[class*="text-on-surface-variant"] {
-  color: rgba(255, 255, 255, 0.8) !important;
-}
 /* ─── Light Mode Utility Overrides ─── */
 html.light .lm-bg-black {
   background-color: #111111 !important;
