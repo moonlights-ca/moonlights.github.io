@@ -50,12 +50,12 @@ export const enclosuresCategories: EnclosuresCategory[] = [
     img: "/moonlights.github.io/assets/industrial_terminals.webp",
     desc: "Fusible and non-fusible safety switches, rotary disconnects, and enclosed switches for safe power isolation. From Siemens, Eaton, and Square D.",
     products: [
-      { slug: "siemens-hnf363jchw-safety-switch", name: "Siemens HNF363JCHW Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "600 VAC, 100A, TPST, 3-pole, non-fusible, NEMA 12, viewing window", category: "Safety & Disconnect Switches" },
+      { slug: "siemens-hnf363jchw-safety-switch", name: "Siemens HNF363JCHW Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/siemens_hnf363jchw.webp", spec: "600 VAC, 100A, TPST, 3-pole, non-fusible, NEMA 12, viewing window", category: "Safety & Disconnect Switches" },
       { slug: "square-d-h363-disconnect-100a", name: "Square D H363 Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/square_d_h363_disconnect_100a.webp", spec: "600 VAC, 100A, 3-pole, fusible, NEMA 1, Class H/R fuses", category: "Safety & Disconnect Switches" },
-      { slug: "eaton-dh362fgk-heavy-duty-switch", name: "Eaton DH362FGK Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "600 VAC, 60A, 3-pole, fusible, NEMA 1, with neutral, UL Listed", category: "Safety & Disconnect Switches" },
-      { slug: "siemens-gf322nr-general-duty", name: "Siemens GF322NR General Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "240 VAC, 60A, 3-pole, fusible, NEMA 3R outdoor rated", category: "Safety & Disconnect Switches" },
-      { slug: "square-d-d222nrb-general-duty", name: "Square D D222NRB General Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "240 VAC, 60A, 2-pole, fusible, NEMA 3R, neutral provision", category: "Safety & Disconnect Switches" },
-      { slug: "abb-eot16u3m4-rotary-disconnect", name: "ABB EOT16U3M4 Enclosed Rotary Disconnect", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "600 VAC, 16A, 3-pole, UL 508, NEMA 4X, door interlock", category: "Safety & Disconnect Switches" },
+      { slug: "eaton-dh362fgk-heavy-duty-switch", name: "Eaton DH362FGK Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/eaton_dh362fgk.webp", spec: "600 VAC, 60A, 3-pole, fusible, NEMA 1, with neutral, UL Listed", category: "Safety & Disconnect Switches" },
+      { slug: "siemens-gf322nr-general-duty", name: "Siemens GF322NR General Duty Safety Switch", img: "/moonlights.github.io/assets/siemens_gf322nr.webp", spec: "240 VAC, 60A, 3-pole, fusible, NEMA 3R outdoor rated", category: "Safety & Disconnect Switches" },
+      { slug: "square-d-d222nrb-general-duty", name: "Square D D222NRB General Duty Safety Switch", img: "/moonlights.github.io/assets/square_d_d222nrb.webp", spec: "240 VAC, 60A, 2-pole, fusible, NEMA 3R, neutral provision", category: "Safety & Disconnect Switches" },
+      { slug: "abb-eot16u3m4-rotary-disconnect", name: "ABB EOT16U3M4 Enclosed Rotary Disconnect", img: "/moonlights.github.io/assets/abb_eot16u3m4.webp", spec: "600 VAC, 16A, 3-pole, UL 508, NEMA 4X, door interlock", category: "Safety & Disconnect Switches" },
     ],
   },
   {
