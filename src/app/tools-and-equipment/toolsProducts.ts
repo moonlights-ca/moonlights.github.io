@@ -26,8 +26,8 @@ export const toolsCategories: ToolsCategory[] = [
       { slug: "greenlee-k05-1gl-crimper", name: "Greenlee K05-1GL Hydraulic Crimper", img: "/moonlights.github.io/assets/greenlee_k05_1gl_crimper.webp", spec: "Dieless, 6 ton, 8 AWG–750 kcmil, 360° rotating head", category: "Cable & Wire Tools" },
       { slug: "ideal-45-120-t-stripper", name: "Ideal 45-120 T-Stripper", img: "/moonlights.github.io/assets/ideal_45_120_t_stripper.webp", spec: "Wire stripper for 8–18 AWG solid/10–20 AWG stranded, precision ground", category: "Cable & Wire Tools" },
       { slug: "klein-56005-fish-tape-steel", name: "Klein 56005 Steel Fish Tape 100ft", img: "/moonlights.github.io/assets/klein_56005_fish_tape_steel.webp", spec: "1/8\" wide flat steel, 100ft, high-visibility orange case, laser-etched marks", category: "Cable & Wire Tools" },
-      { slug: "burndy-y750hsxt-hydraulic-crimper", name: "Burndy Y750HSXT Hypress Crimper", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "12 ton, #8 AWG–750 kcmil, C-head crimp, quick-release piston", category: "Cable & Wire Tools" },
-      { slug: "southwire-ccpr400-cable-cutter", name: "Southwire CCPR400 Ratcheting Cable Cutter", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "Ratchet action, up to 400 kcmil Cu/Al, hardened steel blade", category: "Cable & Wire Tools" },
+      { slug: "burndy-y750hsxt-hydraulic-crimper", name: "Burndy Y750HSXT Hypress Crimper", img: "/moonlights.github.io/assets/burndy_y750hsxt_crimper.webp", spec: "12 ton, #8 AWG–750 kcmil, C-head crimp, quick-release piston", category: "Cable & Wire Tools" },
+      { slug: "southwire-ccpr400-cable-cutter", name: "Southwire CCPR400 Ratcheting Cable Cutter", img: "/moonlights.github.io/assets/southwire_ccpr400_cable_cutter.webp", spec: "Ratchet action, up to 400 kcmil Cu/Al, hardened steel blade", category: "Cable & Wire Tools" },
     ],
   },
   {
