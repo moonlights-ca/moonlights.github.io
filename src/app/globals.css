@@ -536,6 +536,14 @@ html.light .animate-pulse {
   background-color: var(--color-primary) !important;
 }
 
+/* Hide icon font text until the Material Symbols font has loaded */
+.material-symbols-outlined {
+  visibility: hidden;
+}
+html.icons-loaded .material-symbols-outlined {
+  visibility: visible;
+}
+
 /* Theme transition */
 html {
   transition: background-color 0.3s ease, color 0.3s ease;

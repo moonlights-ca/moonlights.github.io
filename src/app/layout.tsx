@@ -71,27 +71,22 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-          as="style"
-        />
-        <link
-          id="material-symbols-css"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
           rel="stylesheet"
-          media="print"
         />
         <script dangerouslySetInnerHTML={{ __html: `
-          var msLink = document.getElementById('material-symbols-css');
-          msLink.onload = function() { this.media='all' };
-          setTimeout(function() { msLink.media='all' }, 100);
+          (function() {
+            if (document.fonts && document.fonts.ready) {
+              document.fonts.ready.then(function() {
+                document.documentElement.classList.add('icons-loaded');
+              });
+            }
+            // Fallback: always show after 2s even if font API isn't available
+            setTimeout(function() {
+              document.documentElement.classList.add('icons-loaded');
+            }, 2000);
+          })();
         ` }} />
-        <noscript>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-            rel="stylesheet"
-          />
-        </noscript>
       </head>
       <body className="flex flex-col min-h-screen">
         <ThemeProvider>
