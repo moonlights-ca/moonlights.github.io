@@ -48,11 +48,9 @@ export const metadata: Metadata = {
 const themeScript = `
 (function() {
   try {
-    var t = localStorage.getItem('theme');
-    if (t === 'light' || t === 'dark') {
-      document.documentElement.classList.remove('dark', 'light');
-      document.documentElement.classList.add(t);
-    }
+    var t = localStorage.getItem('theme') || 'light';
+    document.documentElement.classList.remove('dark', 'light');
+    document.documentElement.classList.add(t);
   } catch(e) {}
 })();
 `;
@@ -63,10 +61,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`dark ${inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`light ${inter.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <meta name="theme-color" content="#141218" />
+        <meta name="theme-color" content="#ededf0" />
         <link rel="preload" href="/moonlights.github.io/assets/hero_bg.webp" as="image" type="image/webp" fetchPriority="high" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
