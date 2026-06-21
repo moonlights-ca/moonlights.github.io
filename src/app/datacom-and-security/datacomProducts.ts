@@ -18,7 +18,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "conduit-emt-rigid",
     name: "Conduit — EMT & Rigid",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/red_dot_s310e_r_wp_box_cover.webp",
     desc: "Electrical metallic tubing (EMT), rigid metal conduit (RMC), intermediate metal conduit (IMC), and PVC conduit for commercial and industrial wiring systems.",
     products: [
       { slug: "allied-emt-1-inch-10ft", name: "Allied Tube EMT Conduit 1\" × 10ft", img: "/moonlights.github.io/assets/allied_emt_1_inch_10ft.webp", spec: "Galvanized steel, 1\" trade size, 10ft length, UL Listed, pre-galvanized", category: "Conduit — EMT & Rigid" },
@@ -62,7 +62,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "cable-tray-raceway",
     name: "Cable Tray & Raceway",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/cable_tray_ah1418l09_h_beam.webp",
     desc: "Ladder, ventilated trough, and wire basket cable tray systems, plus surface raceway and wire mold for organized cable management in commercial and industrial facilities.",
     products: [
       { slug: "cable-tray-ah1418l09-h-beam", name: "Cable Tray AH1418L09 H-Beam Straight Section", img: "/moonlights.github.io/assets/cable_tray_ah1418l09_h_beam.webp", spec: "Aluminum, 18\" wide × 3\" deep, 3m length, 91 ft-lb capacity", category: "Cable Tray & Raceway" },
@@ -76,7 +76,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "contactors-motor-starters",
     name: "Contactors & Motor Starters",
-    img: "/moonlights.github.io/assets/industrial_controls.webp",
+    img: "/moonlights.github.io/assets/siemens_3rt20463nb30_contactor.webp",
     desc: "IEC and NEMA contactors, motor starters, soft starters, and overload relays for motor control in industrial automation. From Siemens SIRIUS, Eaton, and Allen-Bradley.",
     products: [
       { slug: "siemens-3rt20463nb30-contactor", name: "Siemens SIRIUS 3RT2046 Power Contactor 95A", img: "/moonlights.github.io/assets/siemens_3rt20463nb30_contactor.webp", spec: "20–33V AC/DC coil, 95A, 3NO, 3-pole, integrated varistor, S3 frame", category: "Contactors & Motor Starters" },
@@ -93,7 +93,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "wiring-devices",
     name: "Wiring Devices & Receptacles",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/leviton_5362_duplex_receptacle.webp",
     desc: "Commercial and industrial-grade receptacles, switches, GFCI/AFCI devices, dimmers, and wall plates for power and control points. From Leviton, Hubbell, Pass & Seymour, and Lutron.",
     products: [
       { slug: "leviton-5362-duplex-receptacle", name: "Leviton 5362 Commercial Duplex Receptacle 20A", img: "/moonlights.github.io/assets/leviton_5362_duplex_receptacle.webp", spec: "125V, 20A, NEMA 5-20R, spec grade, back & side wired, UL Listed", category: "Wiring Devices & Receptacles" },

@@ -18,7 +18,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "cable-wire-tools",
     name: "Cable & Wire Tools",
-    img: "/moonlights.github.io/assets/industrial_controls.webp",
+    img: "/moonlights.github.io/assets/klein_11061_wire_stripper.webp",
     desc: "Professional cable cutters, strippers, crimpers, and fish tapes for electrical installation, maintenance, and cable management. Sourced from Klein Tools, Knipex, and Greenlee.",
     products: [
       { slug: "klein-11061-wire-stripper", name: "Klein 11061 Wire Stripper/Cutter", img: "/moonlights.github.io/assets/klein_11061_wire_stripper.webp", spec: "Self-adjusting stripper, 10–20 AWG solid/stranded, spring-loaded", category: "Cable & Wire Tools" },
@@ -33,7 +33,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "hand-tools",
     name: "General Purpose Hand Tools",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/fluke_87v_multimeter.webp",
     desc: "Wrenches, pliers, screwdrivers, and specialty electrical hand tools from trusted brands including Klein, Channellock, Wera, and Wiha.",
     products: [
       { slug: "klein-d2000-9ne-linesman-pliers", name: "Klein D2000-9NE Linesman Pliers 9\"", img: "/moonlights.github.io/assets/klein_d2000_9ne_pliers.webp", spec: "High-leverage, induction-hardened knives, #6 hard wire cutting", category: "General Purpose Hand Tools" },
@@ -76,7 +76,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "fasteners-hardware",
     name: "Fasteners & Hardware",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/unistrut_p1000_channel.webp",
     desc: "Strut channel systems, beam clamps, threaded rod, concrete anchors, and specialty mounting hardware for electrical installations. From Unistrut, Cooper B-Line, and Hilti.",
     products: [
       { slug: "unistrut-p1000-channel", name: "Unistrut P1000 12-Gauge Strut Channel 10ft", img: "/moonlights.github.io/assets/unistrut_p1000_channel.webp", spec: "1-5/8\" × 1-5/8\", 12 ga steel, pre-galvanized, 1450 lb uniform load", category: "Fasteners & Hardware" },
@@ -90,7 +90,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "safety-ppe",
     name: "Safety & PPE",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/salisbury_arc_flash_kit.webp",
     desc: "Arc-flash protection, insulating gloves, lockout/tagout kits, hard hats, and high-visibility gear for electrical worker safety. From Salisbury, Honeywell, Brady, and Klein.",
     products: [
       { slug: "salisbury-pro-wear-arc-flash-kit-40cal", name: "Salisbury Pro-Wear Arc Flash Kit 40 cal/cm²", img: "/moonlights.github.io/assets/salisbury_arc_flash_kit.webp", spec: "40 cal/cm², coat/bib/hood, ASTM F1959, includes faceshield and bag", category: "Safety & PPE" },
@@ -104,7 +104,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "conduit-bending-pulling",
     name: "Conduit Bending & Wire Pulling",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/greenlee_555cx_bender.webp",
     desc: "Conduit benders, cable pullers, fish tapes, pulling lubricant, and rod systems for routing conduit and pulling conductors. From Greenlee, Klein, Gardner Bender, and Ideal.",
     products: [
       { slug: "greenlee-555cx-bender", name: "Greenlee 555CX Classic Electric Conduit Bender", img: "/moonlights.github.io/assets/greenlee_555cx_bender.webp", spec: "Bends 1/2\"–2\" EMT/IMC/rigid, microprocessor angle control, 120V", category: "Conduit Bending & Wire Pulling" },
@@ -118,7 +118,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "drill-bits-cutting",
     name: "Drill Bits & Cutting Accessories",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/milwaukee_hole_dozer_kit.webp",
     desc: "Hole saws, step bits, masonry bits, knockout punches, and reciprocating blades for drilling and cutting in electrical work. From Milwaukee, Greenlee, DeWalt, and Lenox.",
     products: [
       { slug: "milwaukee-49-22-4185-hole-dozer-kit", name: "Milwaukee 49-22-4185 Hole Dozer Hole Saw Kit", img: "/moonlights.github.io/assets/milwaukee_hole_dozer_kit.webp", spec: "19-piece, bi-metal, 3/4\"–2-1/2\", quick-release arbor, carrying case", category: "Drill Bits & Cutting Accessories" },
@@ -132,7 +132,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "tool-storage",
     name: "Tool Storage & Bags",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/veto_pro_pac_tech_pac.webp",
     desc: "Tool bags, pouches, backpacks, rolling cases, and modular storage systems for organizing and transporting electrical tools. From Klein, Veto Pro Pac, Milwaukee, and DeWalt.",
     products: [
       { slug: "veto-pro-pac-tech-pac-backpack", name: "Veto Pro Pac TECH PAC Tool Backpack", img: "/moonlights.github.io/assets/veto_pro_pac_tech_pac.webp", spec: "56 pockets, weatherproof base, padded straps, center panel, 4 trays", category: "Tool Storage & Bags" },

@@ -18,7 +18,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "electrical-connectors",
     name: "Electrical Connectors",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/nylon_cable_gland.webp",
     desc: "Heavy-duty multipin and circular connectors designed for secure data and power transmission in harsh industrial settings. Features IP68 ratings and vibration resistance.",
     products: [
       { slug: "nylon-cable-gland", name: "Nylon Cable Gland", img: "/moonlights.github.io/assets/nylon_cable_gland.webp", spec: "IP68 rated, PG7–PG48 thread sizes, 3–32mm cable range", category: "Electrical Connectors" },
@@ -32,7 +32,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "cable-accessories",
     name: "Cable Accessories",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/heat_shrink_tubing.webp",
     desc: "Strain relief glands, protective conduits, and heavy-duty mounting hardware to ensure cable integrity.",
     products: [
       { slug: "heat-shrink-tubing", name: "Heat Shrink Tubing", img: "/moonlights.github.io/assets/heat_shrink_tubing.webp", spec: "2:1 and 3:1 shrink ratio, 600V, polyolefin, adhesive-lined options", category: "Cable Accessories" },
@@ -46,7 +46,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "terminals-and-lugs",
     name: "Terminals & Lugs",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/copper_compression_lug.webp",
     desc: "Compression and mechanical lugs engineered for optimal conductivity and secure termination of large-gauge wire.",
     products: [
       { slug: "copper-compression-lug", name: "Copper Compression Lug", img: "/moonlights.github.io/assets/copper_compression_lug.webp", spec: "Tin-plated copper, 8 AWG–750 kcmil, 1-hole or 2-hole, UL Listed", category: "Terminals & Lugs" },
@@ -60,7 +60,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "switches",
     name: "Switches",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/toggle_switch_heavy_duty.webp",
     desc: "Ruggedized disconnects, limit switches, and safety interlocks built to withstand high cycle rates and extreme conditions.",
     products: [
       { slug: "toggle-switch-heavy-duty", name: "Heavy-Duty Toggle Switch", img: "/moonlights.github.io/assets/toggle_switch_heavy_duty.webp", spec: "SPDT/DPDT, 20A/125V or 15A/277V, screw terminal, UL Listed", category: "Switches" },
@@ -74,7 +74,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "control-components",
     name: "Control Components",
-    img: "/moonlights.github.io/assets/industrial_controls.webp",
+    img: "/moonlights.github.io/assets/iec_contactor_3_pole.webp",
     desc: "Contactors, relays, and motor starters for precise automation and control in complex industrial machinery.",
     products: [
       { slug: "iec-contactor-3-pole", name: "IEC Contactor 3-Pole", img: "/moonlights.github.io/assets/iec_contactor_3_pole.webp", spec: "9–95A, 24–600V coil, AC-3 rated, DIN rail mount, 1NO+1NC aux", category: "Control Components" },
@@ -88,7 +88,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "crimp-wire-terminals",
     name: "Crimp Wire Terminals",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/ring_crimp_terminals.webp",
     desc: "Premium selection of crimp wire terminals sourced globally for high reliability and performance.",
     products: [
       { slug: "ring-crimp-terminals", name: "Ring Crimp Terminals", img: "/moonlights.github.io/assets/ring_crimp_terminals.webp", spec: "Industrial grade, RoHS compliant, UL Listed.", category: "Crimp Wire Terminals" },
@@ -108,7 +108,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "cable-ties",
     name: "Cable Ties",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/standard_cable_ties.webp",
     desc: "Premium selection of cable ties sourced globally for high reliability and performance.",
     products: [
       { slug: "standard-cable-ties-18-to-50lb", name: "Standard Cable Ties 18 To 50Lb", img: "/moonlights.github.io/assets/standard_cable_ties.webp", spec: "Industrial grade, RoHS compliant, UL Listed.", category: "Cable Ties" },
@@ -128,7 +128,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "terminal-blocks",
     name: "Terminal Blocks",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/feed_through_terminal_blocks.webp",
     desc: "Premium selection of terminal blocks sourced globally for high reliability and performance.",
     products: [
       { slug: "feed-through-terminal-blocks", name: "Feed Through Terminal Blocks", img: "/moonlights.github.io/assets/feed_through_terminal_blocks.webp", spec: "Industrial grade, RoHS compliant, UL Listed.", category: "Terminal Blocks" },
@@ -146,7 +146,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "heat-shrink-tubing",
     name: "Heat Shrink Tubing",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/thin_wall_heat_shrink_2_to_1_colors.webp",
     desc: "Premium selection of heat shrink tubing sourced globally for high reliability and performance.",
     products: [
       { slug: "thin-wall-heat-shrink-2-to-1-colors", name: "Thin Wall Heat Shrink 2 To 1 Colors", img: "/moonlights.github.io/assets/thin_wall_heat_shrink_2_to_1_colors.webp", spec: "Industrial grade, RoHS compliant, UL Listed.", category: "Heat Shrink Tubing" },
@@ -161,7 +161,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "wire-markers-labels",
     name: "Wire Markers & Labels",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/wire_marker_books.webp",
     desc: "Wire marker books, heat-shrink labels, wrap-around labels, and printable identification systems for circuit identification and code-compliant labeling.",
     products: [
       { slug: "wire-marker-books", name: "Wire Marker Books", img: "/moonlights.github.io/assets/wire_marker_books.webp", spec: "Pre-printed 0–9 and A–Z, vinyl cloth, self-laminating, UL Listed.", category: "Wire Markers & Labels" },
@@ -176,7 +176,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "solder-splice-connectors",
     name: "Solder Seal & Splice Connectors",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/solder_seal_heat_shrink_connectors.webp",
     desc: "Heat-activated solder seal connectors, waterproof splices, push-in connectors, and twist-on wire nuts for fast, reliable conductor joining.",
     products: [
       { slug: "solder-seal-heat-shrink-connectors", name: "Solder Seal Heat Shrink Connectors", img: "/moonlights.github.io/assets/solder_seal_heat_shrink_connectors.webp", spec: "Low-temp solder ring, dual adhesive seal, 26–10 AWG, waterproof.", category: "Solder Seal & Splice Connectors" },
@@ -190,7 +190,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "panel-enclosure-accessories",
     name: "Panel & Enclosure Accessories",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/din_rail_35mm_slotted.webp",
     desc: "DIN rail, slotted wire duct, panel cooling fans, filter fans, and mounting accessories for organizing and protecting control panel interiors.",
     products: [
       { slug: "din-rail-35mm-slotted", name: "DIN Rail 35mm Slotted", img: "/moonlights.github.io/assets/din_rail_35mm_slotted.webp", spec: "35mm × 7.5mm, slotted steel, zinc plated, 1m and 2m lengths.", category: "Panel & Enclosure Accessories" },
@@ -204,7 +204,7 @@ export const industrialCategories: IndustrialCategory[] = [
   {
     slug: "grommets-bushings",
     name: "Grommets, Bushings & Plugs",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/rubber_grommets_assortment.webp",
     desc: "Rubber grommets, snap bushings, plastic hole plugs, and edge protection for safely passing conductors through panel and enclosure openings.",
     products: [
       { slug: "rubber-grommets-assortment", name: "Rubber Grommets Assortment", img: "/moonlights.github.io/assets/rubber_grommets_assortment.webp", spec: "EPDM rubber, 1/8\"–2\" hole sizes, oil resistant, assorted kit.", category: "Grommets, Bushings & Plugs" },

@@ -18,11 +18,11 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "circuit-breakers",
     name: "Circuit Breakers",
-    img: "/moonlights.github.io/assets/industrial_controls.webp",
+    img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp",
     desc: "Molded case, miniature, and motor protection circuit breakers from Siemens, Eaton, Square D, and ABB. Rated for residential, commercial, and industrial power distribution.",
     products: [
       { slug: "siemens-neg3b050l-mccb", name: "Siemens NEG3B050L Molded Case Circuit Breaker", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp", spec: "240 VAC, 50A, 85 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
-      { slug: "siemens-qn2150r-miniature-breaker", name: "Siemens QN2150R Miniature Molded Case Breaker", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "120/240 VAC, 150A, 10 kA interrupt, 2-pole, thermal-magnetic trip", category: "Circuit Breakers" },
+      { slug: "siemens-qn2150r-miniature-breaker", name: "Siemens QN2150R Miniature Molded Case Breaker", img: "/moonlights.github.io/assets/siemens_p1l54ml250at_panelboard.webp", spec: "120/240 VAC, 150A, 10 kA interrupt, 2-pole, thermal-magnetic trip", category: "Circuit Breakers" },
       { slug: "siemens-3rv20111fa15-motor-protection", name: "Siemens 3RV2011 Motor Protection Circuit Breaker", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "690 VAC, 3.5–5A adjustable, 4 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
       { slug: "siemens-3rv20324ea15-motor-breaker", name: "Siemens 3RV2032 Motor Protection Breaker w/ Aux", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "690 VAC, 22–32A, 6 kA interrupt, 3-pole, 1NO+1NC auxiliary switch", category: "Circuit Breakers" },
       { slug: "eaton-bab1020-breaker", name: "Eaton BAB1020 Quicklag Type BAB Breaker", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "120/240 VAC, 20A, 10 kA interrupt, 1-pole, bolt-on, UL Listed", category: "Circuit Breakers" },
@@ -47,7 +47,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "safety-disconnect-switches",
     name: "Safety & Disconnect Switches",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/siemens_hnf363jchw.webp",
     desc: "Fusible and non-fusible safety switches, rotary disconnects, and enclosed switches for safe power isolation. From Siemens, Eaton, and Square D.",
     products: [
       { slug: "siemens-hnf363jchw-safety-switch", name: "Siemens HNF363JCHW Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/siemens_hnf363jchw.webp", spec: "600 VAC, 100A, TPST, 3-pole, non-fusible, NEMA 12, viewing window", category: "Safety & Disconnect Switches" },
@@ -61,7 +61,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "fuses-and-holders",
     name: "Fuses, Blocks & Holders",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/bussmann_lpj_30sp.webp",
     desc: "UL class fuses, fuse blocks, holders, and reducers for overcurrent protection in industrial and commercial electrical systems.",
     products: [
       { slug: "bussmann-lpj-30sp-class-j-fuse", name: "Bussmann LPJ-30SP Low-Peak Class J Fuse", img: "/moonlights.github.io/assets/bussmann_lpj_30sp.webp", spec: "600 VAC, 30A, 300 kA interrupt, time-delay, dual-element", category: "Fuses, Blocks & Holders" },
@@ -75,7 +75,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "surge-protection",
     name: "Surge Protection & UPS",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/siemens_tps3l0305d0.webp",
     desc: "AC surge protective devices, UPS systems, power conditioners, and energy monitoring equipment for protecting sensitive electrical loads.",
     products: [
       { slug: "siemens-tps3l0305d0-spd", name: "Siemens TPS3L0305D0 Surge Protective Device", img: "/moonlights.github.io/assets/siemens_tps3l0305d0.webp", spec: "600Y/347 VAC, 50 kA per phase, Type 1 or 2, external mount", category: "Surge Protection & UPS" },
@@ -89,7 +89,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "transfer-switches",
     name: "Transfer Switches & Generators",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/generac_rxsw200a3.webp",
     desc: "Automatic and manual transfer switches, generator interlock kits, and standby power controls for seamless backup power transition. From Generac, ASCO, Eaton, and Reliance.",
     products: [
       { slug: "generac-rxsw200a3-automatic-transfer-switch", name: "Generac RXSW200A3 Automatic Transfer Switch 200A", img: "/moonlights.github.io/assets/generac_rxsw200a3.webp", spec: "200A, service-rated, NEMA 3R, single-phase, whole-home, 16-circuit", category: "Transfer Switches & Generators" },
@@ -103,7 +103,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "meter-sockets-metering",
     name: "Meter Sockets & Metering",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/milbank_u3791_o_meter_socket.webp",
     desc: "Single and multi-position meter sockets, current transformer cabinets, and power monitoring meters for utility service entrance and submetering. From Milbank, Durham, and Schneider.",
     products: [
       { slug: "milbank-u3791-o-200a-meter-socket", name: "Milbank U3791-O Ringless Meter Socket 200A", img: "/moonlights.github.io/assets/milbank_u3791_o_meter_socket.webp", spec: "200A, 4-jaw, single-phase, NEMA 3R, ringless cover, overhead/underground", category: "Meter Sockets & Metering" },
@@ -117,7 +117,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "busway-bus-plugs",
     name: "Busway & Bus Plugs",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/siemens_sentron_busway.webp",
     desc: "Plug-in and feeder busway, bus plugs, and end closures for flexible high-amperage power distribution in industrial plants and data centers. From Siemens, Eaton, and Square D.",
     products: [
       { slug: "siemens-sentron-busway-225a", name: "Siemens Sentron Plug-In Busway 225A × 10ft", img: "/moonlights.github.io/assets/siemens_sentron_busway.webp", spec: "225A, 3-phase, copper bus, indoor NEMA 1, 10ft straight section", category: "Busway & Bus Plugs" },
@@ -131,7 +131,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
   {
     slug: "lighting-control-timers",
     name: "Lighting Contactors & Timers",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/intermatic_t104_mechanical_timer.webp",
     desc: "Mechanically and electrically held lighting contactors, time switches, and photocontrols for automated control of lighting and electrical loads. From Intermatic, Tork, and ASCO.",
     products: [
       { slug: "intermatic-t104-time-switch", name: "Intermatic T104 Mechanical Time Switch 40A", img: "/moonlights.github.io/assets/intermatic_t104_mechanical_timer.webp", spec: "208–277V, 40A, DPST, 24-hour dial, NEMA 1, mechanical, no battery", category: "Lighting Contactors & Timers" },
