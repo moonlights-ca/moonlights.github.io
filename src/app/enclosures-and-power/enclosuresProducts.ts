@@ -23,17 +23,17 @@ export const enclosuresCategories: EnclosuresCategory[] = [
     products: [
       { slug: "siemens-neg3b050l-mccb", name: "Siemens NEG3B050L Molded Case Circuit Breaker", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp", spec: "240 VAC, 50A, 85 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
       { slug: "siemens-qn2150r-miniature-breaker", name: "Siemens QN2150R Miniature Molded Case Breaker", img: "/moonlights.github.io/assets/siemens_p1l54ml250at_panelboard.webp", spec: "120/240 VAC, 150A, 10 kA interrupt, 2-pole, thermal-magnetic trip", category: "Circuit Breakers" },
-      { slug: "siemens-3rv20111fa15-motor-protection", name: "Siemens 3RV2011 Motor Protection Circuit Breaker", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "690 VAC, 3.5–5A adjustable, 4 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
-      { slug: "siemens-3rv20324ea15-motor-breaker", name: "Siemens 3RV2032 Motor Protection Breaker w/ Aux", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "690 VAC, 22–32A, 6 kA interrupt, 3-pole, 1NO+1NC auxiliary switch", category: "Circuit Breakers" },
-      { slug: "eaton-bab1020-breaker", name: "Eaton BAB1020 Quicklag Type BAB Breaker", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "120/240 VAC, 20A, 10 kA interrupt, 1-pole, bolt-on, UL Listed", category: "Circuit Breakers" },
-      { slug: "square-d-qo120-plug-on-breaker", name: "Square D QO120 Plug-On Circuit Breaker", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "120/240 VAC, 20A, 10 kA interrupt, 1-pole, Visi-Trip indicator", category: "Circuit Breakers" },
-      { slug: "abb-s203-c32-miniature-breaker", name: "ABB S203-C32 Miniature Circuit Breaker", img: "/moonlights.github.io/assets/industrial_controls.webp", spec: "400 VAC, 32A, 6 kA interrupt, 3-pole, C-curve, DIN rail mount", category: "Circuit Breakers" },
+      { slug: "siemens-3rv20111fa15-motor-protection", name: "Siemens 3RV2011 Motor Protection Circuit Breaker", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp", spec: "690 VAC, 3.5–5A adjustable, 4 kA interrupt, 3-pole, thermal-magnetic trip", category: "Circuit Breakers" },
+      { slug: "siemens-3rv20324ea15-motor-breaker", name: "Siemens 3RV2032 Motor Protection Breaker w/ Aux", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp", spec: "690 VAC, 22–32A, 6 kA interrupt, 3-pole, 1NO+1NC auxiliary switch", category: "Circuit Breakers" },
+      { slug: "eaton-bab1020-breaker", name: "Eaton BAB1020 Quicklag Type BAB Breaker", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp", spec: "120/240 VAC, 20A, 10 kA interrupt, 1-pole, bolt-on, UL Listed", category: "Circuit Breakers" },
+      { slug: "square-d-qo120-plug-on-breaker", name: "Square D QO120 Plug-On Circuit Breaker", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp", spec: "120/240 VAC, 20A, 10 kA interrupt, 1-pole, Visi-Trip indicator", category: "Circuit Breakers" },
+      { slug: "abb-s203-c32-miniature-breaker", name: "ABB S203-C32 Miniature Circuit Breaker", img: "/moonlights.github.io/assets/siemens_neg3b050l_mccb.webp", spec: "400 VAC, 32A, 6 kA interrupt, 3-pole, C-curve, DIN rail mount", category: "Circuit Breakers" },
     ],
   },
   {
     slug: "panelboards-load-centers",
     name: "Panelboards & Load Centers",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/siemens_p1l54ml250at_panelboard.webp",
     desc: "Residential and commercial panelboards, load centers, and interiors for branch circuit distribution. From Siemens, Square D, and Eaton.",
     products: [
       { slug: "siemens-p1l54ml250at-panelboard", name: "Siemens P1L54ML250AT Panelboard Interior", img: "/moonlights.github.io/assets/siemens_p1l54ml250at_panelboard.webp", spec: "600Y/347 VAC, 250A, 3-phase, 54-space, main lug only", category: "Panelboards & Load Centers" },

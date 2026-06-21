@@ -18,7 +18,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "conduit-emt-rigid",
     name: "Conduit — EMT & Rigid",
-    img: "/moonlights.github.io/assets/red_dot_s310e_r_wp_box_cover.webp",
+    img: "/moonlights.github.io/assets/allied_emt_1_inch_10ft.webp",
     desc: "Electrical metallic tubing (EMT), rigid metal conduit (RMC), intermediate metal conduit (IMC), and PVC conduit for commercial and industrial wiring systems.",
     products: [
       { slug: "allied-emt-1-inch-10ft", name: "Allied Tube EMT Conduit 1\" × 10ft", img: "/moonlights.github.io/assets/allied_emt_1_inch_10ft.webp", spec: "Galvanized steel, 1\" trade size, 10ft length, UL Listed, pre-galvanized", category: "Conduit — EMT & Rigid" },
@@ -33,7 +33,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "conduit-fittings",
     name: "Conduit Fittings & Bodies",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/iberville_ci5054_emt_connector.webp",
     desc: "Connectors, couplings, conduit bodies, bushings, straps, and adapters for EMT, rigid, PVC, and liquidtight conduit systems. From Iberville, Thomas & Betts, and Bridgeport.",
     products: [
       { slug: "iberville-ci5054-emt-connector", name: "Iberville CI5054 Set Screw EMT Connector 1/2\"", img: "/moonlights.github.io/assets/iberville_ci5054_emt_connector.webp", spec: "Zinc alloy, 1/2\" trade size, set screw, offset, for EMT conduit", category: "Conduit Fittings & Bodies" },
@@ -48,7 +48,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "boxes-enclosures",
     name: "Boxes & Enclosures",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/red_dot_s310e_r_wp_box_cover.webp",
     desc: "Junction boxes, device boxes, pull boxes, NEMA-rated enclosures, and cabinets for housing electrical connections and equipment. From Hoffman, Hubbell, Wiegmann, and Red Dot.",
     products: [
       { slug: "red-dot-s310e-r-wp-box-cover", name: "Red Dot S310E-R Weatherproof Duplex Box Cover", img: "/moonlights.github.io/assets/red_dot_s310e_r_wp_box_cover.webp", spec: "Die-cast aluminum, duplex receptacle, NEMA 3R, in-use, paintable", category: "Boxes & Enclosures" },
@@ -108,7 +108,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "grounding-bonding",
     name: "Grounding & Bonding",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/galvan_5805_copper_ground_rod.webp",
     desc: "Ground rods, clamps, grounding bars, bonding jumpers, and exothermic connections for code-compliant electrical grounding systems. From nVent ERICO, Burndy, and Galvan.",
     products: [
       { slug: "galvan-5805-copper-ground-rod", name: "Galvan 5805 Copper-Bonded Ground Rod 5/8\" × 8ft", img: "/moonlights.github.io/assets/galvan_5805_copper_ground_rod.webp", spec: "5/8\" diameter, 8ft, copper-bonded steel, UL 467, pointed end", category: "Grounding & Bonding" },
@@ -123,7 +123,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "liquidtight-flexible-conduit",
     name: "Liquidtight & Flexible Conduit",
-    img: "/moonlights.github.io/assets/industrial_connectors.webp",
+    img: "/moonlights.github.io/assets/southwire_ultratite_lfnc_1_2.webp",
     desc: "Liquidtight flexible metal (LFMC), non-metallic (LFNC), and flexible metal conduit (FMC) with matched connectors for vibration isolation and wet-location equipment connections. From Southwire, Anamet, and Bridgeport.",
     products: [
       { slug: "southwire-ultratite-lfnc-1-2", name: "Southwire UltraTite LFNC 1/2\" × 100ft", img: "/moonlights.github.io/assets/southwire_ultratite_lfnc_1_2.webp", spec: "Liquidtight non-metallic, 1/2\", PVC, sunlight resistant, UL 1660", category: "Liquidtight & Flexible Conduit" },
@@ -137,7 +137,7 @@ export const datacomCategories: DatacomCategory[] = [
   {
     slug: "wireway-lay-in-trough",
     name: "Wireway & Lay-In Trough",
-    img: "/moonlights.github.io/assets/industrial_accessories.webp",
+    img: "/moonlights.github.io/assets/hoffman_f44l36_lay_in_wireway.webp",
     desc: "Hinged and screw-cover lay-in wireway, troughs, and gutter systems for routing and splicing conductors between panels and equipment. From Hoffman, Wiegmann, and Austin.",
     products: [
       { slug: "hoffman-f44l36-lay-in-wireway", name: "Hoffman F44L36 Lay-In Wireway 4\" × 4\" × 3ft", img: "/moonlights.github.io/assets/hoffman_f44l36_lay_in_wireway.webp", spec: "4\" × 4\" × 36\", screw cover, NEMA 1, gray, knockouts, steel", category: "Wireway & Lay-In Trough" },

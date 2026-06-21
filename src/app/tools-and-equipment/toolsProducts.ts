@@ -33,7 +33,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "hand-tools",
     name: "General Purpose Hand Tools",
-    img: "/moonlights.github.io/assets/fluke_87v_multimeter.webp",
+    img: "/moonlights.github.io/assets/klein_d2000_9ne_pliers.webp",
     desc: "Wrenches, pliers, screwdrivers, and specialty electrical hand tools from trusted brands including Klein, Channellock, Wera, and Wiha.",
     products: [
       { slug: "klein-d2000-9ne-linesman-pliers", name: "Klein D2000-9NE Linesman Pliers 9\"", img: "/moonlights.github.io/assets/klein_d2000_9ne_pliers.webp", spec: "High-leverage, induction-hardened knives, #6 hard wire cutting", category: "General Purpose Hand Tools" },
@@ -47,7 +47,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "power-tools",
     name: "Power Tools & Drills",
-    img: "/moonlights.github.io/assets/industrial_switches.webp",
+    img: "/moonlights.github.io/assets/milwaukee_2804_20_hammer_drill.webp",
     desc: "Cordless and corded power tools for drilling, fastening, sawing, and cutting. Featuring Milwaukee, DeWalt, Makita, and Bosch professional lines.",
     products: [
       { slug: "milwaukee-2804-20-m18-hammer-drill", name: "Milwaukee 2804-20 M18 FUEL 1/2\" Hammer Drill", img: "/moonlights.github.io/assets/milwaukee_2804_20_hammer_drill.webp", spec: "POWERSTATE brushless motor, 1400 in-lbs torque, REDLINK PLUS intelligence", category: "Power Tools & Drills" },
@@ -61,7 +61,7 @@ export const toolsCategories: ToolsCategory[] = [
   {
     slug: "test-measurement",
     name: "Test & Measurement",
-    img: "/moonlights.github.io/assets/industrial_terminals.webp",
+    img: "/moonlights.github.io/assets/fluke_87v_multimeter.webp",
     desc: "Precision multimeters, clamp meters, voltage detectors, thermal imagers, and circuit analyzers for electrical testing and diagnostics. From Fluke, Klein, Megger, and Amprobe.",
     products: [
       { slug: "fluke-87v-industrial-multimeter", name: "Fluke 87V Industrial True-RMS Multimeter", img: "/moonlights.github.io/assets/fluke_87v_multimeter.webp", spec: "True-RMS, 1000V CAT III/600V CAT IV, VFD low-pass filter, 10A current", category: "Test & Measurement" },
