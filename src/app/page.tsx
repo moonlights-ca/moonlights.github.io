@@ -10,13 +10,14 @@ export default function Home() {
  <div className="absolute inset-0 z-0 overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-low">
  <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/40 z-10"></div>
  <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background to-transparent z-10"></div>
-          <img
-            alt="High-end smart LED lighting system"
-            className="hero-img absolute inset-0 w-full h-full object-cover object-right opacity-60 transition-all duration-700"
-            src="/moonlights.github.io/assets/hero_bg.webp"
-            fetchPriority="high"
-            decoding="sync"
-          />
+          <Image
+             alt="High-end smart LED lighting system"
+             className="hero-img absolute inset-0 w-full h-full object-cover object-right opacity-60 transition-all duration-700"
+             src="/moonlights.github.io/assets/hero_bg.webp"
+             fill
+             priority
+             sizes="100vw"
+           />
  </div>
  {/* Hero Content */}
  <div className="relative z-20 w-full max-w-2xl pl-8 md:pl-12">
@@ -305,7 +306,16 @@ export default function Home() {
  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
  {/* Schema Image */}
  <div className="lg:col-span-2 relative rounded-2xl overflow-hidden border border-outline-variant/30 bg-surface-container-low aspect-[16/9] lg:aspect-auto group">
- <div className="hero-img absolute inset-0 bg-[url('/moonlights.github.io/assets/schema_bg.webp')] bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0 "></div>
+ <div className="hero-img absolute inset-0 opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0">
+ <Image
+   alt="Technical blueprint background"
+   src="/moonlights.github.io/assets/schema_bg.webp"
+   fill
+   sizes="(max-width: 768px) 100vw, 66vw"
+   loading="lazy"
+   className="object-cover object-center"
+ />
+ </div>
  <div className="absolute inset-0 bg-gradient-to-tr from-background/80 to-transparent"></div>
  {/* Technical Overlay Over Blueprint */}
  <div className="absolute top-6 left-6 flex space-x-2 lm-bg-black px-3 py-1 rounded-full items-center">

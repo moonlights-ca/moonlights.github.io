@@ -544,8 +544,8 @@ html.icons-loaded .material-symbols-outlined {
   visibility: visible;
 }
 
-/* Theme transition */
-html {
+/* Theme transition – only after page has loaded to avoid reflow during paint */
+html.icons-loaded {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

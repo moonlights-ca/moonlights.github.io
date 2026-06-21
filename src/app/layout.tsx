@@ -66,22 +66,35 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="theme-color" content="#ededf0" />
         <link rel="preload" href="/moonlights.github.io/assets/hero_bg.webp" as="image" type="image/webp" fetchPriority="high" />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
-          rel="stylesheet"
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          as="style"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="stylesheet"
+          media="print"
+        />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+            rel="stylesheet"
+          />
+        </noscript>
         <script dangerouslySetInnerHTML={{ __html: `
           (function() {
+            // Flip media for browsers that don't fire onLoad on link[media=print]
+            var l = document.querySelector('link[media="print"][href*="Material+Symbols"]');
+            if (l) { l.onload = function() { this.media='all'; }; }
+            // Add icons-loaded class once all fonts (including Material Symbols) are ready
             if (document.fonts && document.fonts.ready) {
               document.fonts.ready.then(function() {
                 document.documentElement.classList.add('icons-loaded');
               });
             }
-            // Fallback: always show after 2s even if font API isn't available
             setTimeout(function() {
               document.documentElement.classList.add('icons-loaded');
             }, 2000);
