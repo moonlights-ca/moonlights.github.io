@@ -36,12 +36,12 @@ export const enclosuresCategories: EnclosuresCategory[] = [
     img: "/moonlights.github.io/assets/industrial_switches.webp",
     desc: "Residential and commercial panelboards, load centers, and interiors for branch circuit distribution. From Siemens, Square D, and Eaton.",
     products: [
-      { slug: "siemens-p1l54ml250at-panelboard", name: "Siemens P1L54ML250AT Panelboard Interior", img: "/moonlights.github.io/assets/industrial_switches.webp", spec: "600Y/347 VAC, 250A, 3-phase, 54-space, main lug only", category: "Panelboards & Load Centers" },
-      { slug: "siemens-seq24100-load-center", name: "Siemens SEQ24100SMDW Instawire Load Center", img: "/moonlights.github.io/assets/industrial_switches.webp", spec: "240 VAC, 100A, single-phase, main breaker, with door, 10 kA AIC", category: "Panelboards & Load Centers" },
-      { slug: "square-d-hom2040l200pgc-homeline", name: "Square D HOM2040L200PGC Homeline Load Center", img: "/moonlights.github.io/assets/industrial_switches.webp", spec: "120/240 VAC, 200A, 20-space/40-circuit, main lug, plug-on neutral", category: "Panelboards & Load Centers" },
-      { slug: "eaton-br2040b200-br-panel", name: "Eaton BR2040B200 BR Type Main Breaker Panel", img: "/moonlights.github.io/assets/industrial_switches.webp", spec: "120/240 VAC, 200A, 20-space/40-circuit, NEMA 1, single-phase", category: "Panelboards & Load Centers" },
-      { slug: "siemens-panelboard-trim-front", name: "Siemens S54L Panelboard Trim/Front Assembly", img: "/moonlights.github.io/assets/industrial_switches.webp", spec: "Surface mount, NEMA 1, for P1 panelboard, 54-space, steel enclosure", category: "Panelboards & Load Centers" },
-      { slug: "square-d-nf430l1c-nf-panelboard", name: "Square D NF430L1C NF Type Panelboard Interior", img: "/moonlights.github.io/assets/industrial_switches.webp", spec: "240 VAC, 250A, 30-circuit, 3-phase, convertible main, copper bus", category: "Panelboards & Load Centers" },
+      { slug: "siemens-p1l54ml250at-panelboard", name: "Siemens P1L54ML250AT Panelboard Interior", img: "/moonlights.github.io/assets/siemens_p1l54ml250at_panelboard.webp", spec: "600Y/347 VAC, 250A, 3-phase, 54-space, main lug only", category: "Panelboards & Load Centers" },
+      { slug: "siemens-seq24100-load-center", name: "Siemens SEQ24100SMDW Instawire Load Center", img: "/moonlights.github.io/assets/siemens_seq24100_load_center.webp", spec: "240 VAC, 100A, single-phase, main breaker, with door, 10 kA AIC", category: "Panelboards & Load Centers" },
+      { slug: "square-d-hom2040l200pgc-homeline", name: "Square D HOM2040L200PGC Homeline Load Center", img: "/moonlights.github.io/assets/square_d_hom2040l200pgc_homeline.webp", spec: "120/240 VAC, 200A, 20-space/40-circuit, main lug, plug-on neutral", category: "Panelboards & Load Centers" },
+      { slug: "eaton-br2040b200-br-panel", name: "Eaton BR2040B200 BR Type Main Breaker Panel", img: "/moonlights.github.io/assets/eaton_br2040b200_br_panel.webp", spec: "120/240 VAC, 200A, 20-space/40-circuit, NEMA 1, single-phase", category: "Panelboards & Load Centers" },
+      { slug: "eaton-ch42b200v-ch-load-center", name: "Eaton CH42B200V CH Load Center", img: "/moonlights.github.io/assets/eaton_ch42b200v_ch_load_center.webp", spec: "120/240 VAC, 200A, 42-space, main breaker, copper bus", category: "Panelboards & Load Centers" },
+      { slug: "abb-reliagear-nd-panelboard", name: "ABB ReliaGear ND Panelboard Interior", img: "/moonlights.github.io/assets/abb_reliagear_nd_panelboard.webp", spec: "600 VAC, 400A, 3-phase, advanced circuit protection", category: "Panelboards & Load Centers" },
     ],
   },
   {
@@ -51,7 +51,7 @@ export const enclosuresCategories: EnclosuresCategory[] = [
     desc: "Fusible and non-fusible safety switches, rotary disconnects, and enclosed switches for safe power isolation. From Siemens, Eaton, and Square D.",
     products: [
       { slug: "siemens-hnf363jchw-safety-switch", name: "Siemens HNF363JCHW Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "600 VAC, 100A, TPST, 3-pole, non-fusible, NEMA 12, viewing window", category: "Safety & Disconnect Switches" },
-      { slug: "square-d-h362-heavy-duty-switch", name: "Square D H362 Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "600 VAC, 60A, 3-pole, fusible, NEMA 1, Class H/R fuses", category: "Safety & Disconnect Switches" },
+      { slug: "square-d-h363-disconnect-100a", name: "Square D H363 Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/square_d_h363_disconnect_100a.webp", spec: "600 VAC, 100A, 3-pole, fusible, NEMA 1, Class H/R fuses", category: "Safety & Disconnect Switches" },
       { slug: "eaton-dh362fgk-heavy-duty-switch", name: "Eaton DH362FGK Heavy Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "600 VAC, 60A, 3-pole, fusible, NEMA 1, with neutral, UL Listed", category: "Safety & Disconnect Switches" },
       { slug: "siemens-gf322nr-general-duty", name: "Siemens GF322NR General Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "240 VAC, 60A, 3-pole, fusible, NEMA 3R outdoor rated", category: "Safety & Disconnect Switches" },
       { slug: "square-d-d222nrb-general-duty", name: "Square D D222NRB General Duty Safety Switch", img: "/moonlights.github.io/assets/industrial_terminals.webp", spec: "240 VAC, 60A, 2-pole, fusible, NEMA 3R, neutral provision", category: "Safety & Disconnect Switches" },
