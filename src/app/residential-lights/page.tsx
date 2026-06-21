@@ -11,7 +11,7 @@ const products = [
  {
  name: "Home Lighting Strips",
  desc: "Motion-activated LED strips perfect for home perimeters, driveways, and walkways.",
- img: "/moonlights.github.io/assets/residential_hero.webp",
+ img: "/moonlights.github.io/assets/res_home_strips.webp",
  features: [
  "Motion Detection",
  "Energy Efficient",
@@ -35,7 +35,7 @@ const products = [
  {
  name: "Garden Lighting",
  desc: "Decorative LED solutions for landscaping and outdoor entertainment areas.",
- img: "/moonlights.github.io/assets/residential_hero.webp",
+ img: "/moonlights.github.io/assets/res_garden_lighting.webp",
  features: [
  "Color Changing RGB",
  "Remote Controlled",
@@ -57,7 +57,7 @@ const products = [
  {
  name: "Pathway Safety Lights",
  desc: "Low-profile LED strips for safe navigation along walkways and stairs.",
- img: "/moonlights.github.io/assets/residential_hero.webp",
+ img: "/moonlights.github.io/assets/res_pathway_lights.webp",
  features: [
  "Non-Slip Design",
  "Dusk-to-Dawn Sensor",
