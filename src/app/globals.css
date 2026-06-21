@@ -236,6 +236,22 @@ img {
   content-visibility: auto;
 }
 
+/* ─── Dark Mode: Global Grayscale → Color on Hover ─── */
+html.dark img,
+html.dark .hero-img {
+  filter: grayscale(1);
+  transition: filter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.dark img:hover,
+html.dark .hero-img:hover,
+html.dark .group:hover img,
+html.dark .group:hover .hero-img,
+html.dark a:hover img,
+html.dark a:hover .hero-img {
+  filter: grayscale(0);
+}
+
 /* ─── Light Mode Image Treatment ─── */
 /* Show images naturally — no blend modes, no filters */
 html.light .hero-img {
@@ -440,16 +456,7 @@ html.light section:nth-child(4) {
   animation-delay: 0.3s;
 }
 
-/* Smooth hover transitions for interactive cards */
-html.light .group {
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-html.light .group:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
-}
 
 /* Product card hover lift */
 html.light a.group[class*="rounded-xl"] {

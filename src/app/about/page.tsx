@@ -25,13 +25,12 @@ export default function About() {
       </section>
 
       {/* Massive Image Section */}
-      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 relative group cursor-pointer">
-        <div className="w-full h-[400px] md:h-[600px] rounded-[2rem] overflow-hidden relative shadow-2xl">
+      <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 relative cursor-pointer">
+        <div className="group w-full h-[400px] md:h-[600px] rounded-[2rem] overflow-hidden relative shadow-2xl">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out hero-img"
             style={{ backgroundImage: `url('https://images.unsplash.com/photo-1558442074-3c19857bc1dc?auto=format&fit=crop&q=80')` }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent opacity-90 group-hover:opacity-50 transition-opacity duration-500 about-hero-gradient"></div>
         </div>
       </section>
 
