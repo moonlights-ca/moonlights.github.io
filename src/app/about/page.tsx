@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -27,10 +28,14 @@ export default function About() {
       {/* Massive Image Section */}
       <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 relative cursor-pointer">
         <div className="group w-full h-[400px] md:h-[600px] rounded-[2rem] overflow-hidden relative shadow-2xl">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out hero-img"
-            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1558442074-3c19857bc1dc?auto=format&fit=crop&q=80')` }}
-          ></div>
+          <Image
+            alt="Industrial electrical infrastructure and equipment"
+            className="hero-img absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
+            src="/moonlights.github.io/assets/industrial_hero.webp"
+            fill
+            sizes="(max-width: 768px) 100vw, 90vw"
+            priority
+          />
         </div>
       </section>
 

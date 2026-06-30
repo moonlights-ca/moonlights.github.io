@@ -17,11 +17,6 @@ const categoryLinks = [
   { href: "/industrial-parts/control-components", label: "Control Components" },
 ];
 
-const companyLinks = [
-  { href: "/contact", label: "Contact Us" },
-  { href: "/contact", label: "Request a Quote" },
-];
-
 export default function Footer() {
   return (
     <footer className="bg-surface-container-lowest border-t border-outline-variant/20 w-full z-10 mt-auto" role="contentinfo">
@@ -86,13 +81,11 @@ export default function Footer() {
           <div>
             <h3 className="font-label-caps text-label-caps text-on-surface tracking-wider mb-4 uppercase">Company</h3>
             <ul className="space-y-3 mb-8">
-              {companyLinks.map((link, i) => (
-                <li key={i}>
-                  <Link href={link.href} className="text-on-surface-variant text-sm hover:text-primary transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link href="/about" className="text-on-surface-variant text-sm hover:text-primary transition-colors">
+                  About Us
+                </Link>
+              </li>
             </ul>
 
             {/* CTA */}
@@ -107,15 +100,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-outline-variant/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-outline font-label-caps text-label-caps text-center md:text-left">
+        <div className="border-t border-outline-variant/20 pt-8 flex justify-center">
+          <p className="text-outline font-label-caps text-label-caps text-center">
             © {new Date().getFullYear()} Moonlights.ca — All rights reserved.
           </p>
-          <div className="flex items-center gap-6 font-label-caps text-label-caps">
-            <Link href="#" className="text-outline hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-outline hover:text-primary transition-colors">Terms of Service</Link>
-            <Link href="#" className="text-outline hover:text-primary transition-colors">Cookies</Link>
-          </div>
         </div>
       </div>
     </footer>

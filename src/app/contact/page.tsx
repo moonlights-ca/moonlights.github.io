@@ -41,7 +41,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-label-caps text-label-caps text-on-surface-variant mb-1">Headquarters</div>
-                    <div className="font-body-md text-body-md text-on-surface">123 Industrial Pkwy<br />Toronto, ON M1X 2Y3</div>
+                    <div className="font-body-md text-body-md text-on-surface">1214 Birchview Dr. Unit<br />ON L1T 4C5</div>
                   </div>
                 </div>
 
@@ -61,7 +61,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-label-caps text-label-caps text-on-surface-variant mb-1">Support Line</div>
-                    <a className="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="tel:18005550199">1-800-555-0199</a>
+                    <a className="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="tel:+16477864848">+1 (647) 786-4848</a>
                   </div>
                 </div>
               </div>
