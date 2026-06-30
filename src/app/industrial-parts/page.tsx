@@ -4,8 +4,9 @@ import type { Metadata } from "next";
 import { industrialCategories } from "./industrialProducts";
 
 export const metadata: Metadata = {
- title: "Industrial Parts | Moonlights Electrical",
- description: "Browse our comprehensive inventory of industrial electrical parts — connectors, cable accessories, terminals, switches, and control components.",
+ title: "Industrial Electrical Parts in Canada",
+ description: "Industrial electrical parts in Canada — connectors, cable accessories, terminals and lugs, switches, and control components. Browse the catalogue and get a quote.",
+ alternates: { canonical: "/industrial-parts/" },
 };
 
 export default function IndustrialParts() {
@@ -29,7 +30,7 @@ export default function IndustrialParts() {
  <Image
  alt="Industrial Electrical Parts"
  className="hero-img w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
- src="/moonlights.github.io/assets/industrial_hero.webp"
+ src="/assets/industrial_hero.webp"
  fill
  sizes="100vw"
  priority
@@ -59,7 +60,7 @@ export default function IndustrialParts() {
  <Image
  alt="Electrical Connectors"
  className="hero-img w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500 [mask-image:linear-gradient(to_top,transparent,black_30%)] md:[mask-image:linear-gradient(to_right,transparent,black_30%)] lm-no-mask"
- src="/moonlights.github.io/assets/industrial_connectors.webp"
+ src="/assets/industrial_connectors.webp"
  fill
  sizes="(max-width: 768px) 100vw, 33vw"
  loading="lazy"

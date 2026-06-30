@@ -4,8 +4,9 @@ import type { Metadata } from "next";
 import { enclosuresCategories } from "./enclosuresProducts";
 
 export const metadata: Metadata = {
- title: "Distribution & Circuit Protection | Moonlights Electrical",
- description: "Circuit breakers, panelboards, safety switches, fuses, surge protection, and motor control equipment from Siemens, Eaton, Square D, and ABB.",
+ title: "Circuit Breakers & Power Distribution in Canada",
+ description: "Circuit breakers, panelboards, safety switches, fuses, and surge protection in Canada — Siemens, Eaton, Square D, and ABB. Power distribution and circuit protection.",
+ alternates: { canonical: "/enclosures-and-power/" },
 };
 
 export default function DistributionProtection() {
@@ -29,7 +30,7 @@ export default function DistributionProtection() {
  <Image
  alt="Distribution and Circuit Protection Equipment"
  className="hero-img w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
- src="/moonlights.github.io/assets/industrial_hero.webp"
+ src="/assets/industrial_hero.webp"
  fill
  sizes="100vw"
  priority

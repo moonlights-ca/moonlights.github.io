@@ -4,8 +4,9 @@ import type { Metadata } from "next";
 import { toolsCategories } from "./toolsProducts";
 
 export const metadata: Metadata = {
- title: "Tools & Test Equipment | Moonlights Electrical",
- description: "Professional hand tools, power tools, test equipment, and fasteners from Klein, Fluke, Milwaukee, DeWalt, and more — for electrical contractors and industrial applications.",
+ title: "Electrical Tools & Test Equipment in Canada",
+ description: "Electrical tools and test equipment in Canada — hand tools, power tools, meters, and fasteners from Klein, Fluke, Milwaukee, and DeWalt.",
+ alternates: { canonical: "/tools-and-equipment/" },
 };
 
 export default function ToolsEquipment() {
@@ -29,7 +30,7 @@ export default function ToolsEquipment() {
  <Image
  alt="Tools and Test Equipment"
  className="hero-img w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
- src="/moonlights.github.io/assets/industrial_hero.webp"
+ src="/assets/industrial_hero.webp"
  fill
  sizes="100vw"
  priority

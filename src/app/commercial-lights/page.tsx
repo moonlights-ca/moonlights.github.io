@@ -3,15 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
- title: "Commercial LED Systems | Moonlights Electrical",
- description: "Professional-grade LED solutions for versatility, durability, and RGB/RGBW brilliance in commercial spaces.",
+ title: "Commercial LED Lighting in Canada",
+ description: "Commercial LED lighting in Canada — high-bay, troffer panels, wall packs, shoebox lights, and RGB/RGBW strips for professional spaces.",
+ alternates: { canonical: "/commercial-lights/" },
 };
 
 const products = [
  {
  name: "Professional RGB+White Strip",
  desc: "Premium RGB+White LED strips designed for professional installations requiring both color and clean white illumination.",
- img: "/moonlights.github.io/assets/com_rgbw_strip.webp",
+ img: "/assets/com_rgbw_strip.webp",
  features: [
  "RGB + White Channels",
  "High CRI (>90)",
@@ -34,7 +35,7 @@ const products = [
  {
  name: "High-Density RGB Strip",
  desc: "Commercial-grade high-density RGB LED strips with seamless color blending for continuous lighting runs.",
- img: "/moonlights.github.io/assets/com_high_density_strip.webp",
+ img: "/assets/com_high_density_strip.webp",
  features: [
  "120 LEDs/m Density",
  "Seamless Color Blend",
@@ -57,7 +58,7 @@ const products = [
  {
  name: "Ultra-Bright RGB Strip",
  desc: "High-lumen RGB LED strip for outdoor commercial installations and large-scale architectural lighting.",
- img: "/moonlights.github.io/assets/com_ultra_bright_strip.webp",
+ img: "/assets/com_ultra_bright_strip.webp",
  features: [
  "Ultra-High Output",
  "Aluminum Channel Compatible",
@@ -80,7 +81,7 @@ const products = [
  {
  name: "Commercial White Strip",
  desc: "High-efficiency commercial-grade white LED strip for professional ambient and task lighting applications.",
- img: "/moonlights.github.io/assets/com_white_strip.webp",
+ img: "/assets/com_white_strip.webp",
  features: [
  "Tunable White",
  "High Efficiency",
@@ -104,7 +105,7 @@ const products = [
  {
  name: "High-Bay LED Warehouse Light",
  desc: "Powerful and efficient high-bay lighting designed for warehouses and large commercial facilities.",
- img: "/moonlights.github.io/assets/com_high_bay_light.webp",
+ img: "/assets/com_high_bay_light.webp",
  features: [
  "UFO Style Design",
  "150W-240W Options",
@@ -127,7 +128,7 @@ const products = [
  {
  name: "Commercial Troffer Panel",
  desc: "Ultra-slim LED panel lights offering glare-free and uniform illumination for office ceilings.",
- img: "/moonlights.github.io/assets/com_troffer_panel.webp",
+ img: "/assets/com_troffer_panel.webp",
  features: [
  "Edge-Lit Technology",
  "Flicker-Free",
@@ -150,7 +151,7 @@ const products = [
  {
  name: "Architectural Wall Pack",
  desc: "Heavy-duty LED wall packs for exterior building security and perimeter lighting.",
- img: "/moonlights.github.io/assets/com_wall_pack.webp",
+ img: "/assets/com_wall_pack.webp",
  features: [
  "Die-Cast Aluminum Housing",
  "Shatter-Resistant Glass",
@@ -173,7 +174,7 @@ const products = [
  {
  name: "LED Parking Lot Shoebox",
  desc: "High-performance area lights for massive outdoor spaces requiring immense illumination.",
- img: "/moonlights.github.io/assets/com_shoebox_light.webp",
+ img: "/assets/com_shoebox_light.webp",
  features: [
  "Slipfitter Mount",
  "High Efficacy (140 lm/w)",
@@ -210,7 +211,7 @@ export default function CommercialLights() {
  <Image width={800} height={800}
  alt="Commercial LED Systems"
  className="hero-img w-full h-full object-cover opacity-40 "
- src="/moonlights.github.io/assets/commercial_hero.webp"
+ src="/assets/commercial_hero.webp"
  />
  <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
  </div>

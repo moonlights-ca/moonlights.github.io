@@ -11,6 +11,35 @@ const SPEC_OPTIONS = {
   brightness: ["500 LM/m", "750 LM/m", "1000 LM/m", "1500 LM/m", "2000 LM/m", "3000 LM/m"],
 };
 
+const ACCENT_STYLES = {
+  primary: {
+    icon: "text-primary",
+    active:
+      "bg-primary border-primary text-on-primary shadow-[0_0_15px_var(--glow-color)] lm-bg-black lm-text-white lm-border-black",
+    inactiveHover: "hover:border-primary/50",
+  },
+  secondary: {
+    icon: "text-secondary",
+    active:
+      "bg-secondary border-secondary text-on-primary shadow-[0_0_15px_var(--glow-color-secondary)] lm-bg-black lm-text-white lm-border-black",
+    inactiveHover: "hover:border-secondary/50",
+  },
+} as const;
+
+const SPEC_SECTIONS: ReadonlyArray<{
+  key: keyof typeof SPEC_OPTIONS;
+  title: string;
+  icon: string;
+  accent: keyof typeof ACCENT_STYLES;
+}> = [
+  { key: "chipTypes", title: "Chip Types", icon: "memory", accent: "primary" },
+  { key: "cct", title: "Color Temperature", icon: "thermometer", accent: "secondary" },
+  { key: "density", title: "LED Density", icon: "flare", accent: "primary" },
+  { key: "protection", title: "Protection Rating", icon: "shield", accent: "secondary" },
+  { key: "pcb", title: "PCB Width", icon: "straighten", accent: "primary" },
+  { key: "brightness", title: "Brightness", icon: "lightbulb", accent: "secondary" },
+];
+
 export default function CustomConfigurator() {
   const [specs, setSpecs] = useState({
     chipTypes: "2835",
@@ -45,143 +74,32 @@ export default function CustomConfigurator() {
       {/* Configurator Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        {/* Chip Types */}
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 hover:border-primary/50 transition-colors">
-          <h2 className="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-3">
-            <span className="material-symbols-outlined text-primary text-[24px]">memory</span>
-            Chip Types
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {SPEC_OPTIONS.chipTypes.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => handleSelect("chipTypes", opt)}
-                className={`px-6 py-2 rounded-full font-body-sm text-body-sm transition-all duration-300 border flex-grow text-center ${
-                  specs.chipTypes === opt
-                    ? "bg-primary border-primary text-on-primary shadow-[0_0_15px_var(--glow-color)] lm-bg-black lm-text-white lm-border-black"
-                    : "bg-surface-container border-outline-variant/20 text-on-surface hover:border-primary/50"
-                }`}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Color Temperature */}
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 hover:border-primary/50 transition-colors">
-          <h2 className="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-3">
-            <span className="material-symbols-outlined text-secondary text-[24px]">thermometer</span>
-            Color Temperature
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {SPEC_OPTIONS.cct.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => handleSelect("cct", opt)}
-                className={`px-6 py-2 rounded-full font-body-sm text-body-sm transition-all duration-300 border flex-grow text-center ${
-                  specs.cct === opt
-                    ? "bg-secondary border-secondary text-on-primary shadow-[0_0_15px_var(--glow-color-secondary)] lm-bg-black lm-text-white lm-border-black"
-                    : "bg-surface-container border-outline-variant/20 text-on-surface hover:border-secondary/50"
-                }`}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* LED Density */}
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 hover:border-primary/50 transition-colors">
-          <h2 className="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-3">
-            <span className="material-symbols-outlined text-primary text-[24px]">flare</span>
-            LED Density
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {SPEC_OPTIONS.density.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => handleSelect("density", opt)}
-                className={`px-6 py-2 rounded-full font-body-sm text-body-sm transition-all duration-300 border flex-grow text-center ${
-                  specs.density === opt
-                    ? "bg-primary border-primary text-on-primary shadow-[0_0_15px_var(--glow-color)] lm-bg-black lm-text-white lm-border-black"
-                    : "bg-surface-container border-outline-variant/20 text-on-surface hover:border-primary/50"
-                }`}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Protection Rating */}
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 hover:border-primary/50 transition-colors">
-          <h2 className="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-3">
-            <span className="material-symbols-outlined text-secondary text-[24px]">shield</span>
-            Protection Rating
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {SPEC_OPTIONS.protection.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => handleSelect("protection", opt)}
-                className={`px-6 py-2 rounded-full font-body-sm text-body-sm transition-all duration-300 border flex-grow text-center ${
-                  specs.protection === opt
-                    ? "bg-secondary border-secondary text-on-primary shadow-[0_0_15px_var(--glow-color-secondary)] lm-bg-black lm-text-white lm-border-black"
-                    : "bg-surface-container border-outline-variant/20 text-on-surface hover:border-secondary/50"
-                }`}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* PCB Width */}
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 hover:border-primary/50 transition-colors">
-          <h2 className="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-3">
-            <span className="material-symbols-outlined text-primary text-[24px]">straighten</span>
-            PCB Width
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {SPEC_OPTIONS.pcb.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => handleSelect("pcb", opt)}
-                className={`px-6 py-2 rounded-full font-body-sm text-body-sm transition-all duration-300 border flex-grow text-center ${
-                  specs.pcb === opt
-                    ? "bg-primary border-primary text-on-primary shadow-[0_0_15px_var(--glow-color)] lm-bg-black lm-text-white lm-border-black"
-                    : "bg-surface-container border-outline-variant/20 text-on-surface hover:border-primary/50"
-                }`}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Brightness */}
-        <div className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 hover:border-primary/50 transition-colors">
-          <h2 className="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-3">
-            <span className="material-symbols-outlined text-secondary text-[24px]">lightbulb</span>
-            Brightness
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {SPEC_OPTIONS.brightness.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => handleSelect("brightness", opt)}
-                className={`px-6 py-2 rounded-full font-body-sm text-body-sm transition-all duration-300 border flex-grow text-center ${
-                  specs.brightness === opt
-                    ? "bg-secondary border-secondary text-on-primary shadow-[0_0_15px_var(--glow-color-secondary)] lm-bg-black lm-text-white lm-border-black"
-                    : "bg-surface-container border-outline-variant/20 text-on-surface hover:border-secondary/50"
-                }`}
-              >
-                {opt}
-              </button>
-            ))}
-          </div>
-        </div>
+        {SPEC_SECTIONS.map((section) => {
+          const accent = ACCENT_STYLES[section.accent];
+          return (
+            <div key={section.key} className="bg-surface-container-lowest border border-outline-variant/30 rounded-2xl p-8 hover:border-primary/50 transition-colors">
+              <h2 className="font-headline-md text-headline-md text-on-surface mb-6 flex items-center gap-3">
+                <span className={`material-symbols-outlined ${accent.icon} text-[24px]`}>{section.icon}</span>
+                {section.title}
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                {SPEC_OPTIONS[section.key].map((opt) => (
+                  <button
+                    key={opt}
+                    onClick={() => handleSelect(section.key, opt)}
+                    className={`px-6 py-2 rounded-full font-body-sm text-body-sm transition-all duration-300 border flex-grow text-center ${
+                      specs[section.key] === opt
+                        ? accent.active
+                        : `bg-surface-container border-outline-variant/20 text-on-surface ${accent.inactiveHover}`
+                    }`}
+                  >
+                    {opt}
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
 
       </div>
 

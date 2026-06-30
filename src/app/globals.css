@@ -50,8 +50,12 @@
   --color-primary-fixed: #e9ddff;
 
   --spacing-container-max: 1440px;
-  --spacing-margin-desktop: 80px;
-  --spacing-margin-mobile: 20px;
+  /* Fluid page gutter — scales smoothly from ~28px (small phones) to 80px (large
+     desktops) at every viewport width, so spacing never needs per-resolution
+     tuning. Both tokens share one formula, so there is no jump at the md
+     breakpoint. Change these once to retune the gutter site-wide. */
+  --spacing-margin-desktop: clamp(1.75rem, 6vw, 5rem);
+  --spacing-margin-mobile: clamp(1.75rem, 6vw, 5rem);
   --spacing-unit: 4px;
   --spacing-gutter: 24px;
   --spacing-stack-md: 48px;
@@ -91,8 +95,8 @@
   --text-display-lg--letter-spacing: -0.02em;
   --text-display-lg--font-weight: 700;
 
-  --text-display-xl: 80px;
-  --text-display-xl--line-height: 80px;
+  --text-display-xl: clamp(2.25rem, 12vw, 5rem);
+  --text-display-xl--line-height: 1;
   --text-display-xl--letter-spacing: -0.04em;
   --text-display-xl--font-weight: 800;
 

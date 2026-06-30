@@ -4,8 +4,9 @@ import type { Metadata } from "next";
 import { datacomCategories } from "./datacomProducts";
 
 export const metadata: Metadata = {
- title: "Conduit & Fittings | Moonlights Electrical",
- description: "EMT, rigid, PVC, and liquidtight conduit, fittings, boxes, enclosures, cable tray, and motor control equipment for electrical installations.",
+ title: "Conduit & Fittings in Canada",
+ description: "Conduit and fittings in Canada — EMT, rigid, PVC, and liquidtight conduit, fittings, boxes, enclosures, and cable tray for electrical installations.",
+ alternates: { canonical: "/datacom-and-security/" },
 };
 
 export default function ConduitFittings() {
@@ -29,7 +30,7 @@ export default function ConduitFittings() {
  <Image
  alt="Conduit and Fittings"
  className="hero-img w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
- src="/moonlights.github.io/assets/industrial_hero.webp"
+ src="/assets/industrial_hero.webp"
  fill
  sizes="100vw"
  priority

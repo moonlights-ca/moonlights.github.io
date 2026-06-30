@@ -2,15 +2,16 @@ import type { Metadata } from "next";
 import CustomConfigurator from "@/components/CustomConfigurator";
 
 export const metadata: Metadata = {
-  title: "Custom Moonlights | Configure Your LED Solution",
+  title: "Custom LED Configurator",
   description: "Select your preferred specifications to create a custom Moonlights LED solution tailored perfectly to your project needs.",
+  alternates: { canonical: "/custom/" },
 };
 
 export default function CustomPage() {
   return (
     <main className="flex-grow w-full">
       <header className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-stack-xl pb-stack-md text-center relative">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] max-w-full h-[400px] bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
         <h1 className="font-display-xl text-display-xl text-on-surface mb-6 relative z-10">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             Custom

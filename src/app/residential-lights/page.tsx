@@ -3,15 +3,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
- title: "Residential LED Solutions | Moonlights Electrical",
- description: "Transform your home with intelligent LED lighting systems designed for safety, security, and style.",
+ title: "Residential LED Lighting in Canada",
+ description: "Residential LED lighting in Canada — smart, energy-efficient systems for homes, including pathway lights, garden lighting, and LED strips.",
+ alternates: { canonical: "/residential-lights/" },
 };
 
 const products = [
  {
  name: "Home Lighting Strips",
  desc: "Motion-activated LED strips perfect for home perimeters, driveways, and walkways.",
- img: "/moonlights.github.io/assets/res_home_strips.webp",
+ img: "/assets/res_home_strips.webp",
  features: [
  "Motion Detection",
  "Energy Efficient",
@@ -35,7 +36,7 @@ const products = [
  {
  name: "Garden Lighting",
  desc: "Decorative LED solutions for landscaping and outdoor entertainment areas.",
- img: "/moonlights.github.io/assets/res_garden_lighting.webp",
+ img: "/assets/res_garden_lighting.webp",
  features: [
  "Color Changing RGB",
  "Remote Controlled",
@@ -57,7 +58,7 @@ const products = [
  {
  name: "Pathway Safety Lights",
  desc: "Low-profile LED strips for safe navigation along walkways and stairs.",
- img: "/moonlights.github.io/assets/res_pathway_lights.webp",
+ img: "/assets/res_pathway_lights.webp",
  features: [
  "Non-Slip Design",
  "Dusk-to-Dawn Sensor",
@@ -87,7 +88,7 @@ export default function ResidentialLights() {
  <Image width={800} height={800}
  alt="Residential LED Lighting"
  className="hero-img w-full h-full object-cover opacity-40 "
- src="/moonlights.github.io/assets/residential_hero.webp"
+ src="/assets/residential_hero.webp"
  />
  <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
  </div>

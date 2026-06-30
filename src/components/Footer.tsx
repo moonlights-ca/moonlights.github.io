@@ -31,7 +31,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 max-w-xs">
-              Full-scale North American electrical supplier. Precision-engineered wires, cables, transformers, and industrial components.
+              Canadian electrical supplier of wires, cables, transformers, and industrial electrical components for commercial and industrial projects.
             </p>
             <div className="space-y-2 text-sm text-on-surface-variant">
               <div className="flex items-center gap-2">

@@ -1,16 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Required for GitHub Pages
+  // Static HTML export for GitHub Pages
   output: 'export',
-  
-  // Base path for GitHub Pages Project deployment
-  basePath: '/moonlights.github.io',
-  
+
+  // Served at the root of the custom domain (www.moonlights.ca) — no base path.
+  // The CNAME file in /public points GitHub Pages at the custom domain.
+
   // Disable server-based image optimization since GitHub Pages is static
   images: {
     unoptimized: true,
   },
+
+  // Emit /route/index.html so clean URLs resolve correctly on static hosts
+  trailingSlash: true,
 
   // Compress responses
   compress: true,

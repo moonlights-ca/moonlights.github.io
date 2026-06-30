@@ -1,21 +1,16 @@
-export interface TransformerProduct {
-  slug: string;
-  name: string;
-  img: string;
-  tags: string[];
-  category: string;
-  voltage: string;
-  desc: string;
-  description: string[];
-  usage: string[];
-  features: string[];
-}
+import type { CatalogProduct } from "@/lib/products";
 
-export const transformerProducts: TransformerProduct[] = [
+export type TransformerProduct = CatalogProduct;
+
+export const transformerCategories = ["All", "Distribution", "Single-Phase", "Control", "Isolation", "Auto", "Buck-Boost", "Specialty"] as const;
+
+export const transformerVoltages = ["All Voltages", "240V", "480V", "600V", "15kV", "34.5kV"] as const;
+
+export const transformerProducts: CatalogProduct[] = [
   {
     slug: "dry-type-distribution-transformer",
     name: "Dry-Type Distribution Transformer",
-    img: "/moonlights.github.io/assets/transformer_dry_type.webp",
+    img: "/assets/transformer_dry_type.webp",
     tags: ["600V", "THREE-PHASE"],
     category: "Distribution",
     voltage: "600V",
@@ -43,7 +38,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "control-transformer",
     name: "Industrial Control Transformer",
-    img: "/moonlights.github.io/assets/transformer_control.webp",
+    img: "/assets/transformer_control.webp",
     tags: ["600V", "CONTROL"],
     category: "Control",
     voltage: "600V",
@@ -71,7 +66,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "isolation-transformer",
     name: "Isolation Transformer",
-    img: "/moonlights.github.io/assets/transformer_isolation.webp",
+    img: "/assets/transformer_isolation.webp",
     tags: ["600V", "ISOLATED"],
     category: "Isolation",
     voltage: "600V",
@@ -99,7 +94,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "buck-boost-transformer",
     name: "Buck-Boost Transformer",
-    img: "/moonlights.github.io/assets/transformer_buck_boost.webp",
+    img: "/assets/transformer_buck_boost.webp",
     tags: ["240V", "VOLTAGE CORRECTION"],
     category: "Buck-Boost",
     voltage: "240V",
@@ -127,7 +122,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "three-phase-autotransformer",
     name: "Three-Phase Autotransformer",
-    img: "/moonlights.github.io/assets/transformer_auto_3ph.webp",
+    img: "/assets/transformer_auto_3ph.webp",
     tags: ["600V", "THREE-PHASE"],
     category: "Auto",
     voltage: "600V",
@@ -155,7 +150,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "drive-isolation-transformer",
     name: "Drive Isolation Transformer",
-    img: "/moonlights.github.io/assets/transformer_drive_isolation.webp",
+    img: "/assets/transformer_drive_isolation.webp",
     tags: ["600V", "VFD RATED"],
     category: "Isolation",
     voltage: "600V",
@@ -183,7 +178,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "step-down-distribution-transformer",
     name: "Step-Down Distribution Transformer",
-    img: "/moonlights.github.io/assets/transformer_step_down.webp",
+    img: "/assets/transformer_step_down.webp",
     tags: ["600V", "STEP-DOWN"],
     category: "Distribution",
     voltage: "600V",
@@ -211,7 +206,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "encapsulated-transformer",
     name: "Encapsulated Dry-Type Transformer",
-    img: "/moonlights.github.io/assets/transformer_encapsulated.webp",
+    img: "/assets/transformer_encapsulated.webp",
     tags: ["600V", "SEALED"],
     category: "Distribution",
     voltage: "600V",
@@ -239,7 +234,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "medium-voltage-transformer",
     name: "Medium Voltage Transformer",
-    img: "/moonlights.github.io/assets/transformer_medium_voltage.webp",
+    img: "/assets/transformer_medium_voltage.webp",
     tags: ["15kV", "PADMOUNT"],
     category: "Distribution",
     voltage: "15kV",
@@ -267,7 +262,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "harmonic-mitigating-transformer",
     name: "K-Rated Harmonic Mitigating Transformer",
-    img: "/moonlights.github.io/assets/transformer_harmonic.webp",
+    img: "/assets/transformer_harmonic.webp",
     tags: ["480V", "K-RATED"],
     category: "Distribution",
     voltage: "480V",
@@ -295,7 +290,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "oil-filled-power-transformer",
     name: "Oil-Filled Power Transformer",
-    img: "/moonlights.github.io/assets/transformer_medium_voltage.webp",
+    img: "/assets/transformer_medium_voltage.webp",
     tags: ["34.5kV", "OIL-FILLED"],
     category: "Distribution",
     voltage: "34.5kV",
@@ -321,7 +316,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "cast-resin-transformer",
     name: "Cast Resin Dry-Type Transformer",
-    img: "/moonlights.github.io/assets/transformer_dry_type.webp",
+    img: "/assets/transformer_dry_type.webp",
     tags: ["15kV", "CAST-RESIN"],
     category: "Distribution",
     voltage: "15kV",
@@ -347,7 +342,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "single-phase-distribution-transformer",
     name: "Single-Phase Distribution Transformer",
-    img: "/moonlights.github.io/assets/transformer_single_phase.webp",
+    img: "/assets/transformer_single_phase.webp",
     tags: ["240V", "SINGLE-PHASE"],
     category: "Single-Phase",
     voltage: "240V",
@@ -375,7 +370,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "low-voltage-lighting-transformer",
     name: "Low-Voltage Lighting Transformer",
-    img: "/moonlights.github.io/assets/transformer_encapsulated.webp",
+    img: "/assets/transformer_encapsulated.webp",
     tags: ["120V", "12V/24V OUTPUT"],
     category: "Single-Phase",
     voltage: "240V",
@@ -403,7 +398,7 @@ export const transformerProducts: TransformerProduct[] = [
   {
     slug: "grounding-zigzag-transformer",
     name: "Zigzag Grounding Transformer",
-    img: "/moonlights.github.io/assets/transformer_harmonic.webp",
+    img: "/assets/transformer_harmonic.webp",
     tags: ["480V", "GROUNDING"],
     category: "Specialty",
     voltage: "480V",

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import CatalogGrid from "./CatalogGrid";
+import CatalogGrid from "@/components/catalog/CatalogGrid";
+import { wireProducts, wireCategories, wireVoltages } from "./wireProducts";
 
 export const metadata: Metadata = {
- title: "Wires & Cables | Moonlights Electrical",
- description: "Browse our comprehensive catalog of commercial and residential wires and cables. Built for safety, durability, and high performance.",
+ title: "Wires & Cables in Canada",
+ description: "Wires and cables in Canada — THHN/THWN-2, XHHW-2, tray cable, portable cord, and MC. Building wire and industrial cable for commercial and industrial projects.",
+ alternates: { canonical: "/wires-and-cables/" },
 };
 
 export default function WiresAndCables() {
@@ -29,7 +31,7 @@ export default function WiresAndCables() {
  <Image
  alt="Industrial Grade Wires & Cables"
  className="hero-img w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
- src="/moonlights.github.io/assets/wires_hero.webp"
+ src="/assets/wires_hero.webp"
  fill
  sizes="100vw"
  priority
@@ -49,7 +51,12 @@ export default function WiresAndCables() {
  </section>
 
  {/* Interactive Catalog Grid */}
- <CatalogGrid />
+ <CatalogGrid
+ products={wireProducts}
+ categories={wireCategories}
+ voltages={wireVoltages}
+ basePath="/wires-and-cables"
+ />
  </main>
  );
 }

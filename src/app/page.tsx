@@ -13,17 +13,17 @@ export default function Home() {
           <Image
              alt="High-end smart LED lighting system"
              className="hero-img absolute inset-0 w-full h-full object-cover object-right opacity-60 transition-all duration-700"
-             src="/moonlights.github.io/assets/hero_bg.webp"
+             src="/assets/hero_bg.webp"
              fill
              priority
              sizes="100vw"
            />
  </div>
  {/* Hero Content */}
- <div className="relative z-20 w-full max-w-2xl pl-8 md:pl-12">
+ <div className="relative z-20 w-full max-w-2xl md:pl-12">
  <div className="inline-flex items-center px-3 py-1 rounded-full bg-surface-container border border-outline-variant/50 mb-6 lm-bg-black">
  <span className="font-label-caps text-label-caps text-primary uppercase tracking-wider lm-text-white">
- Full-Scale North American Electrical Supplier
+ Full-Scale Canadian Electrical Supplier
  </span>
  </div>
  <h1 className="font-display-lg text-display-xl md:text-display-2xl text-white mb-6 font-bold">
@@ -31,7 +31,7 @@ export default function Home() {
  <span className="text-white">Industry.</span>
  </h1>
  <p className="font-body-lg text-body-lg text-white/90 mb-10 max-w-xl">
- The premier distributor for wires, cables, and industrial electrical components across North America. Engineered for reliability and scale.
+ A trusted distributor of wires, cables, transformers, and industrial electrical components across Canada. Built for reliability and scale.
  </p>
  <div className="flex flex-col sm:flex-row gap-4">
  <Link
@@ -78,7 +78,7 @@ export default function Home() {
  <Image
  alt="Lighting Solutions"
  className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/moonlights.github.io/assets/cat_lighting.webp"
+ src="/assets/cat_lighting.webp"
  fill
  sizes="(max-width: 768px) 100vw, 50vw"
  loading="lazy"
@@ -109,7 +109,7 @@ export default function Home() {
  <Image
  alt="Auto Transformers"
  className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/moonlights.github.io/assets/transformers_hero.webp"
+ src="/assets/transformers_hero.webp"
  fill
  sizes="(max-width: 768px) 100vw, 50vw"
  loading="lazy"
@@ -140,7 +140,7 @@ export default function Home() {
  <Image
  alt="Industrial Electrical Parts"
  className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/moonlights.github.io/assets/cat_industrial.webp"
+ src="/assets/cat_industrial.webp"
  fill
  sizes="(max-width: 768px) 100vw, 50vw"
  loading="lazy"
@@ -171,7 +171,7 @@ export default function Home() {
  <Image
  alt="Wires and Cables"
  className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/moonlights.github.io/assets/cat_wires.webp"
+ src="/assets/cat_wires.webp"
  fill
  sizes="(max-width: 768px) 100vw, 50vw"
  loading="lazy"
@@ -202,7 +202,7 @@ export default function Home() {
  <Image
  alt="Tools and Equipment"
  className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/moonlights.github.io/assets/industrial_hero.webp"
+ src="/assets/industrial_hero.webp"
  fill
  sizes="(max-width: 768px) 100vw, 50vw"
  loading="lazy"
@@ -233,7 +233,7 @@ export default function Home() {
  <Image
  alt="Distribution and Protection"
  className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/moonlights.github.io/assets/industrial_controls.webp"
+ src="/assets/industrial_controls.webp"
  fill
  sizes="(max-width: 768px) 100vw, 50vw"
  loading="lazy"
@@ -264,7 +264,7 @@ export default function Home() {
  <Image
  alt="Conduit and Fittings"
  className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/moonlights.github.io/assets/industrial_connectors.webp"
+ src="/assets/industrial_connectors.webp"
  fill
  sizes="(max-width: 768px) 100vw, 50vw"
  loading="lazy"
@@ -300,7 +300,7 @@ export default function Home() {
  Engineered for Reliability
  </h2>
  <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto lm-text-black">
- Beneath the surface lies military-grade infrastructure. Explore the core components that power our supply chains.
+ Every product is selected to a demanding standard. Explore the core components that keep Canadian industry running.
  </p>
  </div>
  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -309,7 +309,7 @@ export default function Home() {
  <div className="hero-img absolute inset-0 opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0">
  <Image
    alt="Technical blueprint background"
-   src="/moonlights.github.io/assets/schema_bg.webp"
+   src="/assets/schema_bg.webp"
    fill
    sizes="(max-width: 768px) 100vw, 66vw"
    loading="lazy"
@@ -375,7 +375,7 @@ export default function Home() {
  Engine.
  </h2>
  <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 lm-text-black">
- Our proprietary logistics network ensures next-day delivery across North America, keeping your operations running without interruption.
+ Our distribution network helps keep your projects moving, with dependable sourcing and shipping across Canada.
  </p>
  <ul className="space-y-4 mb-10">
  <li className="flex items-center text-on-surface-variant font-body-md text-body-md glass-card px-4 py-3 rounded-lg border-l-2 border-l-primary border-y-0 border-r-0 rounded-l-none">
@@ -385,7 +385,7 @@ export default function Home() {
  >
  check_circle
  </span>
- Automated warehousing
+ Wide product selection
  </li>
  <li className="flex items-center text-on-surface-variant font-body-md text-body-md glass-card px-4 py-3 rounded-lg border-l-2 border-l-primary border-y-0 border-r-0 rounded-l-none">
  <span
@@ -394,7 +394,7 @@ export default function Home() {
  >
  check_circle
  </span>
- Real-time tracking
+ Fast, responsive quoting
  </li>
  </ul>
  <Link
@@ -409,7 +409,7 @@ export default function Home() {
  <Image
  alt="Abstract light engineering cutaway"
  className="hero-img w-full h-full object-cover opacity-70 grayscale group-hover:grayscale-0 transition-all duration-700"
- src="/moonlights.github.io/assets/innovation_bg.webp"
+ src="/assets/innovation_bg.webp"
  fill
  sizes="(max-width: 768px) 100vw, 60vw"
  loading="lazy"

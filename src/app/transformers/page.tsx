@@ -1,11 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import TransformerCatalogGrid from "./TransformerCatalogGrid";
+import CatalogGrid from "@/components/catalog/CatalogGrid";
+import { transformerProducts, transformerCategories, transformerVoltages } from "./transformerProducts";
 
 export const metadata: Metadata = {
- title: "Transformers | Moonlights Electrical",
- description: "Browse our comprehensive catalog of industrial and commercial transformers. Dry-type, control, isolation, autotransformers and more for every application.",
+ title: "Transformers in Canada",
+ description: "Transformers in Canada — dry-type, control, isolation, autotransformers, and buck-boost units for industrial and commercial power. Request a fast quote.",
+ alternates: { canonical: "/transformers/" },
 };
 
 export default function Transformers() {
@@ -29,7 +31,7 @@ export default function Transformers() {
  <Image
  alt="Industrial Transformers"
  className="hero-img w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:opacity-80 transition-all duration-700"
- src="/moonlights.github.io/assets/transformers_hero.webp"
+ src="/assets/transformers_hero.webp"
  fill
  sizes="100vw"
  priority
@@ -49,7 +51,12 @@ export default function Transformers() {
  </section>
 
  {/* Interactive Catalog Grid */}
- <TransformerCatalogGrid />
+ <CatalogGrid
+ products={transformerProducts}
+ categories={transformerCategories}
+ voltages={transformerVoltages}
+ basePath="/transformers"
+ />
  </main>
  );
 }

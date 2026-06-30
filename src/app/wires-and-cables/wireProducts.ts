@@ -1,21 +1,16 @@
-export interface WireProduct {
-  slug: string;
-  name: string;
-  img: string;
-  tags: string[];
-  category: string;
-  voltage: string;
-  desc: string;
-  description: string[];
-  usage: string[];
-  features: string[];
-}
+import type { CatalogProduct } from "@/lib/products";
 
-export const wireProducts: WireProduct[] = [
+export type WireProduct = CatalogProduct;
+
+export const wireCategories = ["All", "Building Wire", "Portable Cord", "Tray Cable", "Armored", "Service", "Shielded", "Coaxial & Data", "Fire Alarm", "Instrumentation", "Solar PV", "Grounding"] as const;
+
+export const wireVoltages = ["All Voltages", "300V", "600V", "2kV", "15kV"] as const;
+
+export const wireProducts: CatalogProduct[] = [
   {
     slug: "thhn-thwn-2-copper",
     name: "THHN / THWN-2 Copper",
-    img: "/moonlights.github.io/assets/wires_thhn.webp",
+    img: "/assets/wires_thhn.webp",
     tags: ["600V", "DRY/DAMP"],
     category: "Building Wire",
     voltage: "600V",
@@ -43,7 +38,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "xhhw-2-copper",
     name: "XHHW-2 Copper",
-    img: "/moonlights.github.io/assets/wires_xhhw2.webp",
+    img: "/assets/wires_xhhw2.webp",
     tags: ["600V", "90°C WET/DRY"],
     category: "Building Wire",
     voltage: "600V",
@@ -71,7 +66,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "tray-cable-tc",
     name: "Tray Cable (TC)",
-    img: "/moonlights.github.io/assets/wires_tc.webp",
+    img: "/assets/wires_tc.webp",
     tags: ["600V", "TC-ER RATED"],
     category: "Tray Cable",
     voltage: "600V",
@@ -99,7 +94,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "soow-portable-cord",
     name: "SOOW Portable Cord",
-    img: "/moonlights.github.io/assets/wires_soow.webp",
+    img: "/assets/wires_soow.webp",
     tags: ["600V", "FLEXIBLE"],
     category: "Portable Cord",
     voltage: "600V",
@@ -127,7 +122,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "nm-b-romex-building-wire",
     name: "NM-B (Romex) Building Wire",
-    img: "/moonlights.github.io/assets/wires_nmb.webp",
+    img: "/assets/wires_nmb.webp",
     tags: ["600V", "RESIDENTIAL"],
     category: "Building Wire",
     voltage: "600V",
@@ -155,7 +150,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "mc-metal-clad-cable",
     name: "MC Metal-Clad Cable",
-    img: "/moonlights.github.io/assets/wires_mc.webp",
+    img: "/assets/wires_mc.webp",
     tags: ["600V", "ARMORED"],
     category: "Armored",
     voltage: "600V",
@@ -183,7 +178,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "ser-service-entrance-cable",
     name: "SER Service Entrance Cable",
-    img: "/moonlights.github.io/assets/wires_ser.webp",
+    img: "/assets/wires_ser.webp",
     tags: ["600V", "SERVICE"],
     category: "Service",
     voltage: "600V",
@@ -211,7 +206,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "welding-cable",
     name: "Welding Cable",
-    img: "/moonlights.github.io/assets/wires_welding.webp",
+    img: "/assets/wires_welding.webp",
     tags: ["600V", "HEAVY-DUTY"],
     category: "Portable Cord",
     voltage: "600V",
@@ -239,7 +234,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "hv-tray-cable-15kv",
     name: "HV Tray Cable (15kV)",
-    img: "/moonlights.github.io/assets/wires_hv_tc.webp",
+    img: "/assets/wires_hv_tc.webp",
     tags: ["15kV", "XLPE/PVC"],
     category: "Tray Cable",
     voltage: "15kV",
@@ -267,7 +262,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "sjoow-portable-cord",
     name: "SJOOW Portable Cord",
-    img: "/moonlights.github.io/assets/wires_sjoow.webp",
+    img: "/assets/wires_sjoow.webp",
     tags: ["300V", "WATER RESISTANT"],
     category: "Portable Cord",
     voltage: "300V",
@@ -295,7 +290,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "tew-mtw-machine-wire",
     name: "TEW/MTW Machine Tool Wire",
-    img: "/moonlights.github.io/assets/wires_tew_mtw.webp",
+    img: "/assets/wires_tew_mtw.webp",
     tags: ["600V", "105°C"],
     category: "Building Wire",
     voltage: "600V",
@@ -323,7 +318,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "braided-shielded-cable",
     name: "Braided Shielded Cable",
-    img: "/moonlights.github.io/assets/wires_braided.webp",
+    img: "/assets/wires_braided.webp",
     tags: ["600V", "EMI SHIELDED"],
     category: "Shielded",
     voltage: "600V",
@@ -351,7 +346,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "thhn-thwn-2-aluminum",
     name: "THHN / THWN-2 Aluminum",
-    img: "/moonlights.github.io/assets/wires_thhn.webp",
+    img: "/assets/wires_thhn.webp",
     tags: ["600V", "AA-8000"],
     category: "Building Wire",
     voltage: "600V",
@@ -379,7 +374,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "ac-bx-armored-cable",
     name: "AC (BX) Armored Cable",
-    img: "/moonlights.github.io/assets/wires_mc.webp",
+    img: "/assets/wires_mc.webp",
     tags: ["600V", "STEEL ARMOR"],
     category: "Armored",
     voltage: "600V",
@@ -407,7 +402,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "rg6-coaxial-cable",
     name: "RG-6 Coaxial Cable",
-    img: "/moonlights.github.io/assets/wires_braided.webp",
+    img: "/assets/wires_braided.webp",
     tags: ["75Ω", "QUAD SHIELD"],
     category: "Coaxial & Data",
     voltage: "300V",
@@ -435,7 +430,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "cat6-utp-network-cable",
     name: "Cat6 UTP Network Cable",
-    img: "/moonlights.github.io/assets/wires_braided.webp",
+    img: "/assets/wires_braided.webp",
     tags: ["GIGABIT", "23 AWG"],
     category: "Coaxial & Data",
     voltage: "300V",
@@ -463,7 +458,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "fplr-fire-alarm-cable",
     name: "FPLR Fire Alarm Cable",
-    img: "/moonlights.github.io/assets/wires_tc.webp",
+    img: "/assets/wires_tc.webp",
     tags: ["RISER", "FPLR"],
     category: "Fire Alarm",
     voltage: "300V",
@@ -491,7 +486,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "instrumentation-tray-cable-itc",
     name: "Instrumentation Tray Cable (ITC)",
-    img: "/moonlights.github.io/assets/wires_braided.webp",
+    img: "/assets/wires_braided.webp",
     tags: ["300V", "SHIELDED PAIRS"],
     category: "Instrumentation",
     voltage: "300V",
@@ -519,7 +514,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "pv-solar-wire-2kv",
     name: "PV Wire (2kV) Solar Cable",
-    img: "/moonlights.github.io/assets/wires_xhhw2.webp",
+    img: "/assets/wires_xhhw2.webp",
     tags: ["2kV", "SUNLIGHT RES."],
     category: "Solar PV",
     voltage: "2kV",
@@ -547,7 +542,7 @@ export const wireProducts: WireProduct[] = [
   {
     slug: "green-thhn-grounding-wire",
     name: "Green THHN Grounding Wire",
-    img: "/moonlights.github.io/assets/wires_thhn.webp",
+    img: "/assets/wires_thhn.webp",
     tags: ["600V", "EQUIP. GROUND"],
     category: "Grounding",
     voltage: "600V",

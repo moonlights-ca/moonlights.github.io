@@ -3,8 +3,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
- title: "Residential & Commercial Lighting | Moonlights Electrical",
- description: "Next-generation illumination systems for smart homes and high-performance commercial architectures.",
+ title: "LED Lighting in Canada",
+ description: "Residential and commercial LED lighting in Canada — strips, fixtures, and smart systems engineered for performance, efficiency, and reliability.",
+ alternates: { canonical: "/lighting/" },
 };
 
 export default function Lighting() {
@@ -17,11 +18,11 @@ export default function Lighting() {
  <div className="absolute inset-0">
  <Image width={800} height={800}
  alt="Residential Architectural Lighting"
- src="/moonlights.github.io/assets/residential_hero.webp"
+ src="/assets/residential_hero.webp"
  className="hero-img w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0"
  />
  </div>
- <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background md:via-background/50 md:to-transparent"></div>
+ <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/30 md:to-transparent"></div>
  <div className="relative h-full flex flex-col justify-end p-margin-mobile md:p-margin-desktop z-10">
  <span className="inline-block chip backdrop-blur-md rounded px-3 py-1 font-label-caps text-label-caps text-on-surface w-max mb-6 lm-bg-black lm-text-white">Residential</span>
  <h1 className="font-display-xl text-display-xl text-white mb-6">Architectural<br />Brilliance</h1>
@@ -36,11 +37,11 @@ export default function Lighting() {
  <div className="absolute inset-0">
  <Image width={800} height={800}
  alt="Commercial Industrial Lighting"
- src="/moonlights.github.io/assets/commercial_hero.webp"
+ src="/assets/commercial_hero.webp"
  className="hero-img w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0"
  />
  </div>
- <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-l md:from-background md:via-background/50 md:to-transparent"></div>
+ <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent md:bg-gradient-to-l md:from-black/80 md:via-black/30 md:to-transparent"></div>
  <div className="relative h-full flex flex-col justify-end p-margin-mobile md:p-margin-desktop z-10">
  <span className="inline-block chip backdrop-blur-md rounded px-3 py-1 font-label-caps text-label-caps text-on-surface w-max mb-6 lm-bg-black lm-text-white">Commercial</span>
  <h2 className="font-display-xl text-display-xl text-white mb-6">Industrial<br />Precision</h2>
