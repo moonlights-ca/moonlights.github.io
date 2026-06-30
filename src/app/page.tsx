@@ -20,7 +20,7 @@ export default function Home() {
            />
  </div>
  {/* Hero Content */}
- <div className="relative z-20 w-full max-w-2xl md:pl-12">
+ <div className="relative z-20 w-full max-w-2xl md:pl-12 hero-enter">
  <div className="inline-flex items-center px-3 py-1 rounded-full bg-surface-container border border-outline-variant/50 mb-6 lm-bg-black">
  <span className="font-label-caps text-label-caps text-primary uppercase tracking-wider lm-text-white">
  Full-Scale Canadian Electrical Supplier
@@ -69,7 +69,7 @@ export default function Home() {
  <span className="material-symbols-outlined ml-2">arrow_forward</span>
  </Link>
  </div>
- <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 md:auto-rows-[220px] gap-gutter">
+ <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 md:auto-rows-[220px] gap-gutter" data-stagger>
  {/* Lighting Solutions Card */}
  <Link
  className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 sm:col-span-2 md:col-span-4 md:row-span-2"

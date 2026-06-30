@@ -141,7 +141,7 @@ export default function CatalogGrid({ products, categories, voltages, basePath }
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-gutter" data-stagger>
             {filtered.map((product) => (
               <Link
                 key={product.slug}

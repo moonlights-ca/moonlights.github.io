@@ -60,7 +60,7 @@ export default function CategoryListing({ system, category }: CategoryListingPro
 
       {/* Product Grid — Simple cards with image, name, spec */}
       <section className="pb-stack-xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter" data-stagger>
           {category.products.map((product) => (
             <Link
               key={product.slug}

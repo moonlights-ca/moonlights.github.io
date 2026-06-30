@@ -58,8 +58,8 @@
   --spacing-margin-mobile: clamp(1.75rem, 6vw, 5rem);
   --spacing-unit: 4px;
   --spacing-gutter: 24px;
-  --spacing-stack-md: 48px;
-  --spacing-stack-xl: 120px;
+  --spacing-stack-md: clamp(2rem, 5vw, 3rem);
+  --spacing-stack-xl: clamp(4rem, 10vw, 7.5rem);
 
   --font-body-lg: "Inter", sans-serif;
   --font-label-caps: "Inter", sans-serif;
@@ -90,8 +90,8 @@
   --text-display-lg-mobile--letter-spacing: -0.02em;
   --text-display-lg-mobile--font-weight: 700;
 
-  --text-display-lg: 48px;
-  --text-display-lg--line-height: 52px;
+  --text-display-lg: clamp(2.25rem, 6vw, 3rem);
+  --text-display-lg--line-height: 1.08;
   --text-display-lg--letter-spacing: -0.02em;
   --text-display-lg--font-weight: 700;
 
@@ -443,43 +443,81 @@ html.light .border-outline-variant\/20 {
   50% { transform: translateY(-4px); }
 }
 
-/* Section entrance animations */
-html.light section {
-  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+/* ─── Scroll-reveal animations (JS-driven via IntersectionObserver) ─── */
+/* Robust by design: elements stay fully visible by default and only *animate*
+   once JS adds `.reveal-in`. If JS never runs, the observer is throttled, or the
+   browser lacks support, nothing is ever hidden — the content just appears
+   without the entrance animation. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal.reveal-in {
+    animation: reveal-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  /* Staggered children — grids/lists reveal item by item */
+  .reveal-stagger.reveal-in > * {
+    animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: calc(var(--reveal-i, 0) * 65ms);
+  }
+
+  /* Hero content: gentle staggered slide-up on first paint (pure CSS).
+     Transform-only (never changes opacity) so the above-the-fold hero is always
+     fully visible even if the animation is paused (e.g. tab opened in background). */
+  .hero-enter > * {
+    animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-enter > *:nth-child(2) { animation-delay: 0.09s; }
+  .hero-enter > *:nth-child(3) { animation-delay: 0.18s; }
+  .hero-enter > *:nth-child(4) { animation-delay: 0.27s; }
 }
 
-html.light section:nth-child(2) {
-  animation-delay: 0.1s;
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-html.light section:nth-child(3) {
-  animation-delay: 0.2s;
+@keyframes hero-rise {
+  from {
+    transform: translateY(22px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
-html.light section:nth-child(4) {
-  animation-delay: 0.3s;
+/* ─── Interactive polish (both themes) ─── */
+a.group[class*="rounded-xl"] {
+  transition:
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s ease;
 }
 
-
-
-/* Product card hover lift */
-html.light a.group[class*="rounded-xl"] {
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.3s ease;
+@media (hover: hover) {
+  a.group[class*="rounded-xl"]:hover {
+    transform: translateY(-4px);
+  }
 }
 
 html.light a.group[class*="rounded-xl"]:hover {
-  transform: translateY(-3px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+html.dark a.group[class*="rounded-xl"]:hover {
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+}
+
 /* Arrow icon micro-animation on hover */
-html.light .group:hover .material-symbols-outlined {
+.group:hover .material-symbols-outlined {
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-html.light .group:hover [class*="rounded-full"] .material-symbols-outlined {
+.group:hover [class*="rounded-full"] .material-symbols-outlined {
   transform: translate(2px, -2px);
 }
 
@@ -532,6 +570,21 @@ html.icons-loaded .material-symbols-outlined {
 /* Theme transition – only after page has loaded to avoid reflow during paint */
 html.icons-loaded {
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ─── Accessible keyboard focus (modern :focus-visible, pointer users unaffected) ─── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-offset: 4px;
 }
 
 /* Respect reduced motion */

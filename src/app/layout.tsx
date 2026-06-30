@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
+import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
 import { siteConfig, canonicalUrl } from "@/lib/site";
 import { organizationSchema, websiteSchema } from "@/lib/structuredData";
@@ -122,6 +123,7 @@ export default function RootLayout({
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <ThemeProvider>
           <Navbar />
+          <ScrollReveal />
           {children}
           <Footer />
         </ThemeProvider>
