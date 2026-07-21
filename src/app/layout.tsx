@@ -110,7 +110,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="theme-color" content="#ededf0" />
-        <link rel="preload" href="/assets/hero_bg.webp" as="image" type="image/webp" fetchPriority="high" />
+        <link rel="preload" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/assets/hero_bg.webp`} as="image" type="image/webp" fetchPriority="high" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preload" href={materialSymbolsHref} as="style" />

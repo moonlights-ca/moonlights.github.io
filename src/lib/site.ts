@@ -10,7 +10,7 @@ export const siteConfig = {
   /** Legal / trading name used in structured data. */
   legalName: "Moonlights Electrical",
   /** Canonical origin — every absolute URL is built from this. */
-  url: "https://www.moonlights.ca",
+  url: "https://www.moonlights.ca/moonlights.github.io",
   /** Default meta description (Canada-focused, keyword-rich). */
   description:
     "Moonlights is a Canadian electrical supplier of wires and cables, transformers, circuit breakers, conduit, industrial parts, tools, and LED lighting. Browse the catalogue and request a fast quote — shipping across Canada.",

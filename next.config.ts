@@ -1,15 +1,24 @@
 import type { NextConfig } from "next";
 
+/**
+ * Set NEXT_PUBLIC_BASE_PATH=/moonlights.github.io in CI to deploy under
+ * the org's custom domain (www.moonlights.ca/moonlights.github.io/).
+ * Locally it is empty so the dev server works at http://localhost:3000/.
+ */
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const nextConfig: NextConfig = {
   // Static HTML export for GitHub Pages
   output: 'export',
 
-  // Served at the root of the custom domain (www.moonlights.ca) — no base path.
-  // The CNAME file in /public points GitHub Pages at the custom domain.
+  // Subpath only in production (set by the GitHub Actions workflow).
+  ...(basePath ? { basePath } : {}),
 
-  // Disable server-based image optimization since GitHub Pages is static
+  // Custom loader prepends basePath so images resolve correctly under the subpath.
+  // (A custom loaderFile replaces the need for `unoptimized: true` with `output: 'export'`.)
   images: {
-    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/lib/imageLoader.ts',
   },
 
   // Emit /route/index.html so clean URLs resolve correctly on static hosts
