@@ -33,7 +33,7 @@ export const siteConfig = {
   areaServed: "Canada",
 
   /** Default Open Graph / Twitter share image (1200×630 recommended). */
-  ogImage: "/assets/new_hero.jpg",
+  ogImage: "/assets/hero_led_minimal.png",
 
   /** Broad keyword set surfaced in metadata. */
   keywords: [

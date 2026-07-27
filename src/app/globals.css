@@ -293,22 +293,22 @@ html.light [class*="bg-gradient-to-b"][class*="from-surface-container"] {
 
 /* For hero sections: replace the white gradient with a subtle dark scrim
    so the text stays readable without washing out the image */
-html.light section[class*="relative"] > div[class*="bg-gradient-to-r"][class*="from-background"] {
+html.light section[class*="relative"]>div[class*="bg-gradient-to-r"][class*="from-background"] {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.3), transparent) !important;
 }
 
 /* Hero bottom gradient — eliminate completely (text isn't placed over it) */
-html.light section[class*="relative"] > div[class*="bg-gradient-to-t"][class*="from-background"] {
+html.light section[class*="relative"]>div[class*="bg-gradient-to-t"][class*="from-background"] {
   background: transparent !important;
 }
 
 /* Category cards on homepage — use a dark bottom scrim for text readability */
-html.light a[class*="group"] > div[class*="bg-gradient-to-t"][class*="from-background"] {
+html.light a[class*="group"]>div[class*="bg-gradient-to-t"][class*="from-background"] {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35) 50%, transparent) !important;
 }
 
 /* "Engineered for Reliability" inventory image — use a very subtle scrim */
-html.light div[class*="relative"] > div[class*="bg-gradient-to-tr"][class*="from-background"] {
+html.light div[class*="relative"]>div[class*="bg-gradient-to-tr"][class*="from-background"] {
   background: linear-gradient(to top right, rgba(0, 0, 0, 0.3), transparent) !important;
 }
 
@@ -346,12 +346,15 @@ html.light .lm-bg-black {
   background-color: #111111 !important;
   border-color: #111111 !important;
 }
+
 html.light .lm-bg-white {
   background-color: #ffffff !important;
 }
+
 html.light .lm-border-black {
   border-color: #111111 !important;
 }
+
 html.light .lm-text-white,
 html.light section[class*="relative"] .lm-text-white,
 html.light section[class*="relative"] p.lm-text-white,
@@ -361,6 +364,7 @@ html.light a[class*="group"] p.lm-text-white {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
 }
+
 html.light .lm-text-black,
 html.light .lm-text-black *,
 html.light section[class*="relative"] .lm-text-black,
@@ -373,15 +377,18 @@ html.light .text-transparent.bg-clip-text[class*="bg-gradient-to-r"][class*="fro
   color: #111111 !important;
   -webkit-text-fill-color: #111111 !important;
 }
+
 html.light .lm-no-mask {
   mask-image: none !important;
   -webkit-mask-image: none !important;
 }
+
 html.light .lm-no-hover-bg:hover {
   background-color: transparent !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
 }
+
 html.light .lm-hover-text-black:hover,
 html.light section[class*="relative"] .lm-hover-text-black:hover,
 html.light a[class*="group"] .lm-hover-text-black:hover {
@@ -393,7 +400,7 @@ html.light a[class*="group"] .lm-hover-text-black:hover {
 html.light [class*="shadow-[0_0_"] {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04) !important;
   transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 html.light [class*="shadow-[0_0_"]:hover {
@@ -416,6 +423,7 @@ html.light .border-outline-variant\/20 {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -423,8 +431,13 @@ html.light .border-outline-variant\/20 {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInLeft {
@@ -432,6 +445,7 @@ html.light .border-outline-variant\/20 {
     opacity: 0;
     transform: translateX(-16px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -439,8 +453,15 @@ html.light .border-outline-variant\/20 {
 }
 
 @keyframes subtleFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 /* ─── Scroll-reveal animations (JS-driven via IntersectionObserver) ─── */
@@ -454,7 +475,7 @@ html.light .border-outline-variant\/20 {
   }
 
   /* Staggered children — grids/lists reveal item by item */
-  .reveal-stagger.reveal-in > * {
+  .reveal-stagger.reveal-in>* {
     animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
     animation-delay: calc(var(--reveal-i, 0) * 65ms);
   }
@@ -462,12 +483,21 @@ html.light .border-outline-variant\/20 {
   /* Hero content: gentle staggered slide-up on first paint (pure CSS).
      Transform-only (never changes opacity) so the above-the-fold hero is always
      fully visible even if the animation is paused (e.g. tab opened in background). */
-  .hero-enter > * {
+  .hero-enter>* {
     animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
-  .hero-enter > *:nth-child(2) { animation-delay: 0.09s; }
-  .hero-enter > *:nth-child(3) { animation-delay: 0.18s; }
-  .hero-enter > *:nth-child(4) { animation-delay: 0.27s; }
+
+  .hero-enter>*:nth-child(2) {
+    animation-delay: 0.09s;
+  }
+
+  .hero-enter>*:nth-child(3) {
+    animation-delay: 0.18s;
+  }
+
+  .hero-enter>*:nth-child(4) {
+    animation-delay: 0.27s;
+  }
 }
 
 @keyframes reveal-up {
@@ -475,6 +505,7 @@ html.light .border-outline-variant\/20 {
     opacity: 0;
     transform: translateY(28px);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -485,10 +516,27 @@ html.light .border-outline-variant\/20 {
   from {
     transform: translateY(22px);
   }
+
   to {
     transform: translateY(0);
   }
 }
+
+/* ─── Lockscreen Depth Hero ─── */
+.hero-depth-foreground {
+  /* Mask that reveals only the bottom ~45% of the image (where the LED strip sits),
+     so it renders ON TOP of the text layer, creating the depth punch-through. */
+  -webkit-mask-image: linear-gradient(to top, black 0%, black 25%, transparent 40%);
+  mask-image: linear-gradient(to top, black 0%, black 25%, transparent 40%);
+}
+
+.hero-depth-text {
+  text-shadow:
+    0 4px 60px rgba(0, 0, 0, 0.8),
+    0 0 150px rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.03em;
+}
+
 
 /* ─── Interactive polish (both themes) ─── */
 a.group[class*="rounded-xl"] {
@@ -546,8 +594,8 @@ html.light .glass-card:hover {
 /* ─── Light Mode Primary Button ─── */
 html.light .bg-primary {
   transition: background-color 0.3s ease,
-              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html.light .bg-primary:hover {
@@ -563,6 +611,7 @@ html.light .animate-pulse {
 .material-symbols-outlined {
   visibility: hidden;
 }
+
 html.icons-loaded .material-symbols-outlined {
   visibility: visible;
 }
@@ -585,6 +634,18 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   outline-offset: 4px;
+}
+
+/* ─── Logo Blend Modes ─── */
+html.light .logo-img {
+  mix-blend-mode: multiply !important;
+  filter: none !important;
+}
+
+html.dark .logo-img {
+  mix-blend-mode: screen !important;
+  /* Invert black to white, then rotate hue back to preserve the cyan/blue accents */
+  filter: invert(1) hue-rotate(180deg) !important;
 }
 
 /* Respect reduced motion */

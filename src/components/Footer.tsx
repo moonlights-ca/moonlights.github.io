@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const productLinks = [
   { href: "/wires-and-cables", label: "Wires & Cables" },
@@ -25,7 +26,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-block mb-4" aria-label="Moonlights Home">
+            <Link href="/" className="inline-flex items-center gap-2 mb-4" aria-label="Moonlights Home">
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center">
+                <Image 
+                  src="/assets/logo_moonlights.png" 
+                  alt="Moonlights Logo" 
+                  fill 
+                  className="object-contain logo-img" 
+                />
+              </div>
               <span className="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface">
                 Moonlights
               </span>

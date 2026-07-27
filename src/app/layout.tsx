@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ThemeProvider from "@/components/ThemeProvider";
 import ScrollReveal from "@/components/ScrollReveal";
 import JsonLd from "@/components/JsonLd";
+import CursorSpotlight from "@/components/CursorSpotlight";
 import { siteConfig, canonicalUrl } from "@/lib/site";
 import { organizationSchema, websiteSchema } from "@/lib/structuredData";
 import "./globals.css";
@@ -110,7 +111,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="theme-color" content="#ededf0" />
-        <link rel="preload" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/assets/new_hero.jpg`} as="image" type="image/jpeg" fetchPriority="high" />
+        <link rel="preload" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/assets/hero_led_minimal.png`} as="image" type="image/png" fetchPriority="high" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preload" href={materialSymbolsHref} as="style" />
@@ -122,6 +123,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen">
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         <ThemeProvider>
+          <CursorSpotlight />
           <Navbar />
           <ScrollReveal />
           {children}
