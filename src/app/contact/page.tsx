@@ -41,7 +41,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-label-caps text-label-caps text-on-surface-variant mb-1">Headquarters</div>
-                    <div className="font-body-md text-body-md text-on-surface">1214 Birchview Dr. Unit<br />ON L1T 4C5</div>
+                    <div className="font-body-md text-body-md text-on-surface">16 Stevensgate Dr<br />Ajax, ON L1T 4Z3</div>
                   </div>
                 </div>
 
@@ -61,7 +61,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-label-caps text-label-caps text-on-surface-variant mb-1">Support Line</div>
-                    <a className="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="tel:+16477864848">+1 (647) 786-4848</a>
+                    <a className="font-body-md text-body-md text-on-surface hover:text-primary transition-colors" href="tel:+15487886606">+1 (548) 788-6606</a>
                   </div>
                 </div>
               </div>

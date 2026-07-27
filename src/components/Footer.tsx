@@ -25,9 +25,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-block mb-4" aria-label="Moonlights.ca Home">
+            <Link href="/" className="inline-block mb-4" aria-label="Moonlights Home">
               <span className="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface">
-                Moonlights.ca
+                Moonlights
               </span>
             </Link>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 max-w-xs">
@@ -36,11 +36,11 @@ export default function Footer() {
             <div className="space-y-2 text-sm text-on-surface-variant">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-[16px]">location_on</span>
-                <span>1214 Birchview Dr. Unit, ON L1T 4C5</span>
+                <span>16 Stevensgate Dr, Ajax, ON L1T 4Z3</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-[16px]">call</span>
-                <a href="tel:+16477864848" className="hover:text-primary transition-colors">+1 (647) 786-4848</a>
+                <a href="tel:+15487886606" className="hover:text-primary transition-colors">+1 (548) 788-6606</a>
               </div>
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-[16px]">mail</span>
@@ -102,7 +102,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-outline-variant/20 pt-8 flex justify-center">
           <p className="text-outline font-label-caps text-label-caps text-center">
-            © {new Date().getFullYear()} Moonlights.ca — All rights reserved.
+            © {new Date().getFullYear()} Moonlights — All rights reserved.
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@
 
 export const siteConfig = {
   /** Public-facing brand name. */
-  name: "Moonlights.ca",
+  name: "Moonlights",
   /** Legal / trading name used in structured data. */
   legalName: "Moonlights Electrical",
   /** Canonical origin — every absolute URL is built from this. */
@@ -18,13 +18,14 @@ export const siteConfig = {
   tagline: "Canadian Electrical Supplier — Wires, Cables, Transformers & More",
 
   // ── Contact (NAP — keep identical everywhere) ───────────────────────────
-  telephone: "+1 (647) 786-4848",
-  telephoneHref: "+16477864848",
+  telephone: "+1 (548) 788-6606",
+  telephoneHref: "+15487886606",
   email: "sales@moonlights.ca",
   address: {
-    street: "1214 Birchview Dr. Unit",
+    street: "16 Stevensgate Dr",
+    city: "Ajax",
     region: "ON",
-    postalCode: "L1T 4C5",
+    postalCode: "L1T 4Z3",
     country: "CA",
   },
 
@@ -32,7 +33,7 @@ export const siteConfig = {
   areaServed: "Canada",
 
   /** Default Open Graph / Twitter share image (1200×630 recommended). */
-  ogImage: "/assets/hero_bg.webp",
+  ogImage: "/assets/new_hero.jpg",
 
   /** Broad keyword set surfaced in metadata. */
   keywords: [

@@ -18,8 +18,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Moonlights.ca — Canadian Electrical Supplier | Wires, Cables, Transformers",
-    template: "%s | Moonlights.ca",
+    default: "Moonlights — Canadian Electrical Supplier | Wires, Cables, Transformers",
+    template: "%s | Moonlights",
   },
   description: siteConfig.description,
   keywords: [...siteConfig.keywords],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: canonicalUrl("/"),
   },
   openGraph: {
-    title: "Moonlights.ca — Canadian Electrical Supplier",
+    title: "Moonlights — Canadian Electrical Supplier",
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moonlights.ca — Canadian Electrical Supplier",
+    title: "Moonlights — Canadian Electrical Supplier",
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
@@ -110,7 +110,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <meta name="theme-color" content="#ededf0" />
-        <link rel="preload" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/assets/hero_bg.webp`} as="image" type="image/webp" fetchPriority="high" />
+        <link rel="preload" href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/assets/new_hero.jpg`} as="image" type="image/jpeg" fetchPriority="high" />
         <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preload" href={materialSymbolsHref} as="style" />

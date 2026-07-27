@@ -10,7 +10,6 @@ const navLinks = [
   { href: "/transformers", label: "Transformers" },
   { href: "/industrial-parts", label: "Industrial Parts" },
   { href: "/lighting", label: "Lighting" },
-  { href: "/tools-and-equipment", label: "Tools & Equipment" },
   { href: "/enclosures-and-power", label: "Distribution & Protection" },
   { href: "/datacom-and-security", label: "Conduit & Fittings" },
 ];
@@ -59,7 +58,7 @@ export default function Navbar() {
             className="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface transition-transform duration-200"
             href="/"
           >
-            Moonlights.ca
+            Moonlights
           </Link>
 
           <div className="flex items-center gap-8">

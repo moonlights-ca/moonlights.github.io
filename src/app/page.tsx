@@ -13,7 +13,7 @@ export default function Home() {
           <Image
              alt="High-end smart LED lighting system"
              className="hero-img absolute inset-0 w-full h-full object-cover object-right opacity-60 transition-all duration-700"
-             src="/assets/hero_bg.webp"
+             src="/assets/new_hero.jpg"
              fill
              priority
              sizes="100vw"
@@ -134,7 +134,7 @@ export default function Home() {
  </Link>
  {/* Industrial Electrical Parts Card */}
  <Link
- className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-2"
+ className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-3"
  href="/industrial-parts"
  >
  <Image
@@ -165,7 +165,7 @@ export default function Home() {
  </Link>
  {/* Wires & Cables Card */}
  <Link
- className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-2"
+ className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-3"
  href="/wires-and-cables"
  >
  <Image
@@ -194,37 +194,6 @@ export default function Home() {
  </div>
  </div>
  </Link>
- {/* Tools & Equipment Card */}
- <Link
- className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 md:col-span-2"
- href="/tools-and-equipment"
- >
- <Image
- alt="Tools and Equipment"
- className="hero-img absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-500 grayscale group-hover:grayscale-0"
- src="/assets/industrial_hero.webp"
- fill
- sizes="(max-width: 768px) 100vw, 50vw"
- loading="lazy"
- />
- <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
- <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
- <div>
- <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
- 05
- </span>
- <h3 className="font-headline-md text-headline-md text-white">
- Tools &amp; Equipment
- </h3>
- <p className="font-body-md text-white/80 mt-2 max-w-sm hidden sm:block">
- Professional-grade hand tools, power tools, test instruments, and safety gear for every job site.
- </p>
- </div>
- <div className="w-10 h-10 shrink-0 rounded-full bg-surface border border-outline-variant flex items-center justify-center group-hover:border-primary text-on-surface group-hover:text-primary transition-colors">
- <span className="material-symbols-outlined">north_east</span>
- </div>
- </div>
- </Link>
  {/* Distribution & Protection Card */}
  <Link
  className="group relative block aspect-[4/3] md:aspect-auto rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 sm:col-span-2 md:col-span-3"
@@ -242,7 +211,7 @@ export default function Home() {
  <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
  <div>
  <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
- 06
+ 05
  </span>
  <h3 className="font-headline-md text-headline-md text-white">
  Distribution &amp; Protection
@@ -273,7 +242,7 @@ export default function Home() {
  <div className="absolute bottom-0 left-0 p-8 w-full flex justify-between items-end">
  <div>
  <span className="font-label-caps text-label-caps text-primary mb-2 block tracking-widest opacity-80">
- 07
+ 06
  </span>
  <h3 className="font-headline-md text-headline-md text-white">
  Conduit &amp; Fittings

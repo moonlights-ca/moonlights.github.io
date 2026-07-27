@@ -6,7 +6,6 @@ import { transformerProducts } from "@/app/transformers/transformerProducts";
 import { industrialCategories } from "@/app/industrial-parts/industrialProducts";
 import { datacomCategories } from "@/app/datacom-and-security/datacomProducts";
 import { enclosuresCategories } from "@/app/enclosures-and-power/enclosuresProducts";
-import { toolsCategories } from "@/app/tools-and-equipment/toolsProducts";
 
 export const dynamic = "force-static";
 
@@ -21,7 +20,6 @@ const STATIC_PATHS = [
   "/lighting",
   "/residential-lights",
   "/commercial-lights",
-  "/tools-and-equipment",
   "/enclosures-and-power",
   "/datacom-and-security",
 ];
@@ -30,7 +28,6 @@ const CATEGORY_SYSTEMS: { base: string; categories: ProductCategory[] }[] = [
   { base: "/industrial-parts", categories: industrialCategories },
   { base: "/datacom-and-security", categories: datacomCategories },
   { base: "/enclosures-and-power", categories: enclosuresCategories },
-  { base: "/tools-and-equipment", categories: toolsCategories },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
