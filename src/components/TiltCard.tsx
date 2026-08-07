@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, MouseEvent } from "react";
+import React, { useRef, MouseEvent, useCallback } from "react";
 import Link from "next/link";
 
 interface TiltCardProps {
@@ -10,11 +10,11 @@ interface TiltCardProps {
 }
 
 export default function TiltCard({ children, className = "", href }: TiltCardProps) {
-  const cardRef = useRef<HTMLAnchorElement | HTMLDivElement>(null);
-  const [rotation, setRotation] = useState({ x: 0, y: 0 });
-  const [glarePosition, setGlarePosition] = useState({ x: 50, y: 50, opacity: 0 });
+  const cardRef = useRef<HTMLAnchorElement & HTMLDivElement>(null);
+  const glareRef = useRef<HTMLDivElement>(null);
+  const requestRef = useRef<number>(0);
 
-  const handleMouseMove = (e: MouseEvent<HTMLElement>) => {
+  const handleMouseMove = useCallback((e: MouseEvent<HTMLElement>) => {
     if (!cardRef.current) return;
 
     const rect = cardRef.current.getBoundingClientRect();
@@ -32,51 +32,51 @@ export default function TiltCard({ children, className = "", href }: TiltCardPro
     // Max rotation in degrees
     const maxRotation = 10;
     
-    // Y-axis rotation depends on X position (moving right rotates right)
-    // X-axis rotation depends on Y position (moving down rotates down/back)
     const rotateY = xPct * maxRotation;
     const rotateX = -yPct * maxRotation;
+    const glareX = (mouseX / width) * 100;
+    const glareY = (mouseY / height) * 100;
 
-    setRotation({ x: rotateX, y: rotateY });
-    
-    // Glare follows mouse but inversely mapped to rotation
-    setGlarePosition({ 
-      x: (mouseX / width) * 100, 
-      y: (mouseY / height) * 100,
-      opacity: 0.15
+    if (requestRef.current) {
+      cancelAnimationFrame(requestRef.current);
+    }
+
+    requestRef.current = requestAnimationFrame(() => {
+      if (cardRef.current) {
+        cardRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        cardRef.current.style.transition = "none";
+      }
+      if (glareRef.current) {
+        glareRef.current.style.opacity = "0.15";
+        glareRef.current.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 60%)`;
+      }
     });
-  };
+  }, []);
 
-  const handleMouseLeave = () => {
-    // Reset to flat state
-    setRotation({ x: 0, y: 0 });
-    setGlarePosition({ ...glarePosition, opacity: 0 });
-  };
-
-  // The base transform applied to the card
-  const transformStyle = {
-    transform: `perspective(1000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale3d(1.02, 1.02, 1.02)`,
-    transition: "transform 0.1s ease-out",
-  };
-
-  // Return to idle state transition
-  const idleTransition = {
-    transform: "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
-    transition: "transform 0.5s ease-out",
-  };
-
-  const isHovered = glarePosition.opacity > 0;
-  const currentStyle = isHovered ? transformStyle : idleTransition;
+  const handleMouseLeave = useCallback(() => {
+    if (requestRef.current) {
+      cancelAnimationFrame(requestRef.current);
+    }
+    requestRef.current = requestAnimationFrame(() => {
+      if (cardRef.current) {
+        cardRef.current.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+        cardRef.current.style.transition = "transform 0.5s ease-out";
+      }
+      if (glareRef.current) {
+        glareRef.current.style.opacity = "0";
+      }
+    });
+  }, []);
 
   const content = (
     <>
       {children}
       {/* Glare effect layer */}
       <div 
-        className="pointer-events-none absolute inset-0 z-50 transition-opacity duration-300"
+        ref={glareRef}
+        className="pointer-events-none absolute inset-0 z-50 transition-opacity duration-500"
         style={{
-          opacity: glarePosition.opacity,
-          background: `radial-gradient(circle at ${glarePosition.x}% ${glarePosition.y}%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 60%)`,
+          opacity: 0,
           mixBlendMode: "overlay"
         }}
         aria-hidden="true"
@@ -94,7 +94,7 @@ export default function TiltCard({ children, className = "", href }: TiltCardPro
         className={baseClasses}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        style={currentStyle}
+        style={{ transition: "transform 0.5s ease-out" }}
       >
         {content}
       </Link>
@@ -107,7 +107,7 @@ export default function TiltCard({ children, className = "", href }: TiltCardPro
       className={baseClasses}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={currentStyle}
+      style={{ transition: "transform 0.5s ease-out" }}
     >
       {content}
     </div>
