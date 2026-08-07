@@ -637,15 +637,15 @@ textarea:focus-visible {
 }
 
 /* ─── Logo Blend Modes ─── */
+/* logo1.png has a dark navy background — native for dark mode, inverted for light */
 html.light .logo-img {
+  filter: invert(1) !important;
   mix-blend-mode: multiply !important;
-  filter: none !important;
 }
 
 html.dark .logo-img {
-  mix-blend-mode: screen !important;
-  /* Invert black to white, then rotate hue back to preserve the cyan/blue accents */
-  filter: invert(1) hue-rotate(180deg) !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
 }
 
 /* Respect reduced motion */

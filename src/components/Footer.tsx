@@ -27,12 +27,12 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2 mb-4" aria-label="Moonlights Home">
-              <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center">
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center overflow-hidden rounded-xl">
                 <Image 
-                  src="/assets/logo_moonlights.png" 
+                  src="/assets/logo1.png" 
                   alt="Moonlights Logo" 
                   fill 
-                  className="object-contain logo-img" 
+                  className="object-contain logo-img scale-[1.45]" 
                 />
               </div>
               <span className="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface">

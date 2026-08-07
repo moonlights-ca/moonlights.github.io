@@ -59,12 +59,12 @@ export default function Navbar() {
             className="flex items-center gap-2 font-display-lg text-headline-md font-bold tracking-tighter text-on-surface transition-transform duration-200"
             href="/"
           >
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center">
+            <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center overflow-hidden rounded-xl">
               <Image 
-                src="/assets/logo_moonlights.png" 
+                src="/assets/logo1.png" 
                 alt="Moonlights Logo" 
                 fill 
-                className="object-contain logo-img" 
+                className="object-contain logo-img scale-[1.45]" 
                 priority
               />
             </div>
