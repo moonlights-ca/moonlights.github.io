@@ -60,15 +60,14 @@ export default function Navbar() {
             href="/"
             aria-label="Moonlights"
           >
-            <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center overflow-hidden rounded-xl">
-              <Image 
-                src="/assets/logo1.png" 
-                alt="Moonlights" 
-                fill 
-                className="object-contain logo-img scale-[1.5]" 
-                priority
-              />
-            </div>
+            <Image 
+              src="/assets/logo_navbar.png" 
+              alt="Moonlights" 
+              width={225}
+              height={48}
+              className="logo-img h-10 sm:h-12 w-auto"
+              priority
+            />
           </Link>
 
           <div className="flex items-center gap-8">

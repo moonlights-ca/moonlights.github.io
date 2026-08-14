@@ -27,14 +27,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-flex mb-4" aria-label="Moonlights Home">
-              <div className="relative w-20 h-20 sm:w-24 sm:h-24 shrink-0 flex items-center justify-center overflow-hidden rounded-xl">
-                <Image 
-                  src="/assets/logo1.png" 
-                  alt="Moonlights" 
-                  fill 
-                  className="object-contain logo-img scale-[1.5]" 
-                />
-              </div>
+              <Image 
+                src="/assets/logo_navbar.png" 
+                alt="Moonlights" 
+                width={281}
+                height={60}
+                className="logo-img h-12 sm:h-16 w-auto"
+              />
             </Link>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 max-w-xs">
               Canadian electrical supplier of wires, cables, transformers, and industrial electrical components for commercial and industrial projects.
