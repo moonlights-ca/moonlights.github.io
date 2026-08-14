@@ -44,7 +44,8 @@ export default function TiltCard({ children, className = "", href }: TiltCardPro
     requestRef.current = requestAnimationFrame(() => {
       if (cardRef.current) {
         cardRef.current.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
-        cardRef.current.style.transition = "none";
+        // Only kill transform's transition for instant tracking; preserve box-shadow and border-color
+        cardRef.current.style.transition = "transform 0s, box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease";
       }
       if (glareRef.current) {
         glareRef.current.style.opacity = "0.15";
@@ -57,10 +58,13 @@ export default function TiltCard({ children, className = "", href }: TiltCardPro
     if (requestRef.current) {
       cancelAnimationFrame(requestRef.current);
     }
+    // Set the return transition synchronously NOW so the browser applies it before the transform changes in the rAF
+    if (cardRef.current) {
+      cardRef.current.style.transition = "transform 0.5s ease-out, box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease";
+    }
     requestRef.current = requestAnimationFrame(() => {
       if (cardRef.current) {
         cardRef.current.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
-        cardRef.current.style.transition = "transform 0.5s ease-out";
       }
       if (glareRef.current) {
         glareRef.current.style.opacity = "0";
@@ -94,7 +98,7 @@ export default function TiltCard({ children, className = "", href }: TiltCardPro
         className={baseClasses}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        style={{ transition: "transform 0.5s ease-out" }}
+        style={{ transition: "transform 0.5s ease-out, box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease" }}
       >
         {content}
       </Link>
@@ -107,7 +111,7 @@ export default function TiltCard({ children, className = "", href }: TiltCardPro
       className={baseClasses}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ transition: "transform 0.5s ease-out" }}
+        style={{ transition: "transform 0.5s ease-out, box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease" }}
     >
       {content}
     </div>
