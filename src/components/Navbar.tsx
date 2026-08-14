@@ -56,19 +56,19 @@ export default function Navbar() {
       <nav className="bg-surface/95 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30 w-full">
         <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full">
           <Link
-            className="flex items-center gap-2 font-display-lg text-headline-md font-bold tracking-tighter text-on-surface transition-transform duration-200"
+            className="flex items-center transition-transform duration-200"
             href="/"
+            aria-label="Moonlights"
           >
-            <div className="relative w-12 h-12 sm:w-16 sm:h-16 shrink-0 flex items-center justify-center overflow-hidden rounded-xl">
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20 shrink-0 flex items-center justify-center overflow-hidden rounded-xl">
               <Image 
                 src="/assets/logo1.png" 
-                alt="Moonlights Logo" 
+                alt="Moonlights" 
                 fill 
-                className="object-contain logo-img scale-[1.45]" 
+                className="object-contain logo-img scale-[1.5]" 
                 priority
               />
             </div>
-            Moonlights
           </Link>
 
           <div className="flex items-center gap-8">

@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { enclosuresCategories } from "./enclosuresProducts";
 
 export const metadata: Metadata = {
- title: "Circuit Breakers & Power Distribution in Canada",
- description: "Circuit breakers, panelboards, safety switches, fuses, and surge protection in Canada — Siemens, Eaton, Square D, and ABB. Power distribution and circuit protection.",
+ title: "Circuit Breakers & Power Distribution in North America",
+ description: "Circuit breakers, panelboards, safety switches, fuses, and surge protection in North America — Siemens, Eaton, Square D, and ABB. Power distribution and circuit protection.",
  alternates: { canonical: "/enclosures-and-power/" },
 };
 

@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { datacomCategories } from "./datacomProducts";
 
 export const metadata: Metadata = {
- title: "Conduit & Fittings in Canada",
- description: "Conduit and fittings in Canada — EMT, rigid, PVC, and liquidtight conduit, fittings, boxes, enclosures, and cable tray for electrical installations.",
+ title: "Conduit & Fittings in North America",
+ description: "Conduit and fittings in North America — EMT, rigid, PVC, and liquidtight conduit, fittings, boxes, enclosures, and cable tray for electrical installations.",
  alternates: { canonical: "/datacom-and-security/" },
 };
 

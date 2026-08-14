@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Moonlights Electrical, our history, mission, and commitment to providing top-tier industrial and commercial electrical solutions.",
+  description: "Learn about Moonlights, our history, mission, and commitment to providing top-tier industrial and commercial electrical solutions.",
   alternates: { canonical: "/about/" },
 };
 
@@ -20,7 +20,7 @@ export default function About() {
           </div>
           <div className="md:col-span-7 pt-4 md:pt-6">
             <p className="font-body-lg text-lg text-on-surface-variant leading-relaxed lm-text-black max-w-2xl">
-              Moonlights Electrical is a trusted Canadian supplier of industrial and commercial electrical components. We saw how often projects stall on fragmented supply chains and subpar materials, so we brought together a comprehensive catalogue of transformers, wires and cables, distribution equipment, and lighting from established brands. Today we work with contractors, municipalities, and facility managers across Canada to help keep their projects on schedule.
+              Moonlights is a trusted North American supplier of industrial and commercial electrical components. We saw how often projects stall on fragmented supply chains and subpar materials, so we brought together a comprehensive catalogue of transformers, wires and cables, distribution equipment, and lighting from established brands. Today we work with contractors, municipalities, and facility managers across North America to help keep their projects on schedule.
             </p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function About() {
             <div className="w-32 h-32 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center transition-transform group-hover/val:scale-105 group-hover/val:bg-primary/20 duration-500 shadow-lg">
               <span className="material-symbols-outlined text-primary text-[48px]" style={{ fontVariationSettings: "'FILL' 0" }}>local_shipping</span>
             </div>
-            <h3 className="font-headline-sm text-xl text-on-surface lm-text-black max-w-[150px]">Canada-Wide Supply</h3>
+            <h3 className="font-headline-sm text-xl text-on-surface lm-text-black max-w-[150px]">North America-Wide Supply</h3>
           </div>
 
           {/* Value 4 */}

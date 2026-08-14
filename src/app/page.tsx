@@ -47,14 +47,14 @@ export default function Home() {
             <div className="pt-8 px-8 pointer-events-auto">
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
                 <span className="font-label-caps text-label-caps text-white uppercase tracking-wider">
-                  Full-Scale Canadian Electrical Supplier
+                  Full-Scale North American Electrical Supplier
                 </span>
               </div>
             </div>
             {/* Bottom content */}
             <div className="bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-32 pb-10 px-8 md:px-12">
               <p className="font-body-lg text-body-lg text-white/80 mb-8 max-w-xl pointer-events-auto">
-                A trusted distributor of wires, cables, transformers, and industrial electrical components across Canada.
+                A trusted distributor of wires, cables, transformers, and industrial electrical components across North America.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pointer-events-auto">
                 <Link
@@ -294,7 +294,7 @@ export default function Home() {
             Engineered for Reliability
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto lm-text-black">
-            Every product is selected to a demanding standard. Explore the core components that keep Canadian industry running.
+            Every product is selected to a demanding standard. Explore the core components that keep North American industry running.
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -369,7 +369,7 @@ export default function Home() {
               Engine.
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 lm-text-black">
-              Our distribution network helps keep your projects moving, with dependable sourcing and shipping across Canada.
+              Our distribution network helps keep your projects moving, with dependable sourcing and shipping across North America.
             </p>
             <ul className="space-y-4 mb-10">
               <li className="flex items-center text-on-surface-variant font-body-md text-body-md glass-card px-4 py-3 rounded-lg border-l-2 border-l-primary border-y-0 border-r-0 rounded-l-none">

@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Moonlights — Canadian Electrical Supplier | Wires, Cables, Transformers",
+    default: "Moonlights — North American Electrical Supplier | Wires, Cables, Transformers",
     template: "%s | Moonlights",
   },
   description: siteConfig.description,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: canonicalUrl("/"),
   },
   openGraph: {
-    title: "Moonlights — Canadian Electrical Supplier",
+    title: "Moonlights — North American Electrical Supplier",
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
     images: [
       {
         url: siteConfig.ogImage,
-        alt: "Moonlights — Canadian electrical supplier",
+        alt: "Moonlights — North American electrical supplier",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moonlights — Canadian Electrical Supplier",
+    title: "Moonlights — North American Electrical Supplier",
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
@@ -63,6 +63,14 @@ export const metadata: Metadata = {
     },
   },
   category: "Electrical Supply",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
+  },
 };
 
 // Inline script to prevent flash of wrong theme (runs before React hydrates)

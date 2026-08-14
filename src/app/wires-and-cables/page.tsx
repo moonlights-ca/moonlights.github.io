@@ -5,8 +5,8 @@ import CatalogGrid from "@/components/catalog/CatalogGrid";
 import { wireProducts, wireCategories, wireVoltages } from "./wireProducts";
 
 export const metadata: Metadata = {
- title: "Wires & Cables in Canada",
- description: "Wires and cables in Canada — THHN/THWN-2, XHHW-2, tray cable, portable cord, and MC. Building wire and industrial cable for commercial and industrial projects.",
+ title: "Wires & Cables in North America",
+ description: "Wires and cables in North America — THHN/THWN-2, XHHW-2, tray cable, portable cord, and MC. Building wire and industrial cable for commercial and industrial projects.",
  alternates: { canonical: "/wires-and-cables/" },
 };
 

@@ -8,14 +8,14 @@ export const siteConfig = {
   /** Public-facing brand name. */
   name: "Moonlights",
   /** Legal / trading name used in structured data. */
-  legalName: "Moonlights Electrical",
+  legalName: "Moonlights",
   /** Canonical origin — every absolute URL is built from this. */
-  url: "https://www.moonlights.ca/moonlights.github.io",
-  /** Default meta description (Canada-focused, keyword-rich). */
+  url: "https://www.moonlights.ca",
+  /** Default meta description (North America-focused, keyword-rich). */
   description:
-    "Moonlights is a Canadian electrical supplier of wires and cables, transformers, circuit breakers, conduit, industrial parts, tools, and LED lighting. Browse the catalogue and request a fast quote — shipping across Canada.",
+    "Moonlights is a North American electrical supplier of wires and cables, transformers, circuit breakers, conduit, industrial parts, tools, and LED lighting. Browse the catalogue and request a fast quote — shipping across North America.",
   /** Short tagline used in Open Graph / hero contexts. */
-  tagline: "Canadian Electrical Supplier — Wires, Cables, Transformers & More",
+  tagline: "North American Electrical Supplier — Wires, Cables, Transformers & More",
 
   // ── Contact (NAP — keep identical everywhere) ───────────────────────────
   telephone: "+1 (548) 788-6606",
@@ -30,23 +30,23 @@ export const siteConfig = {
   },
 
   /** Primary market for SEO copy and structured data. */
-  areaServed: "Canada",
+  areaServed: "North America",
 
   /** Default Open Graph / Twitter share image (1200×630 recommended). */
   ogImage: "/assets/hero_led_minimal.png",
 
   /** Broad keyword set surfaced in metadata. */
   keywords: [
-    "electrical supplier Canada",
-    "wire and cable supplier Canada",
-    "industrial transformers Canada",
-    "circuit breakers Canada",
+    "electrical supplier North America",
+    "wire and cable supplier",
+    "industrial transformers",
+    "circuit breakers",
     "conduit and fittings",
     "industrial electrical parts",
     "electrical connectors",
     "terminals and lugs",
-    "LED lighting Canada",
-    "electrical distributor Canada",
+    "LED lighting",
+    "electrical distributor North America",
     "panelboards and load centers",
     "electrical tools and equipment",
     "moonlights.ca",

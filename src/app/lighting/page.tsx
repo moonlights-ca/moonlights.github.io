@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
- title: "LED Lighting in Canada",
- description: "Residential and commercial LED lighting in Canada — strips, fixtures, and smart systems engineered for performance, efficiency, and reliability.",
+ title: "LED Lighting in North America",
+ description: "Residential and commercial LED lighting in North America — strips, fixtures, and smart systems engineered for performance, efficiency, and reliability.",
  alternates: { canonical: "/lighting/" },
 };
 

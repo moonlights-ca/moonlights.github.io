@@ -31,7 +31,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-label-caps text-label-caps text-on-surface-variant mb-1">Company</div>
-                    <div className="font-body-md text-body-md text-on-surface">Moonlights Electrical Supply</div>
+                    <div className="font-body-md text-body-md text-on-surface">Moonlights</div>
                   </div>
                 </div>
 

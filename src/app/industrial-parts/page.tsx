@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { industrialCategories } from "./industrialProducts";
 
 export const metadata: Metadata = {
- title: "Industrial Electrical Parts in Canada",
- description: "Industrial electrical parts in Canada — connectors, cable accessories, terminals and lugs, switches, and control components. Browse the catalogue and get a quote.",
+ title: "Industrial Electrical Parts in North America",
+ description: "Industrial electrical parts in North America — connectors, cable accessories, terminals and lugs, switches, and control components. Browse the catalogue and get a quote.",
  alternates: { canonical: "/industrial-parts/" },
 };
 

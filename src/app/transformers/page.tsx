@@ -5,8 +5,8 @@ import CatalogGrid from "@/components/catalog/CatalogGrid";
 import { transformerProducts, transformerCategories, transformerVoltages } from "./transformerProducts";
 
 export const metadata: Metadata = {
- title: "Transformers in Canada",
- description: "Transformers in Canada — dry-type, control, isolation, autotransformers, and buck-boost units for industrial and commercial power. Request a fast quote.",
+ title: "Transformers in North America",
+ description: "Transformers in North America — dry-type, control, isolation, autotransformers, and buck-boost units for industrial and commercial power. Request a fast quote.",
  alternates: { canonical: "/transformers/" },
 };
 
