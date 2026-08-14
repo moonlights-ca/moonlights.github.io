@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useTheme } from "./ThemeProvider";
 
 const productLinks = [
   { href: "/wires-and-cables", label: "Wires & Cables" },
@@ -19,6 +22,8 @@ const categoryLinks = [
 ];
 
 export default function Footer() {
+  const { theme } = useTheme();
+
   return (
     <footer className="bg-surface-container-lowest border-t border-outline-variant/20 w-full z-10 mt-auto" role="contentinfo">
       <div className="px-margin-mobile md:px-margin-desktop py-16">
@@ -28,7 +33,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-flex mb-4" aria-label="Moonlights Home">
               <Image 
-                src="/assets/logo_navbar.png" 
+                src={theme === "dark" ? "/assets/logo_navbar.png" : "/assets/logo_navbar_dark.png"}
                 alt="Moonlights" 
                 width={281}
                 height={60}

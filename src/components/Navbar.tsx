@@ -61,7 +61,7 @@ export default function Navbar() {
             aria-label="Moonlights"
           >
             <Image 
-              src="/assets/logo_navbar.png" 
+              src={theme === "dark" ? "/assets/logo_navbar.png" : "/assets/logo_navbar_dark.png"}
               alt="Moonlights" 
               width={225}
               height={48}

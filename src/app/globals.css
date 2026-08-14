@@ -636,16 +636,12 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
-/* ─── Logo Blend Modes ─── */
-/* logo1.png has a dark navy background — native for dark mode, inverted for light */
-html.light .logo-img {
-  filter: invert(1) !important;
-  mix-blend-mode: multiply !important;
-}
-
+/* ─── Logo ─── */
+/* Separate logo images are used per theme — no colour filters needed.
+   Just override the global html.dark img { grayscale } rule. */
+html.light .logo-img,
 html.dark .logo-img {
   filter: none !important;
-  mix-blend-mode: normal !important;
 }
 
 /* Respect reduced motion */
