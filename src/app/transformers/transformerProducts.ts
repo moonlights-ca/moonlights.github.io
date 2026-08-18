@@ -189,7 +189,7 @@ export const transformerProducts: CatalogProduct[] = [
     ],
     usage: [
       "480V to 208Y/120V for office buildings",
-      "600V to 208Y/120V for Canadian facilities",
+      "600V to 208Y/120V for North American facilities",
       "480V to 240V delta for industrial machinery",
       "Multi-floor commercial building distribution",
       "Retail and hospitality power distribution",

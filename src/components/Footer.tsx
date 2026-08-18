@@ -41,7 +41,7 @@ export default function Footer() {
               />
             </Link>
             <p className="font-body-md text-body-md text-on-surface-variant mb-6 max-w-xs">
-              Canadian electrical supplier of wires, cables, transformers, and industrial electrical components for commercial and industrial projects.
+              North American electrical supplier of wires, cables, transformers, and industrial electrical components for commercial and industrial projects.
             </p>
             <div className="space-y-2 text-sm text-on-surface-variant">
               <div className="flex items-center gap-2">
