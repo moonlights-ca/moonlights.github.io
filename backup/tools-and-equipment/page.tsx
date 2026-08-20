@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { toolsCategories } from "./toolsProducts";
 
 export const metadata: Metadata = {
- title: "Electrical Tools & Test Equipment in Canada",
- description: "Electrical tools and test equipment in Canada — hand tools, power tools, meters, and fasteners from Klein, Fluke, Milwaukee, and DeWalt.",
+ title: "Electrical Tools & Test Equipment in North America",
+ description: "Electrical tools and test equipment in North America — hand tools, power tools, meters, and fasteners from Klein, Fluke, Milwaukee, and DeWalt.",
  alternates: { canonical: "/tools-and-equipment/" },
 };
 
